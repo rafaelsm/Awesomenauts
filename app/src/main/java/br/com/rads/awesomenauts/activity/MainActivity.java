@@ -19,6 +19,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import br.com.rads.awesomenauts.fragment.NautsFragment;
+import br.com.rads.awesomenauts.model.Awesomenaut;
+import br.com.rads.awesomenauts.util.DataManager;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -51,6 +53,8 @@ public class MainActivity extends ActionBarActivity
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
         nautsFragment = new NautsFragment();
+        String json = DataManager.loadJSONFromAssets(this.getApplicationContext());
+        Awesomenaut.parseJSON(json);
     }
 
     @Override
