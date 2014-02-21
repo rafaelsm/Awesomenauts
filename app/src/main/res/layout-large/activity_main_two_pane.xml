@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frags"
+    android:baselineAligned="false"
+    android:showDividers="middle">
+
+    <fragment
+        android:id="@+id/nauts_list_fragment"
+        android:name="br.com.rads.awesomenauts.fragment.NautsListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@android:layout/list_content"
+        />
+
+    <FrameLayout
+        android:id="@+id/nauts_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"/>
+
+</LinearLayout>
