@@ -1,6 +1,8 @@
 package br.com.rads.awesomenauts.fragment;
 
 import android.app.Activity;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.util.Log;
@@ -13,10 +15,10 @@ import br.com.rads.awesomenauts.activity.R;
 /**
  * Created by rafael_2 on 20/02/14.
  */
-public class NautsListFragment extends ListFragment{
+public class NautsListFragment extends ListFragment {
 
     private static final String TAG = "NAUTS_LIST_FRAGMENT";
-    private static final String STATE_ACTIVATED_POSITION = "activated_position";
+    public static final String STATE_ACTIVATED_POSITION = "activated_position";
 
     private int activatedPosition = ListView.INVALID_POSITION;
     private String[] listOptionArray;
@@ -24,7 +26,7 @@ public class NautsListFragment extends ListFragment{
     /**
      * Delegate
      */
-    public interface NautsListListener{
+    public interface NautsListListener {
         public void onNautsListSelected(String id);
     }
 
@@ -37,14 +39,14 @@ public class NautsListFragment extends ListFragment{
         }
     };
 
-    public NautsListFragment(){
+    public NautsListFragment() {
     }
 
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        if (!(activity instanceof NautsListListener)){
+        if (!(activity instanceof NautsListListener)) {
             throw new IllegalStateException(activity + " must implement NautsListListener");
         }
 
@@ -56,7 +58,7 @@ public class NautsListFragment extends ListFragment{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        listOptionArray =  new String[]{
+        listOptionArray = new String[]{
                 getString(R.string.title_section1),
                 getString(R.string.title_section2),
                 getString(R.string.title_section3),
@@ -72,8 +74,8 @@ public class NautsListFragment extends ListFragment{
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        if (savedInstanceState != null && savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)){
+        getListView().setBackgroundColor(Color.parseColor("#222222"));
+        if (savedInstanceState != null && savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)) {
             setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION));
         }
 
@@ -91,7 +93,7 @@ public class NautsListFragment extends ListFragment{
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        if (activatedPosition != ListView.INVALID_POSITION){
+        if (activatedPosition != ListView.INVALID_POSITION) {
             outState.putInt(STATE_ACTIVATED_POSITION, activatedPosition);
         }
     }
@@ -103,19 +105,19 @@ public class NautsListFragment extends ListFragment{
         listener.onNautsListSelected(listOptionArray[position]);
     }
 
-    public void setActivatedOnItemClick(boolean active){
+    public void setActivatedOnItemClick(boolean active) {
         getListView().setChoiceMode(active ?
-                        ListView.CHOICE_MODE_SINGLE :
-                        ListView.CHOICE_MODE_NONE
+                ListView.CHOICE_MODE_SINGLE :
+                ListView.CHOICE_MODE_NONE
         );
     }
 
     private void setActivatedPosition(int position) {
 
-        if(position == ListView.INVALID_POSITION){
-            getListView().setItemChecked(activatedPosition,false);
-        }else{
-            getListView().setItemChecked(position,true);
+        if (position == ListView.INVALID_POSITION) {
+            getListView().setItemChecked(activatedPosition, false);
+        } else {
+            getListView().setItemChecked(position, true);
         }
 
         activatedPosition = position;

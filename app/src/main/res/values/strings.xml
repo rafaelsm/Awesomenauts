@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Awesomenauts</string>
-    <string name="title_section1">Awesomenauts</string>
+    <string name="title_section1">News</string>
     <string name="title_section2">Nauts</string>
     <string name="title_section3">Maps</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -27,6 +28,7 @@ public class Awesomenaut {
 
     public static Awesomenaut parseJSON(String json){
 
+        List<Awesomenaut> allNauts = new ArrayList<Awesomenaut>();
         Awesomenaut awesomenaut = new Awesomenaut();
 
         try {
@@ -35,9 +37,10 @@ public class Awesomenaut {
                 JSONObject nautJson = rootArray.getJSONObject(i);
                 awesomenaut.setName(nautJson.getString("name"));
                 awesomenaut.setBackstory(nautJson.getString("backstory"));
-
                 awesomenaut.setStats(parseStats(nautJson.getJSONObject("stats")));
+                awesomenaut.setSkills(parseSkills(nautJson.getJSONArray("skill")));
 
+                allNauts.add(awesomenaut);
                 Log.d("AWESOMENAUT", awesomenaut.toString());
             }
 
@@ -48,8 +51,12 @@ public class Awesomenaut {
         return awesomenaut;
     }
 
-    private static Stats parseStats(JSONObject stats) throws JSONException {
-        return Stats.parseJSON(stats);
+    private static List<Skill> parseSkills(JSONArray skillArray) throws JSONException {
+        return Skill.parseJSON(skillArray);
+    }
+
+    private static Stats parseStats(JSONObject statsJSON) throws JSONException {
+        return Stats.parseJSON(statsJSON);
     }
 
     public String getName() {

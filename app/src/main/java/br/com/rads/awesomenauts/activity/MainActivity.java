@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +24,8 @@ import br.com.rads.awesomenauts.util.DataManager;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks, NautsListFragment.NautsListListener {
+
+    private static final String TAG = "MAIN_ACTIVITY";
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -48,15 +52,19 @@ public class MainActivity extends ActionBarActivity
             mNavigationDrawerFragment.setUp(
                     R.id.navigation_drawer,
                     (DrawerLayout) findViewById(R.id.drawer_layout));
-        } else {
-
         }
 
         mTitle = getTitle();
 
         nautsFragment = new NautsFragment();
+
+        Log.d(TAG, "Starting json parser");
+        long start = System.currentTimeMillis();
         String json = DataManager.loadJSONFromAssets(this.getApplicationContext());
         Awesomenaut.parseJSON(json);
+        long end = System.currentTimeMillis();
+
+        Log.d(TAG,"total time: " + ((end - start) / 1000));
     }
 
     @Override
@@ -125,7 +133,17 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onNautsListSelected(String id) {
-        Toast.makeText(this, "Selected - " + id, Toast.LENGTH_LONG).show();
+        if (id.equalsIgnoreCase(getString(R.string.title_section1))){
+            Bundle arguments = new Bundle();
+            arguments.putString(NautsListFragment.STATE_ACTIVATED_POSITION,id);
+
+            NautsFragment nautsFragment1 = new NautsFragment();
+
+            FragmentManager fragManager = getSupportFragmentManager();
+            FragmentTransaction transaction = fragManager.beginTransaction();
+            transaction.replace(R.id.nauts_detail_container, nautsFragment1);
+            transaction.commit();
+        }
     }
 
     /**
