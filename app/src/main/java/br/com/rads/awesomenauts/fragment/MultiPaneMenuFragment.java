@@ -1,7 +1,6 @@
 package br.com.rads.awesomenauts.fragment;
 
 import android.app.Activity;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -15,7 +14,7 @@ import br.com.rads.awesomenauts.activity.R;
 /**
  * Created by rafael_2 on 20/02/14.
  */
-public class NautsListFragment extends ListFragment {
+public class MultiPaneMenuFragment extends ListFragment {
 
     private static final String TAG = "NAUTS_LIST_FRAGMENT";
     public static final String STATE_ACTIVATED_POSITION = "activated_position";
@@ -26,31 +25,31 @@ public class NautsListFragment extends ListFragment {
     /**
      * Delegate
      */
-    public interface NautsListListener {
-        public void onNautsListSelected(String id);
+    public interface MultiPaneMenuListener {
+        public void onPaneMenuSelected(String id);
     }
 
-    private NautsListListener listener = dummyListener;
+    private MultiPaneMenuListener listener = dummyListener;
 
-    private static NautsListListener dummyListener = new NautsListListener() {
+    private static MultiPaneMenuListener dummyListener = new MultiPaneMenuListener() {
         @Override
-        public void onNautsListSelected(String id) {
+        public void onPaneMenuSelected(String id) {
             Log.d(TAG, "Selected: " + id);
         }
     };
 
-    public NautsListFragment() {
+    public MultiPaneMenuFragment() {
     }
 
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        if (!(activity instanceof NautsListListener)) {
-            throw new IllegalStateException(activity + " must implement NautsListListener");
+        if (!(activity instanceof MultiPaneMenuListener)) {
+            throw new IllegalStateException(activity + " must implement MultiPaneMenuListener");
         }
 
-        listener = (NautsListListener) activity;
+        listener = (MultiPaneMenuListener) activity;
 
     }
 
@@ -58,11 +57,7 @@ public class NautsListFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        listOptionArray = new String[]{
-                getString(R.string.title_section1),
-                getString(R.string.title_section2),
-                getString(R.string.title_section3),
-        };
+        listOptionArray = getResources().getStringArray(R.array.drawer_menu);
 
         setListAdapter(new ArrayAdapter<String>(
                 getActivity().getApplicationContext(),
@@ -102,7 +97,7 @@ public class NautsListFragment extends ListFragment {
     public void onListItemClick(ListView listView, View view, int position, long id) {
         super.onListItemClick(listView, view, position, id);
 
-        listener.onNautsListSelected(listOptionArray[position]);
+        listener.onPaneMenuSelected(listOptionArray[position]);
     }
 
     public void setActivatedOnItemClick(boolean active) {

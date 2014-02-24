@@ -15,32 +15,29 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
+import br.com.rads.awesomenauts.fragment.MultiPaneMenuFragment;
 import br.com.rads.awesomenauts.fragment.NautsFragment;
-import br.com.rads.awesomenauts.fragment.NautsListFragment;
 import br.com.rads.awesomenauts.model.Awesomenaut;
 import br.com.rads.awesomenauts.util.DataManager;
 
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks, NautsListFragment.NautsListListener {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks, MultiPaneMenuFragment.MultiPaneMenuListener {
 
     private static final String TAG = "MAIN_ACTIVITY";
 
     /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
+     * Fragments
      */
-    private NavigationDrawerFragment mNavigationDrawerFragment;
+    private NavigationDrawerFragment navigationDrawerFragment;
+    private NautsFragment nautsFragment;
 
     /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
+     * Variables
      */
-    private CharSequence mTitle;
-
-
-    private NautsFragment nautsFragment;
+    private CharSequence activityTitle;
     private List<Awesomenaut> awesomenauts;
 
     @Override
@@ -48,27 +45,36 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mNavigationDrawerFragment = (NavigationDrawerFragment)
+        navigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
 
-        if (mNavigationDrawerFragment != null) {
-            mNavigationDrawerFragment.setUp(
+        if (navigationDrawerFragment != null) {
+            navigationDrawerFragment.setUp(
                     R.id.navigation_drawer,
                     (DrawerLayout) findViewById(R.id.drawer_layout));
         }
 
-        mTitle = getTitle();
+        activityTitle = getTitle();
+
+        loadAwesomenauts();
+        loadFragments();
+
+    }
 
 
+    private void loadAwesomenauts() {
         Log.d(TAG, "Starting json parser");
+
         long start = System.currentTimeMillis();
         String json = DataManager.loadJSONFromAssets(this.getApplicationContext());
         awesomenauts = Awesomenaut.parseJSON(json);
         long end = System.currentTimeMillis();
+
         Log.d(TAG,"total time: " + ((end - start) / 1000));
+    }
 
+    private void loadFragments() {
         nautsFragment = new NautsFragment(awesomenauts);
-
     }
 
     @Override
@@ -76,28 +82,36 @@ public class MainActivity extends ActionBarActivity
         // update the activity_main_two_pane content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
 
-        if (position == 1) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.container, nautsFragment)
-                    .commit();
-            return;
+        switch (position){
+            case 0:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .commit();
+                break;
+            case 1:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, nautsFragment)
+                        .commit();
+                break;
+            case 2:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .commit();
+                break;
         }
 
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                activityTitle = getString(R.string.title_section1);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                activityTitle = getString(R.string.title_section2);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                activityTitle = getString(R.string.title_section3);
                 break;
         }
     }
@@ -106,13 +120,13 @@ public class MainActivity extends ActionBarActivity
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle(mTitle);
+        actionBar.setTitle(activityTitle);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (mNavigationDrawerFragment != null && !mNavigationDrawerFragment.isDrawerOpen()) {
+        if (navigationDrawerFragment != null && !navigationDrawerFragment.isDrawerOpen()) {
             // Only show items in the action bar relevant to this screen
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
@@ -136,16 +150,14 @@ public class MainActivity extends ActionBarActivity
     }
 
     @Override
-    public void onNautsListSelected(String id) {
+    public void onPaneMenuSelected(String id) {
         if (id.equalsIgnoreCase(getString(R.string.title_section2))){
             Bundle arguments = new Bundle();
-            arguments.putString(NautsListFragment.STATE_ACTIVATED_POSITION,id);
-
-            NautsFragment nautsFragment1 = new NautsFragment(awesomenauts);
+            arguments.putString(MultiPaneMenuFragment.STATE_ACTIVATED_POSITION,id);
 
             FragmentManager fragManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragManager.beginTransaction();
-            transaction.replace(R.id.nauts_detail_container, nautsFragment1);
+            transaction.replace(R.id.nauts_detail_container, nautsFragment);
             transaction.commit();
         }
     }
