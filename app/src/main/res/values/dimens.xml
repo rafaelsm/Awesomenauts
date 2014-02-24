@@ -8,6 +8,10 @@
     <dimen name="navigation_drawer_width">240dp</dimen>
 
     <!-- Grid Width -->
-    <dimen name="grid_width">120dp</dimen>
+    <dimen name="grid_width">140dp</dimen>
+
+    <!-- Grid Margin -->
+    <dimen name="grid_horizontal_margin">0dp</dimen>
+    <dimen name="grid_vertical_margin">0dp</dimen>
 
 </resources>

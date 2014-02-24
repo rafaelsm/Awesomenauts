@@ -27,9 +27,43 @@ public class Upgrade {
             JSONObject upgradeJSON = upgradesArray.getJSONObject(i);
 
             Upgrade upgrade = new Upgrade();
-            //TODO: atribuir elementos do json
+            upgrade.name = upgradeJSON.getString("name");
+            upgrade.description = upgradeJSON.getString("description");
+            upgrade.solar = upgradeJSON.getInt("value");
+            upgrade.flavor = upgradeJSON.getString("flavor");
+            upgrade.levelUpgrades = parseLevelUpgrade(upgradeJSON.getJSONArray("levelUpgrade"));
+
+            upgrades.add(upgrade);
         }
 
         return upgrades;
+    }
+
+    private static List<LevelUpgrade> parseLevelUpgrade(JSONArray levelUpgradeArray) throws JSONException {
+        return  LevelUpgrade.parseJSONArray(levelUpgradeArray);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getSolar() {
+        return solar;
+    }
+
+    public String getFlavor() {
+        return flavor;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public List<LevelUpgrade> getLevelUpgrades() {
+        return levelUpgrades;
     }
 }

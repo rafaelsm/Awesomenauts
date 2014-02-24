@@ -6,7 +6,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -26,7 +29,7 @@ public class Awesomenaut {
     private int unlockedAtLevel;
     private Date releaseDate;
 
-    public static Awesomenaut parseJSON(String json){
+    public static List<Awesomenaut> parseJSON(String json){
 
         List<Awesomenaut> allNauts = new ArrayList<Awesomenaut>();
         Awesomenaut awesomenaut = new Awesomenaut();
@@ -35,10 +38,14 @@ public class Awesomenaut {
             JSONArray rootArray = new JSONArray(json);
             for (int i = 0; i < rootArray.length(); i++){
                 JSONObject nautJson = rootArray.getJSONObject(i);
-                awesomenaut.setName(nautJson.getString("name"));
-                awesomenaut.setBackstory(nautJson.getString("backstory"));
-                awesomenaut.setStats(parseStats(nautJson.getJSONObject("stats")));
-                awesomenaut.setSkills(parseSkills(nautJson.getJSONArray("skill")));
+                awesomenaut.name = nautJson.getString("name");
+                awesomenaut.backstory = nautJson.getString("backstory");
+                awesomenaut.stats = parseStats(nautJson.getJSONObject("stats"));
+                awesomenaut.skills = parseSkills(nautJson.getJSONArray("skills"));
+                awesomenaut.tipsPlayingAs = parseTips(nautJson.getJSONArray("tipsPlayingAs"));
+                awesomenaut.tipsPlayingAgainst = parseTips(nautJson.getJSONArray("tipsPlayingAgainst"));
+                awesomenaut.unlockedAtLevel = nautJson.getInt("unlockedAtLevel");
+                awesomenaut.releaseDate = parseDateFromString(nautJson.getString("releaseDate"));
 
                 allNauts.add(awesomenaut);
                 Log.d("AWESOMENAUT", awesomenaut.toString());
@@ -48,7 +55,7 @@ public class Awesomenaut {
             e.printStackTrace();
         }
 
-        return awesomenaut;
+        return allNauts;
     }
 
     private static List<Skill> parseSkills(JSONArray skillArray) throws JSONException {
@@ -59,88 +66,79 @@ public class Awesomenaut {
         return Stats.parseJSON(statsJSON);
     }
 
-    public String getName() {
-        return name;
+    private static List<String> parseTips(JSONArray tipsArray) throws JSONException {
+
+        List<String> tips = new ArrayList<String>();
+
+        for (int i = 0; i < tipsArray.length(); i++){
+            tips.add(tipsArray.getString(i));
+        }
+
+        return tips;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    private static Date parseDateFromString(String releaseDate) {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+
+        try {
+            return format.parse(releaseDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public String getDrawableName() {
+
+        StringBuilder drawableName = new StringBuilder( "icon_" );
+        drawableName.append( this.name.toLowerCase().replace(" ", "_") ) ;
+        return drawableName.toString();
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getBackstory() {
         return backstory;
     }
 
-    public void setBackstory(String backstory) {
-        this.backstory = backstory;
-    }
-
     public Stats getStats() {
         return stats;
-    }
-
-    public void setStats(Stats stats) {
-        this.stats = stats;
     }
 
     public List<Skill> getSkills() {
         return skills;
     }
 
-    public void setSkills(List<Skill> skills) {
-        this.skills = skills;
-    }
-
     public List<String> getTipsPlayingAs() {
         return tipsPlayingAs;
-    }
-
-    public void setTipsPlayingAs(List<String> tipsPlayingAs) {
-        this.tipsPlayingAs = tipsPlayingAs;
     }
 
     public List<String> getTipsPlayingAgainst() {
         return tipsPlayingAgainst;
     }
 
-    public void setTipsPlayingAgainst(List<String> tipsPlayingAgainst) {
-        this.tipsPlayingAgainst = tipsPlayingAgainst;
-    }
-
     public String getIcon() {
         return icon;
-    }
-
-    public void setIcon(String icon) {
-        this.icon = icon;
     }
 
     public String getImage() {
         return image;
     }
 
-    public void setImage(String image) {
-        this.image = image;
-    }
-
     public int getUnlockedAtLevel() {
         return unlockedAtLevel;
-    }
-
-    public void setUnlockedAtLevel(int unlockedAtLevel) {
-        this.unlockedAtLevel = unlockedAtLevel;
     }
 
     public Date getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(Date releaseDate) {
-        this.releaseDate = releaseDate;
-    }
-
     @Override
     public String toString() {
         return this.name + "\n" + this.backstory;
     }
+
 }

@@ -6,4 +6,9 @@
 
     <!-- Grid Width -->
     <dimen name="grid_width">200dp</dimen>
+
+    <!-- Grid Margin -->
+    <dimen name="grid_horizontal_margin">16dp</dimen>
+    <dimen name="grid_vertical_margin">16dp</dimen>
+
 </resources>

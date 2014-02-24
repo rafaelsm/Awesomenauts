@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 import br.com.rads.awesomenauts.fragment.NautsFragment;
 import br.com.rads.awesomenauts.fragment.NautsListFragment;
 import br.com.rads.awesomenauts.model.Awesomenaut;
@@ -39,6 +41,7 @@ public class MainActivity extends ActionBarActivity
 
 
     private NautsFragment nautsFragment;
+    private List<Awesomenaut> awesomenauts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,15 +59,16 @@ public class MainActivity extends ActionBarActivity
 
         mTitle = getTitle();
 
-        nautsFragment = new NautsFragment();
 
         Log.d(TAG, "Starting json parser");
         long start = System.currentTimeMillis();
         String json = DataManager.loadJSONFromAssets(this.getApplicationContext());
-        Awesomenaut.parseJSON(json);
+        awesomenauts = Awesomenaut.parseJSON(json);
         long end = System.currentTimeMillis();
-
         Log.d(TAG,"total time: " + ((end - start) / 1000));
+
+        nautsFragment = new NautsFragment(awesomenauts);
+
     }
 
     @Override
@@ -133,11 +137,11 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onNautsListSelected(String id) {
-        if (id.equalsIgnoreCase(getString(R.string.title_section1))){
+        if (id.equalsIgnoreCase(getString(R.string.title_section2))){
             Bundle arguments = new Bundle();
             arguments.putString(NautsListFragment.STATE_ACTIVATED_POSITION,id);
 
-            NautsFragment nautsFragment1 = new NautsFragment();
+            NautsFragment nautsFragment1 = new NautsFragment(awesomenauts);
 
             FragmentManager fragManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragManager.beginTransaction();

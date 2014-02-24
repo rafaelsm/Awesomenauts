@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="1dp"
+    >
+
+    <ImageView
+        android:id="@+id/cell_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/placeholder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/cell_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#50000000"
+        android:text="Awesomenaut"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        />
+
+</FrameLayout>
