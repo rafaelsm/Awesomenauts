@@ -11,22 +11,23 @@ import br.com.rads.awesomenauts.activity.MainActivity;
 import br.com.rads.awesomenauts.activity.R;
 
 /**
- * Created by rafael_2 on 17/02/14.
+ * Created by rafael_2 on 24/02/14.
  */
-public class NewsFragment extends Fragment {
+public class MapsFragment extends Fragment {
 
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        ((MainActivity)activity).onSectionAttached(1);
+        ((MainActivity)activity).onSectionAttached(3);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = null;
 
-        View v = inflater.inflate(R.layout.fragment_news, container, false);
+        view = inflater.inflate(R.layout.fragment_maps, container, false);
 
-        return v;
+        return view;
     }
 }

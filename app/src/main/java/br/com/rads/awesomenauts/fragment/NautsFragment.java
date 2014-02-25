@@ -31,16 +31,15 @@ public class NautsFragment extends Fragment {
         this.awesomenauts = awesomenauts;
     }
 
+    public NautsFragment() {
+
+    }
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
         ((MainActivity)activity).onSectionAttached(2);
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
     }
 
     @Override

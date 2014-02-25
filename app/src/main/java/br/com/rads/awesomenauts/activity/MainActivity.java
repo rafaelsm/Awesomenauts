@@ -18,8 +18,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import br.com.rads.awesomenauts.fragment.MapsFragment;
 import br.com.rads.awesomenauts.fragment.MultiPaneMenuFragment;
 import br.com.rads.awesomenauts.fragment.NautsFragment;
+import br.com.rads.awesomenauts.fragment.NewsFragment;
 import br.com.rads.awesomenauts.model.Awesomenaut;
 import br.com.rads.awesomenauts.util.DataManager;
 
@@ -32,7 +34,9 @@ public class MainActivity extends ActionBarActivity
      * Fragments
      */
     private NavigationDrawerFragment navigationDrawerFragment;
-    private NautsFragment nautsFragment;
+    private NautsFragment nautsFragment = new NautsFragment();
+    private NewsFragment newsFragment = new NewsFragment();
+    private MapsFragment mapsFragment = new MapsFragment();
 
     /**
      * Variables
@@ -45,20 +49,31 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+         * Load all data
+         */
+        loadAwesomenauts();
+        loadFragments();
+
+        /**
+         * Start navigation drawer
+         */
         navigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
 
+
+        /**
+         * If in single pane(not tablet), setup navigation drawer
+         */
         if (navigationDrawerFragment != null) {
             navigationDrawerFragment.setUp(
                     R.id.navigation_drawer,
                     (DrawerLayout) findViewById(R.id.drawer_layout));
+        }else{
+            ((MultiPaneMenuFragment)getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
         }
 
         activityTitle = getTitle();
-
-        loadAwesomenauts();
-        loadFragments();
-
     }
 
 
@@ -75,6 +90,8 @@ public class MainActivity extends ActionBarActivity
 
     private void loadFragments() {
         nautsFragment = new NautsFragment(awesomenauts);
+        newsFragment = new NewsFragment();
+        mapsFragment = new MapsFragment();
     }
 
     @Override
@@ -85,7 +102,7 @@ public class MainActivity extends ActionBarActivity
         switch (position){
             case 0:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .replace(R.id.container, newsFragment)
                         .commit();
                 break;
             case 1:
@@ -95,7 +112,7 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 2:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .replace(R.id.container, mapsFragment)
                         .commit();
                 break;
         }
@@ -105,13 +122,13 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                activityTitle = getString(R.string.title_section1);
+                activityTitle = getString(R.string.title_section_news);
                 break;
             case 2:
-                activityTitle = getString(R.string.title_section2);
+                activityTitle = getString(R.string.title_section_nauts);
                 break;
             case 3:
-                activityTitle = getString(R.string.title_section3);
+                activityTitle = getString(R.string.title_section_maps);
                 break;
         }
     }
@@ -151,57 +168,26 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onPaneMenuSelected(String id) {
-        if (id.equalsIgnoreCase(getString(R.string.title_section2))){
-            Bundle arguments = new Bundle();
-            arguments.putString(MultiPaneMenuFragment.STATE_ACTIVATED_POSITION,id);
 
-            FragmentManager fragManager = getSupportFragmentManager();
-            FragmentTransaction transaction = fragManager.beginTransaction();
-            transaction.replace(R.id.nauts_detail_container, nautsFragment);
-            transaction.commit();
+        Fragment fragmentToInsert = new Fragment();
+
+        if( id.equalsIgnoreCase(getString(R.string.title_section_news))){
+            fragmentToInsert = newsFragment;
         }
-    }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
+        else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))){
+            fragmentToInsert = nautsFragment;
+        }
+        else if (id.equalsIgnoreCase(getString(R.string.title_section_maps))){
+            fragmentToInsert = mapsFragment;
         }
 
-        public PlaceholderFragment() {
-        }
+        Bundle arguments = new Bundle();
+        arguments.putString(MultiPaneMenuFragment.STATE_ACTIVATED_POSITION,id);
 
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
-            return rootView;
-        }
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ((MainActivity) activity).onSectionAttached(
-                    getArguments().getInt(ARG_SECTION_NUMBER));
-        }
+        FragmentManager fragManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragManager.beginTransaction();
+        transaction.replace(R.id.nauts_detail_container, fragmentToInsert);
+        transaction.commit();
     }
 
 }
