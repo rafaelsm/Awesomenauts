@@ -1,6 +1,5 @@
 package br.com.rads.awesomenauts.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,18 +8,15 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.List;
 
 import br.com.rads.awesomenauts.fragment.MapsFragment;
 import br.com.rads.awesomenauts.fragment.MultiPaneMenuFragment;
-import br.com.rads.awesomenauts.fragment.NautsFragment;
+import br.com.rads.awesomenauts.fragment.NautsGridFragment;
+import br.com.rads.awesomenauts.fragment.NavigationDrawerFragment;
 import br.com.rads.awesomenauts.fragment.NewsFragment;
 import br.com.rads.awesomenauts.model.Awesomenaut;
 import br.com.rads.awesomenauts.util.DataManager;
@@ -34,13 +30,14 @@ public class MainActivity extends ActionBarActivity
      * Fragments
      */
     private NavigationDrawerFragment navigationDrawerFragment;
-    private NautsFragment nautsFragment = new NautsFragment();
+    private NautsGridFragment nautsGridFragment = new NautsGridFragment();
     private NewsFragment newsFragment = new NewsFragment();
     private MapsFragment mapsFragment = new MapsFragment();
 
     /**
      * Variables
      */
+    private boolean onTwoPane;
     private CharSequence activityTitle;
     private List<Awesomenaut> awesomenauts;
 
@@ -83,13 +80,14 @@ public class MainActivity extends ActionBarActivity
         long start = System.currentTimeMillis();
         String json = DataManager.loadJSONFromAssets(this.getApplicationContext());
         awesomenauts = Awesomenaut.parseJSON(json);
+        DataManager.getInstance().setAwesomenauts(awesomenauts);
         long end = System.currentTimeMillis();
 
         Log.d(TAG,"total time: " + ((end - start) / 1000));
     }
 
     private void loadFragments() {
-        nautsFragment = new NautsFragment(awesomenauts);
+        nautsGridFragment = new NautsGridFragment(awesomenauts);
         newsFragment = new NewsFragment();
         mapsFragment = new MapsFragment();
     }
@@ -107,7 +105,7 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 1:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, nautsFragment)
+                        .replace(R.id.container, nautsGridFragment)
                         .commit();
                 break;
             case 2:
@@ -175,7 +173,7 @@ public class MainActivity extends ActionBarActivity
             fragmentToInsert = newsFragment;
         }
         else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))){
-            fragmentToInsert = nautsFragment;
+            fragmentToInsert = nautsGridFragment;
         }
         else if (id.equalsIgnoreCase(getString(R.string.title_section_maps))){
             fragmentToInsert = mapsFragment;

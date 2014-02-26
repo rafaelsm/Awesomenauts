@@ -1,4 +1,4 @@
-package br.com.rads.awesomenauts.activity;
+package br.com.rads.awesomenauts.fragment;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import br.com.rads.awesomenauts.activity.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
