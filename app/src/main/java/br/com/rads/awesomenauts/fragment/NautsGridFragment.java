@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,14 +54,34 @@ public class NautsGridFragment extends Fragment {
         ButterKnife.inject(this,rootView);
 
         grid.setAdapter( new GridImageAdapter(this.getActivity(),awesomenauts));
-        grid.setOnItemClickListener( new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getActivity(), NautActivity.class);
-                startActivity(i);
-            }
-        });
+        grid.setOnItemClickListener( new GridClickListener());
 
         return rootView;
     }
+
+    private class GridClickListener implements AdapterView.OnItemClickListener{
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            MainActivity mainActivity = (MainActivity) getActivity();
+
+            if (mainActivity.isOnTwoPane()){
+
+                Bundle bundle = new Bundle();
+                bundle.putString( NautFragment.SELECTED_NAUT_ID, awesomenauts.get(position).getName());
+
+                NautFragment nautFragment = new NautFragment(awesomenauts.get(position));
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.nauts_detail_container, nautFragment);
+                fragmentTransaction.commit();
+
+            } else{
+                Intent i = new Intent(getActivity(), NautActivity.class);
+                startActivity(i);
+            }
+        }
+    }
+
 }

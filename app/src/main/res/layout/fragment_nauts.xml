@@ -17,6 +17,7 @@
         android:scrollbarStyle="outsideOverlay"
         android:stretchMode="columnWidth"
         android:gravity="center"
+        android:clipToPadding="false"
         />
 
     </RelativeLayout>

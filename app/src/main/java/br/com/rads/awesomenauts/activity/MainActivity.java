@@ -25,6 +25,7 @@ public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks, MultiPaneMenuFragment.MultiPaneMenuListener {
 
     private static final String TAG = "MAIN_ACTIVITY";
+    public static final String SELECTED_DRAWER_ITEM = "select_item";
 
     /**
      * Fragments
@@ -66,8 +67,12 @@ public class MainActivity extends ActionBarActivity
             navigationDrawerFragment.setUp(
                     R.id.navigation_drawer,
                     (DrawerLayout) findViewById(R.id.drawer_layout));
+
+            onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 0));
+
         }else{
             ((MultiPaneMenuFragment)getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
+            onTwoPane = true;
         }
 
         activityTitle = getTitle();
@@ -188,4 +193,7 @@ public class MainActivity extends ActionBarActivity
         transaction.commit();
     }
 
+    public boolean isOnTwoPane() {
+        return onTwoPane;
+    }
 }

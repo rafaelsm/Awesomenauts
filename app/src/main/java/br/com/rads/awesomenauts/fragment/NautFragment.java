@@ -34,12 +34,19 @@ public class NautFragment extends Fragment {
     public NautFragment(){
     }
 
+    public NautFragment(Awesomenaut awesomenaut) {
+
+        this.awesomenaut = awesomenaut;
+
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //Pegar o NAUT que vem com a key specificada, vou pegar o swiggins só pra exibir algo
-        awesomenaut = DataManager.getInstance().getAwesomenauts().get(0);
+        if(awesomenaut == null)
+            awesomenaut = DataManager.getInstance().getAwesomenauts().get(0);
     }
 
     @Override
