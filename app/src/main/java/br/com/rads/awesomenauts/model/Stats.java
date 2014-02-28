@@ -61,4 +61,15 @@ public class Stats {
     public Mobility getMobility() {
         return mobility;
     }
+
+    public String getHealthAsString() {
+        StringBuilder healthWithBonus = new StringBuilder(String.valueOf(getHealth()));
+        healthWithBonus.append(" ");
+        healthWithBonus.append("("+sumHealthAndBonus()+")");
+        return healthWithBonus.toString();
+    }
+
+    private int sumHealthAndBonus() {
+        return getBonusHealth()+getHealth();
+    }
 }

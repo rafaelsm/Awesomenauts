@@ -14,5 +14,10 @@
     <string name="action_settings">Settings</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="health"><![CDATA[<b>Health: </b>]]></string>
+    <string name="move_speed"><![CDATA[<b>Move Speed: </b>]]></string>
+    <string name="attack_type"><![CDATA[<b>Attack Type: </b>]]></string>
+    <string name="role"><![CDATA[<b>Role: </b>]]></string>
+    <string name="mobility"><![CDATA[<b>Mobility: </b>]]></string>
 
 </resources>

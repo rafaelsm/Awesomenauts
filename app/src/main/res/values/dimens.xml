@@ -14,4 +14,7 @@
     <dimen name="grid_horizontal_margin">0dp</dimen>
     <dimen name="grid_vertical_margin">0dp</dimen>
 
+    <!-- Detail -->
+    <dimen name="detail_padding">16dp</dimen>
+
 </resources>

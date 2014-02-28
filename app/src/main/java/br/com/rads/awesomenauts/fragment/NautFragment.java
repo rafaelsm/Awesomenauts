@@ -2,6 +2,7 @@ package br.com.rads.awesomenauts.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,11 +21,26 @@ public class NautFragment extends Fragment {
 
     public static final String SELECTED_NAUT_ID = "naut_id";
 
-    @InjectView(R.id.naut_name_textview)
-    TextView nautName;
-
     @InjectView(R.id.naut_backstory_textview)
-    TextView nautBackstory;
+    TextView nautBackstoryTextView;
+
+    @InjectView(R.id.naut_extra_textview)
+    TextView nautExtraTextView;
+
+    @InjectView(R.id.health_textview)
+    TextView healthTextView;
+
+    @InjectView(R.id.move_speed_textview)
+    TextView moveSpeedTextView;
+
+    @InjectView(R.id.attack_type_textview)
+    TextView attackTypeTextView;
+
+    @InjectView(R.id.role_textview)
+    TextView roleTextView;
+
+    @InjectView(R.id.mobility_textview)
+    TextView mobilityTextView;
 
     private Awesomenaut awesomenaut;
 
@@ -35,9 +51,7 @@ public class NautFragment extends Fragment {
     }
 
     public NautFragment(Awesomenaut awesomenaut) {
-
         this.awesomenaut = awesomenaut;
-
     }
 
     @Override
@@ -55,8 +69,12 @@ public class NautFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_naut_detail,container,false);
         ButterKnife.inject(this, view);
 
-        nautName.setText( awesomenaut.getName() );
-        nautBackstory.setText( awesomenaut.getBackstory() );
+        nautBackstoryTextView.setText( awesomenaut.getBackstory() );
+        healthTextView.setText(Html.fromHtml(getString(R.string.health))  + awesomenaut.getStats().getHealthAsString() );
+        moveSpeedTextView.setText(Html.fromHtml(getString(R.string.move_speed)) + String.valueOf(awesomenaut.getStats().getMovementSpeed()));
+        attackTypeTextView.setText(Html.fromHtml(getString(R.string.attack_type)) + String.valueOf(awesomenaut.getStats().getAttackType()));
+        roleTextView.setText(Html.fromHtml(getString(R.string.role)) + awesomenaut.getStats().getRoles().toString());
+        mobilityTextView.setText(Html.fromHtml(getString(R.string.mobility)) + awesomenaut.getStats().getMobility().toString());
 
         return view;
     }
