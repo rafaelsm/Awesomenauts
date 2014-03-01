@@ -17,15 +17,12 @@ import butterknife.InjectView;
 /**
  * Created by rafael_2 on 25/02/14.
  */
-public class NautFragment extends Fragment {
+public class InformationFragment extends Fragment {
 
     public static final String SELECTED_NAUT_ID = "naut_id";
 
     @InjectView(R.id.naut_backstory_textview)
     TextView nautBackstoryTextView;
-
-    @InjectView(R.id.naut_extra_textview)
-    TextView nautExtraTextView;
 
     @InjectView(R.id.health_textview)
     TextView healthTextView;
@@ -45,12 +42,12 @@ public class NautFragment extends Fragment {
     private Awesomenaut awesomenaut;
 
     /**
-     * Construtor vazio, necessário para instanciar o fragment em caso de rotação
+     * Empty constructor for rotation
      */
-    public NautFragment(){
+    public InformationFragment(){
     }
 
-    public NautFragment(Awesomenaut awesomenaut) {
+    public InformationFragment(Awesomenaut awesomenaut) {
         this.awesomenaut = awesomenaut;
     }
 

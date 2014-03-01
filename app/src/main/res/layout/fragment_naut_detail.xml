@@ -89,17 +89,6 @@
                 android:layout_height="wrap_content"
                 android:text="Raised in the Swiggins Navy Family on the Kraken planet Titan... " />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Extra"
-                android:layout_marginTop="@dimen/detail_padding" />
-
-            <TextView
-                android:id="@+id/naut_extra_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Raised in the Swiggins Navy Family on the Kraken planet Titan... " />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

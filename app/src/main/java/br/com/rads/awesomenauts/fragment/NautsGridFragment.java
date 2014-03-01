@@ -50,7 +50,7 @@ public class NautsGridFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_nauts, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_nauts_grid, container, false);
         ButterKnife.inject(this,rootView);
 
         grid.setAdapter( new GridImageAdapter(this.getActivity(),awesomenauts));
@@ -69,12 +69,12 @@ public class NautsGridFragment extends Fragment {
             if (mainActivity.isOnTwoPane()){
 
                 Bundle bundle = new Bundle();
-                bundle.putString( NautFragment.SELECTED_NAUT_ID, awesomenauts.get(position).getName());
+                bundle.putString( InformationFragment.SELECTED_NAUT_ID, awesomenauts.get(position).getName());
 
-                NautFragment nautFragment = new NautFragment(awesomenauts.get(position));
+                InformationFragment informationFragment = new InformationFragment(awesomenauts.get(position));
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.nauts_detail_container, nautFragment);
+                fragmentTransaction.replace(R.id.nauts_detail_container, informationFragment);
                 fragmentTransaction.commit();
 
             } else{
