@@ -1,6 +1,9 @@
 package br.com.rads.awesomenauts.model;
 
 
+import com.google.common.base.Splitter;
+import com.google.common.base.Strings;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -47,5 +50,16 @@ public class Attribute {
 
     public Format getFormat() {
         return format;
+    }
+
+    @Override
+    public String toString() {
+
+        StringBuilder sb = new StringBuilder(name);
+        sb.append("\t\t\t\t");
+        sb.append(String.valueOf(value));
+        sb.append(format.toString());
+
+        return sb.toString();
     }
 }

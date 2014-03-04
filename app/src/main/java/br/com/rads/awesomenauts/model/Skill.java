@@ -74,4 +74,19 @@ public class Skill {
     public List<Upgrade> getUpgrades() {
         return upgrades;
     }
+
+    public String getAttributesAsString() {
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < attributes.size(); i++){
+
+            sb.append(attributes.get(i));
+
+            if(i+1 < attributes.size())
+                sb.append("\n");
+        }
+
+        return sb.toString();
+    }
 }

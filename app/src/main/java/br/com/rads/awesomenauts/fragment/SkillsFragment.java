@@ -16,6 +16,8 @@ import br.com.rads.awesomenauts.model.Skill;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import it.gmariotti.cardslib.library.internal.Card;
+import it.gmariotti.cardslib.library.internal.CardExpand;
+import it.gmariotti.cardslib.library.internal.ViewToClickToExpand;
 import it.gmariotti.cardslib.library.view.CardView;
 
 /**
@@ -58,16 +60,28 @@ public class SkillsFragment extends Fragment {
 
     private void loadSkillsCard() {
 
-        skill1.setCard(new Card(getActivity(), R.layout.card_skill));
-        skill2.setCard(new Card(getActivity(), R.layout.card_skill));
-        skill3.setCard(new Card(getActivity(), R.layout.card_skill));
-        skill4.setCard(new Card(getActivity(), R.layout.card_skill));
+        skill1.setCard(createNewCard(skill1, awesomenaut.getSkills().get(0)));
+        skill2.setCard(createNewCard(skill2, awesomenaut.getSkills().get(1)));
+        skill3.setCard(createNewCard(skill3, awesomenaut.getSkills().get(2)));
+        skill4.setCard(createNewCard(skill4, awesomenaut.getSkills().get(3)));
 
         configCardView(skill1, awesomenaut.getSkills().get(0));
         configCardView(skill2, awesomenaut.getSkills().get(1));
         configCardView(skill3, awesomenaut.getSkills().get(2));
         configCardView(skill4, awesomenaut.getSkills().get(3));
 
+    }
+
+    private Card createNewCard(View view, Skill skill) {
+        CardExpand expand = new CardExpand(getActivity());
+        expand.setTitle(skill.getAttributesAsString());
+
+        Card c = new Card(getActivity(), R.layout.card_skill);
+        c.addCardExpand(expand);
+
+        ViewToClickToExpand viewToClickToExpand = ViewToClickToExpand.builder().setupView(view);
+        c.setViewToClickToExpand(viewToClickToExpand);
+        return c;
     }
 
     private void configCardView(CardView cardView, Skill skill) {
