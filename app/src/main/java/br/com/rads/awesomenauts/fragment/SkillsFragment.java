@@ -74,7 +74,8 @@ public class SkillsFragment extends Fragment {
 
     private Card createNewCard(View view, Skill skill) {
         CardExpand expand = new CardExpand(getActivity());
-        expand.setTitle(skill.getAttributesAsString());
+        String attributes = skill.getAttributesAsString();
+        expand.setTitle(attributes.isEmpty() ? "Jump" : attributes);
 
         Card c = new Card(getActivity(), R.layout.card_skill);
         c.addCardExpand(expand);

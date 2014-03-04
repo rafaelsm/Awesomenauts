@@ -67,11 +67,11 @@ public class InformationFragment extends Fragment {
         ButterKnife.inject(this, view);
 
         nautBackstoryTextView.setText( awesomenaut.getBackstory() );
-        healthTextView.setText(Html.fromHtml(getString(R.string.health))  + awesomenaut.getStats().getHealthAsString() );
-        moveSpeedTextView.setText(Html.fromHtml(getString(R.string.move_speed)) + String.valueOf(awesomenaut.getStats().getMovementSpeed()));
-        attackTypeTextView.setText(Html.fromHtml(getString(R.string.attack_type)) + String.valueOf(awesomenaut.getStats().getAttackType()));
-        roleTextView.setText(Html.fromHtml(getString(R.string.role)) + awesomenaut.getStats().getRoles().toString());
-        mobilityTextView.setText(Html.fromHtml(getString(R.string.mobility)) + awesomenaut.getStats().getMobility().toString());
+        healthTextView.setText(Html.fromHtml(getString(R.string.health) + awesomenaut.getStats().getHealthAsString()));
+        moveSpeedTextView.setText(Html.fromHtml(getString(R.string.move_speed) + String.valueOf(awesomenaut.getStats().getMovementSpeed())));
+        attackTypeTextView.setText(Html.fromHtml(getString(R.string.attack_type) + String.valueOf(awesomenaut.getStats().getAttackType())));
+        roleTextView.setText(Html.fromHtml(getString(R.string.role) + awesomenaut.getStats().getRoles().toString()));
+        mobilityTextView.setText(Html.fromHtml(getString(R.string.mobility) + awesomenaut.getStats().getMobility().toString()));
 
         return view;
     }
