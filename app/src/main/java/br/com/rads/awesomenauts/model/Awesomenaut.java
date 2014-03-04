@@ -18,6 +18,8 @@ import java.util.List;
  */
 public class Awesomenaut {
 
+    public static final String TAG = "AWESOMENAUT";
+
     private String name;
     private String backstory;
     private Stats stats;

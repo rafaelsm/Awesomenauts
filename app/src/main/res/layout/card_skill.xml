@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/skill_solar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/solar"
+        android:text="135"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:padding="@dimen/small_padding"/>
+
+    <ImageView
+        android:id="@+id/skill_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/placeholder_skill"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/small_padding"/>
+
+    <TextView
+        android:id="@+id/skill_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" First Skill Name"
+        android:layout_toRightOf="@id/skill_image"
+        android:layout_alignTop="@id/skill_image"
+        android:layout_toLeftOf="@id/skill_solar"
+        android:layout_marginTop="@dimen/small_padding"
+        />
+
+    <TextView
+        android:id="@+id/skill_desc_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" First Skill Description"
+        android:layout_toRightOf="@id/skill_image"
+        android:layout_below="@id/skill_name_textview"
+        android:layout_toLeftOf="@id/skill_solar"
+        android:layout_alignBottom="@id/skill_image"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:ellipsize="end"
+        android:singleLine="false"
+        android:maxLines="3"
+        />
+
+</RelativeLayout>

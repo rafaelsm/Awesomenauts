@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_padding">
 
-    <TextView
+    <it.gmariotti.cardslib.library.view.CardView
+        android:id="@+id/card_skill_1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="SKILLS"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_padding" />
+
+    <it.gmariotti.cardslib.library.view.CardView
+        android:id="@+id/card_skill_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_padding" />
+
+    <it.gmariotti.cardslib.library.view.CardView
+        android:id="@+id/card_skill_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_padding" />
+
+    <it.gmariotti.cardslib.library.view.CardView
+        android:id="@+id/card_skill_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

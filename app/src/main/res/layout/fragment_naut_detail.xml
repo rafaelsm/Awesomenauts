@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
         android:scrollbarStyle="outsideOverlay"
-        android:padding="@dimen/detail_padding">
+        android:padding="@dimen/medium_padding">
 
         <LinearLayout
             android:layout_width="match_parent"

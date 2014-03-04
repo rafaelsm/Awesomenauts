@@ -55,9 +55,9 @@ public class InformationFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Pegar o NAUT que vem com a key specificada, vou pegar o swiggins só pra exibir algo
-        if(awesomenaut == null)
+        if(awesomenaut == null){
             awesomenaut = DataManager.getInstance().getAwesomenauts().get(0);
+        }
     }
 
     @Override

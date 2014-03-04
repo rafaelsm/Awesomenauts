@@ -79,6 +79,7 @@ public class NautsGridFragment extends Fragment {
 
             } else{
                 Intent i = new Intent(getActivity(), NautActivity.class);
+                i.putExtra(Awesomenaut.TAG, position);
                 startActivity(i);
             }
         }

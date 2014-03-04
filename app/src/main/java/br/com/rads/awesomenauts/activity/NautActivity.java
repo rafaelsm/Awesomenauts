@@ -16,6 +16,8 @@ import android.view.MenuItem;
 import br.com.rads.awesomenauts.fragment.InformationFragment;
 import br.com.rads.awesomenauts.fragment.SkillsFragment;
 import br.com.rads.awesomenauts.fragment.UpgradesFragment;
+import br.com.rads.awesomenauts.model.Awesomenaut;
+import br.com.rads.awesomenauts.util.DataManager;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
@@ -35,11 +37,18 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
     private SkillsFragment skillsFragment;
     private UpgradesFragment upgradesFragment;
 
+    private Awesomenaut awesomenaut;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_naut);
         ButterKnife.inject(this);
+
+        /**
+         * Get Naut
+         */
+        awesomenaut = DataManager.getInstance().getAwesomenauts().get(getIntent().getIntExtra(Awesomenaut.TAG, 0));
 
         /**
          * Config navigation mode to use viewpager
@@ -86,8 +95,8 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
     }
 
     private void loadFragments() {
-        informationFragment = new InformationFragment();
-        skillsFragment = new SkillsFragment();
+        informationFragment = new InformationFragment(awesomenaut);
+        skillsFragment = new SkillsFragment(awesomenaut);
         upgradesFragment = new UpgradesFragment();
     }
 
