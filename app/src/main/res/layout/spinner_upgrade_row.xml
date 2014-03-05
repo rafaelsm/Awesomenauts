@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_upgrade_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="teste"
+    android:textSize="@dimen/medium_text"
+    android:drawableLeft="@drawable/placeholder_skill"
+    android:drawablePadding="@dimen/large_padding"
+    android:gravity="center_vertical"
+    />

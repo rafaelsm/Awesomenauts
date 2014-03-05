@@ -97,7 +97,7 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
     private void loadFragments() {
         informationFragment = new InformationFragment(awesomenaut);
         skillsFragment = new SkillsFragment(awesomenaut);
-        upgradesFragment = new UpgradesFragment();
+        upgradesFragment = new UpgradesFragment(awesomenaut);
     }
 
     private void loadTabs() {

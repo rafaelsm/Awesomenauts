@@ -4,10 +4,10 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <Spinner
+        android:id="@+id/upgrades_spinner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="UPGRADES"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding"/>
 
 </LinearLayout>
