@@ -2,9 +2,12 @@ package br.com.rads.awesomenauts.adapter;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ScaleDrawable;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,11 +75,11 @@ public class SpinnerUpgradesAdapter extends ArrayAdapter<Skill> {
         if (imageResource == 0)
             imageResource = R.drawable.placeholder_skill;
 
-        Drawable d = context.getResources().getDrawable(imageResource);
-        ScaleDrawable sd = new ScaleDrawable(d, View.TEXT_ALIGNMENT_CENTER, 50, 50);
+        Drawable resizedDrawable = Utils.resizeDrawable(context, imageResource, 0.7f);
 
-        rowTextView.setCompoundDrawablesWithIntrinsicBounds(imageResource, 0, 0, 0);
+        rowTextView.setCompoundDrawablesWithIntrinsicBounds(resizedDrawable, null, null, null);
 
         return row;
     }
+
 }
