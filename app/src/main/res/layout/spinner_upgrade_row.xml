@@ -7,6 +7,6 @@
     android:text="teste"
     android:textSize="@dimen/medium_text"
     android:drawableLeft="@drawable/placeholder_skill"
-    android:drawablePadding="@dimen/large_padding"
+    android:drawablePadding="@dimen/medium_padding"
     android:gravity="center_vertical"
     />

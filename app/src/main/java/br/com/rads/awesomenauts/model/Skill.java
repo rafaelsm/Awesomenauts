@@ -87,4 +87,8 @@ public class Skill {
 
         return sb.toString();
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

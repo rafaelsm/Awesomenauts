@@ -17,8 +17,7 @@ import java.util.List;
 public class Attribute {
 
     private String name;
-    private float value;
-    private Format format;
+    private String value;
 
     public static List<Attribute> parseJSONArray(JSONArray attributesArray) throws JSONException {
 
@@ -30,8 +29,7 @@ public class Attribute {
 
             Attribute attribute = new Attribute();
             attribute.name = attributeJSON.getString("name");
-            attribute.value = (float) attributeJSON.getDouble("value");
-            attribute.format = Format.valueOf(attributeJSON.getString("format").toUpperCase());
+            attribute.value = attributeJSON.getString("value");
 
             attributes.add(attribute);
 
@@ -44,12 +42,8 @@ public class Attribute {
         return name;
     }
 
-    public float getValue() {
+    public String getValue() {
         return value;
-    }
-
-    public Format getFormat() {
-        return format;
     }
 
     @Override
@@ -58,7 +52,6 @@ public class Attribute {
         StringBuilder sb = new StringBuilder(name);
         sb.append("\t\t\t\t");
         sb.append(String.valueOf(value));
-        sb.append(format.toString());
 
         return sb.toString();
     }

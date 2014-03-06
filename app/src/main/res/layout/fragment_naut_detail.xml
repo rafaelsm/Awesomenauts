@@ -3,8 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,6 +22,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/naut_imageview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/placeholder_image" />
@@ -31,8 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="5"
-                    >
+                    android:weightSum="5">
 
                     <TextView
                         android:id="@+id/health_textview"
@@ -40,7 +39,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="Health: 155(185)" />
+                        android:text="Health: 155(185)"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/move_speed_textview"
@@ -48,7 +48,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="Move Speed: 6.8" />
+                        android:text="Move Speed: 6.8"
+                        android:textSize="12sp"/>
 
                     <TextView
                         android:id="@+id/attack_type_textview"
@@ -56,7 +57,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="Attack Type: Melee" />
+                        android:text="Attack Type: Melee"
+                        android:textSize="12sp"/>
 
                     <TextView
                         android:id="@+id/role_textview"
@@ -64,7 +66,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="Role: Fighter, Initiator, Crowd Control" />
+                        android:text="Role: Fighter, Initiator, Crowd Control"
+                        android:textSize="12sp"/>
 
                     <TextView
                         android:id="@+id/mobility_textview"
@@ -72,22 +75,26 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="Mobility: Tactical" />
+                        android:text="Mobility: Tactical"
+                        android:textSize="12sp"/>
                 </LinearLayout>
 
             </LinearLayout>
 
 
             <TextView
+                android:layout_marginTop="@dimen/large_padding"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BackStory" />
+                android:text="BackStory"
+                android:textSize="@dimen/medium_text" />
 
             <TextView
                 android:id="@+id/naut_backstory_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Raised in the Swiggins Navy Family on the Kraken planet Titan... " />
+                android:text="Raised in the Swiggins Navy Family on the Kraken planet Titan... "
+                android:layout_marginTop="@dimen/small_padding"/>
 
         </LinearLayout>
     </ScrollView>

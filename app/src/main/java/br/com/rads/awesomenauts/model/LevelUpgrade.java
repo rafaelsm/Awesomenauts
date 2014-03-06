@@ -14,8 +14,7 @@ public class LevelUpgrade {
 
     private int level;
     private String attrName;
-    private float attrValue;
-    private Format format;
+    private String attrValue;
 
     public static List<LevelUpgrade> parseJSONArray(JSONArray levelUpgradeArray) throws JSONException {
 
@@ -27,8 +26,7 @@ public class LevelUpgrade {
             LevelUpgrade level = new LevelUpgrade();
             level.level = levelJSON.getInt("level");
             level.attrName = levelJSON.getString("attrName");
-            level.attrValue = (float) levelJSON.getDouble("attrValue");
-            level.format = Format.valueOf( levelJSON.getString("format").toUpperCase() );
+            level.attrValue = levelJSON.getString("attrValue");
 
         }
 
@@ -43,11 +41,8 @@ public class LevelUpgrade {
         return attrName;
     }
 
-    public float getAttrValue() {
+    public String getAttrValue() {
         return attrValue;
     }
 
-    public Format getFormat() {
-        return format;
-    }
 }

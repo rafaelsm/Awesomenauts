@@ -34,11 +34,12 @@ public class Awesomenaut {
     public static List<Awesomenaut> parseJSON(String json){
 
         List<Awesomenaut> allNauts = new ArrayList<Awesomenaut>();
-        Awesomenaut awesomenaut = new Awesomenaut();
+
 
         try {
             JSONArray rootArray = new JSONArray(json);
             for (int i = 0; i < rootArray.length(); i++){
+                Awesomenaut awesomenaut = new Awesomenaut();
                 JSONObject nautJson = rootArray.getJSONObject(i);
                 awesomenaut.name = nautJson.getString("name");
                 awesomenaut.backstory = nautJson.getString("backstory");
@@ -93,7 +94,7 @@ public class Awesomenaut {
 
     public String getDrawableName() {
 
-        StringBuilder drawableName = new StringBuilder( "icon_" );
+        StringBuilder drawableName = new StringBuilder( "ic_" );
         drawableName.append( this.name.toLowerCase().replace(" ", "_") ) ;
         return drawableName.toString();
     }
@@ -127,7 +128,9 @@ public class Awesomenaut {
     }
 
     public String getImage() {
-        return image;
+        StringBuilder imagePath = new StringBuilder("naut_");
+        imagePath.append(name.toLowerCase().replace(" ", "_"));
+        return imagePath.toString();
     }
 
     public int getUnlockedAtLevel() {
