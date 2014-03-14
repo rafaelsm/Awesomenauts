@@ -12,9 +12,8 @@ import java.util.List;
  */
 public class LevelUpgrade {
 
-    private int level;
     private String attrName;
-    private String attrValue;
+    private List<String> attrValue;
 
     public static List<LevelUpgrade> parseJSONArray(JSONArray levelUpgradeArray) throws JSONException {
 
@@ -24,25 +23,43 @@ public class LevelUpgrade {
             JSONObject levelJSON = levelUpgradeArray.getJSONObject(i);
 
             LevelUpgrade level = new LevelUpgrade();
-            level.level = levelJSON.getInt("level");
             level.attrName = levelJSON.getString("attrName");
-            level.attrValue = levelJSON.getString("attrValue");
+            level.attrValue = parseValueArray(levelJSON.getJSONArray("attrValue"));
+
+            levels.add(level);
 
         }
 
         return levels;
     }
 
-    public int getLevel() {
-        return level;
+    private static List<String> parseValueArray(JSONArray attrValue) throws JSONException {
+
+        List<String> values = new ArrayList<String>();
+
+        for (int i = 0; i < attrValue.length(); i++){
+            values.add( attrValue.getString(i) );
+        }
+
+        return values;
     }
 
     public String getAttrName() {
         return attrName;
     }
 
-    public String getAttrValue() {
+    public List<String> getAttrValue() {
         return attrValue;
     }
 
+    @Override
+    public String toString() {
+
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(attrName).append(" | ");
+        sb.append(attrValue);
+
+        return sb.toString();
+    }
 }

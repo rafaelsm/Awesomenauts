@@ -63,8 +63,10 @@ public class Skill {
     public String getImage() {
 
         StringBuilder imagePath = new StringBuilder("sk_");
-        imagePath.append(name.toLowerCase().replace(" ", "_"));
+        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/","_"));
+
         return imagePath.toString();
+
     }
 
     public List<Attribute> getAttributes() {

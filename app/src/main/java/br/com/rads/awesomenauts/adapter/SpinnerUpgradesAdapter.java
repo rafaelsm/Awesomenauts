@@ -38,7 +38,7 @@ public class SpinnerUpgradesAdapter extends ArrayAdapter<Skill> {
         this.context = context;
         this.skills = objects;
 
-        addAllSkillAtFirst();
+       // addAllSkillAtFirst();
     }
 
     private void addAllSkillAtFirst() {

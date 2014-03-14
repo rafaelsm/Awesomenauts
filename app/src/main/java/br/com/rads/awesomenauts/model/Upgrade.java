@@ -60,7 +60,11 @@ public class Upgrade {
     }
 
     public String getImage() {
-        return image;
+
+        StringBuilder imagePath = new StringBuilder("up_");
+        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/","_"));
+        return imagePath.toString();
+
     }
 
     public List<LevelUpgrade> getLevelUpgrades() {

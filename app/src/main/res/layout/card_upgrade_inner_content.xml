@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_padding"
+    tools:context="br.com.rads.awesomenauts.view.UpgradeListLayout">
+
+    <ImageView
+        android:id="@+id/upgrade_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/placeholder_skill" />
+
+    <TextView
+        android:id="@+id/upgrade_name_text_view"
+        android:layout_toRightOf="@id/upgrade_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade entire name" />
+
+    <TextView
+        android:id="@+id/upgrade_desc_text_view"
+        android:layout_toRightOf="@id/upgrade_image_view"
+        android:layout_below="@id/upgrade_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade complete description placeholder" />
+
+    <TextView
+        android:id="@+id/upgrade_flavor_text_view"
+        android:layout_toRightOf="@id/upgrade_image_view"
+        android:layout_below="@id/upgrade_desc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade flavor test, and a big text placeholder" />
+
+    <TextView
+        android:id="@+id/upgrade_solar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/solar"
+        android:text="135"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/upgrade_name_text_view"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:paddingRight="@dimen/small_padding" />
+
+    <br.com.rads.awesomenauts.view.UpgradeListLayout
+        android:id="@+id/upgrade_inner_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_below="@+id/upgrade_image_view"/>
+
+</RelativeLayout>

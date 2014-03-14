@@ -46,7 +46,6 @@ public class MainActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         /**
          * Load all data
          */
@@ -70,14 +69,14 @@ public class MainActivity extends ActionBarActivity
 
             onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 0));
 
-        }else{
-            ((MultiPaneMenuFragment)getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
+        } else {
+            ((MultiPaneMenuFragment) getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
             onTwoPane = true;
         }
 
         activityTitle = getTitle();
-    }
 
+    }
 
     private void loadAwesomenauts() {
         Log.d(TAG, "Starting json parser");
@@ -88,7 +87,7 @@ public class MainActivity extends ActionBarActivity
         DataManager.getInstance().setAwesomenauts(awesomenauts);
         long end = System.currentTimeMillis();
 
-        Log.d(TAG,"total time: " + ((end - start) / 1000));
+        Log.d(TAG, "total time: " + ((end - start) / 1000));
     }
 
     private void loadFragments() {
@@ -102,7 +101,7 @@ public class MainActivity extends ActionBarActivity
         // update the activity_main_two_pane content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
 
-        switch (position){
+        switch (position) {
             case 0:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, newsFragment)
@@ -174,18 +173,16 @@ public class MainActivity extends ActionBarActivity
 
         Fragment fragmentToInsert = new Fragment();
 
-        if( id.equalsIgnoreCase(getString(R.string.title_section_news))){
+        if (id.equalsIgnoreCase(getString(R.string.title_section_news))) {
             fragmentToInsert = newsFragment;
-        }
-        else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))){
+        } else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))) {
             fragmentToInsert = nautsGridFragment;
-        }
-        else if (id.equalsIgnoreCase(getString(R.string.title_section_maps))){
+        } else if (id.equalsIgnoreCase(getString(R.string.title_section_maps))) {
             fragmentToInsert = mapsFragment;
         }
 
         Bundle arguments = new Bundle();
-        arguments.putString(MultiPaneMenuFragment.STATE_ACTIVATED_POSITION,id);
+        arguments.putString(MultiPaneMenuFragment.STATE_ACTIVATED_POSITION, id);
 
         FragmentManager fragManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragManager.beginTransaction();

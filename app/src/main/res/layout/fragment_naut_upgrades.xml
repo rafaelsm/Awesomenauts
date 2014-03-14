@@ -10,4 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/small_padding"/>
 
+    <it.gmariotti.cardslib.library.view.CardListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myList"/>
+
 </LinearLayout>

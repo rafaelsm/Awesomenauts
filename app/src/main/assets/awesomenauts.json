@@ -1,1 +1,1088 @@
-[{"name":"Admiral Swiggins","backstory":"Raised in the Swiggins Navy Family on the Kraken planet Titan. Charles Swiggins was the youngest of 30 siblings. Graduating from Wet Point with top honors, he quickly rose through the ranks to become Captain of his very first ship in the Royal Fleet. This ship was called the ‘Sweet Homboldt’.\n\nTasked with finding and defeating Pirates, Swiggins set out with a loyal crew on many succesfull sortees. One day, the Homboldt chanced upon the massive Pirateship 'Colossus' helmed by the dreaded Captain Inkbeard!\n\nAfter a furious battle, which reduced both ships to floating heaps of debris, the two captains were the only ones alive for a final showdown. Being nearly overpowered, Swiggins' grasping tentacle found a chain just below the surface of the churning water. Powered by his desperation he hurled the object at his foe. This object was Sweet Homboldts anchor! With one massive blow, Swiggins ended the biggest Pirate threat on Titan once and for all.\n\nNow an Admiral, he has exchanged the seas for the voids of space where his fame and leadership skills have found him a contract among the Awesomenauts!","stats":{"health":155,"healthBonus":30,"moveSpeed":6.8,"attackType":"Melee","role":["Fighter","Initiator","Crowd_Control"],"mobility":"Tactical"},"skills":[{"name":"Anchor Hook","description":"Swiggins hurls Homboldt forward, and grapples towards whatever he hits. If you thought getting hit by an anchor is bad, wait for the iron-clad squid that's coming after it!","value":135,"attributes":[{"name":"Damage","value":"25"},{"name":"Flying Damage","value":"10"},{"name":"Cooldown","value":"7s"},{"name":"Range","value":"11"}],"upgrades":[{"name":"Flying Fish Compass","description":"Reduces the cooldown of anchor hook","value":145,"flavor":"In the winter they point south, in the summer they point north, easy!","levelUpgrade":[{"level":1,"attrName":"Cooldown","attrValue":"-1s"},{"level":2,"attrName":"Cooldown","attrValue":"-2s"}]},{"name":"Blue Heart Medal","description":"Increases the damage of anchor hook","value":165,"flavor":"Draw me like one of your French girls. :3","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"+10"},{"level":2,"attrName":"Damage","attrValue":"+20"},{"level":1,"attrName":"Flying Damage","attrValue":"+5"},{"level":2,"attrName":"Flying Damage","attrValue":"+10"}]},{"name":"Mobile Periscope","description":"Increases the range of anchor hook","value":185,"flavor":"Penguins on iceplanet Rill use these to find flying fish.","levelUpgrade":[{"level":1,"attrName":"Range","attrValue":"+4"}]},{"name":"Treasure Lottery Map","description":"Increases the Solar gain for the whole team when killing an Awesomenaut with Anchor Hook.","value":80,"flavor":"Do you have what it takes to find the treasure? This months treasure jackpot is 1.4 million Solar!","levelUpgrade":[{"level":1,"attrName":"Team Solar per Kill","attrValue":"+15"}]},{"name":"Kraken Statue","description":"Increases the stun duration on anchor hook","value":200,"flavor":"Resembles Kewlu the ancient one, ruler of the flying seas on Okeanos.","levelUpgrade":[{"level":1,"attrName":"Stun Duration","attrValue":"+0.5s"}]},{"name":"Ancient Octant","description":"Makes anchor hook do damage in an area","value":240,"flavor":"The must have hipster item in sea warfare.","levelUpgrade":[{"level":1,"attrName":"Explosion Size","attrValue":"+3.4"}]}]},{"name":"Drop Anchor","description":"Swiggins throws Homboldt in an arch. If it hits an enemy Awesomenaut, it will be chained to homboldt for a couple of seconds. The anchor can be destroyed. Now that's anchor management!","value":135,"attributes":[{"name":"Damage","value":"10"},{"name":"Cooldown","value":"11s"},{"name":"Duration","value":"4s"},{"name":"Homboldt Health","value":"30"}],"upgrades":[{"name":"Bovinian Skimmed Milk","description":"Increases movement speed when not holding Homboldt","value":145,"flavor":"Can also be used as car paint.","levelUpgrade":[{"level":1,"attrName":"Movement","attrValue":"+1.2"}]},{"name":"Palladium Teabag Chain","description":"Increases the duration of the chain","value":170,"flavor":"No more rusty tea!","levelUpgrade":[{"level":1,"attrName":"Duration","attrValue":"+1s"},{"level":2,"attrName":"Duration","attrValue":"+2s"}]},{"name":"Alien Sweetener","description":"Increases the health of Homboldt","value":135,"flavor":"That just kicks it up a little bit!","levelUpgrade":[{"level":1,"attrName":"Max Health","attrValue":"+20"},{"level":2,"attrName":"Max Health","attrValue":"+40"},{"level":3,"attrName":"Max Health","attrValue":"+60"}]},{"name":"Pneumatic Spoon","description":"When the chain breaks the caught enemy will receive extra damage","value":190,"flavor":"Creates a little hurricane in your cup!","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"+10"},{"level":2,"attrName":"Damage","attrValue":"+20"},{"level":3,"attrName":"Damage","attrValue":"+30"}]},{"name":"Magnetic Anchor","description":"Adds a damage over time effect to drop anchor","value":170,"flavor":"Clean the sea of mines and spiky objects!","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"3.3 per s."},{"level":2,"attrName":"Damage","attrValue":"6.6 per s."}]},{"name":"Double Glazed Royal Porcelain","description":"Adds a healing effect to picking up Homboldt","value":170,"flavor":"Property of the Bouquet residence.","levelUpgrade":[{"level":1,"attrName":"Heal","attrValue":"+10"},{"level":2,"attrName":"Heal","attrValue":"+20"}]}]},{"name":"Anchor Swing/Ink Spray","description":"Admiral Swiggins carries his trustworthy anchor Homboldt anywhere. Quite handy for smacking people on the head with! Especially when they fail to pay a highborn squid admiral his properly earned respect!","value":0,"attributes":[{"name":"Anchor Damage","value":11},{"name":"Anchor Attack Speed","value":95.2},{"name":"Anchor Range","value":3.2},{"name":"Ink Damage","value":7},{"name":"Ink Attack Speed","value":130.4},{"name":"Ink Range","value":7.2}],"upgrades":[{"name":"Aquarium Pump","description":"Increases the attackspeed of anchor swing and ink spray","value":135,"flavor":"For deepsea fish tanks.","levelUpgrade":[{"level":1,"attrName":"Attack Speed","attrValue":"+10%"},{"level":2,"attrName":"Attack Speed","attrValue":"+20%"},{"level":3,"attrName":"Attack Speed","attrValue":"+30%"}]},{"name":"Bag of Gravel","description":"Increases the damage of anchor swing and ink spray","value":155,"flavor":"Keep your litter box clean and fresh.","levelUpgrade":[{"level":1,"attrName":"Anchor Damage","attrValue":"+3"},{"level":2,"attrName":"Anchor Damage","attrValue":"+6"},{"level":3,"attrName":"Anchor Damage","attrValue":"+9"},{"level":1,"attrName":"Ink Damage","attrValue":"+2"},{"level":2,"attrName":"Ink Damage","attrValue":"+4"},{"level":3,"attrName":"Ink Damage","attrValue":"+6"}]},{"name":"Krill Biscuits","description":"Increases your max health when holding Homboldt","value":140,"flavor":"Twist, lick and puke!","levelUpgrade":[{"level":1,"attrName":"Max Health","attrValue":"+20"},{"level":2,"attrName":"Max Health","attrValue":"+40"}]},{"name":"Not Seeweed","description":"Adds a blinding effect to ink spray","value":175,"flavor":"It isn't.","levelUpgrade":[{"level":1,"attrName":"Blind Duration","attrValue":"+0.1s"}]},{"name":"Royal Toy Castle","description":"You gain a damage-reducing shield when not holding Homboldt","value":165,"flavor":"Resembles the sunken castle Windsor.","levelUpgrade":[{"level":1,"attrName":"Shield","attrValue":"+12.5%"},{"level":2,"attrName":"Shield","attrValue":"+25%"}]},{"name":"Pool Boy","description":"Doubles the damage of the next anchor swing and ink spray when switching between weapons","value":240,"flavor":"Comes with denim cut-off shorts.","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"x2"}]}]},{"name":"Ink Propulsion","description":"Who said tentacles are only good for swimming in a weird manner? The admiral has no issues whatsoever with manouvering ground based obstacles. Swiggins can also perform a hovering technique by propelling himself upward with ink squirts. Quite splendid.","value":0,"attributes":[],"upgrades":[{"name":"Power Pills Companion","description":"Increases maximum health of both you and your summons.","value":130,"flavor":"Insert pill into rear end of digestive tract.","levelUpgrade":[{"level":1,"attrName":"Health","attrValue":"+25"},{"level":2,"attrName":"Health","attrValue":"+50"},{"level":3,"attrName":"Health","attrValue":"+75"},{"level":1,"attrName":"Max Summon Health","attrValue":"+5"},{"level":2,"attrName":"Max Summon Health","attrValue":"+10"},{"level":3,"attrName":"Max Summon Health","attrValue":"+15"}]},{"name":"Med-i'-can","description":"Automatically regenerate health.","value":120,"flavor":"Hello... anyone there? Please get me out of here!!!","levelUpgrade":[{"level":1,"attrName":"Health Per Min","attrValue":"+100"},{"level":2,"attrName":"Health Per Min","attrValue":"+200"}]},{"name":"Space Air Max","description":"Increases movement speed.","value":135,"flavor":"Fashionable and Fast.","levelUpgrade":[{"level":1,"attrName":"Movement","attrValue":"+1.6"}]},{"name":"Solar Tree","description":"Gain additional Solar over time.","value":50,"flavor":"These rare plants grow near Solar veins. Keep away from light and water..","levelUpgrade":[{"level":1,"attrName":"Solar Per Min","attrValue":"+17"}]},{"name":"Piggy Bank","description":"Gives 115 Solar.","value":0,"flavor":"This product was brought to you by Zork industries, exploiting Zurians since 2780..","levelUpgrade":[{"level":1,"attrName":"Solar","attrValue":"+115"}]},{"name":"Baby Kuri Mammoth","description":"Reduces the effect of all debuffs","value":110,"flavor":"LOOK!!! A FLYING ELEPHANT!","levelUpgrade":[{"level":1,"attrName":"Debuffs","attrValue":"-25%"},{"level":1,"attrName":"Debuffs","attrValue":"-50%"}]}]}],"tipsPlayingAs":["While Anchor Hook can be used on terrain for a faster escape, it can be unreliable as the terrain hitbox often differ from the actual textures. Only attempt this if you are positive you'll be able to land it properly, or your escape will be delayed instead.","Swiggins becomes lighter and faster after dropping the anchor, allowing him a bit of extra mobility. Bovinian Skimmed Milk increases this bonus even further.","Always try to pick your anchor back up after dropping it, as not only it gives you your powerful Anchor Swing back, but it enables you to use Anchor Hook again.","If a ranged ally ('naut or non-buzzsaw droid) is tanking a turret for you, it might be a good idea to use Drop Anchor just to enable your ranged Ink Spray to attack it without taking damage. Alternatively, with proper upgrades, the anchor itself can have a large amount of health, enabling it to tank the turret shots while you attack it with Ink Shot."],"tipsPlayingAgainst":["When trapped by Drop Anchor, destroying the anchor is almost always better than staying and fighting. Specially if Swiggins has his team nearby.","If the anchor fails to latch on to you after it hits the ground, it will not do so again. Approach it without fear.","If you are anchored, make sure not to fall through platforms. They might hold you in the air, making you very vulnerable to all attacks. If you do happen to get in this situation, use a ranged attack or ability to take the anchor out as soon a possible and use the help command to get your allies to help you.","Swiggins is very vulnerable to snares himself. As his only long-ranged move forces him to close the gap. Use traps like Yuri's mines or Derpl's grid traps to keep him from diving.","Swiggins is tipically more vulnerable without his anchor, if you can avoid it when thrown, you are likely to have an advantage over him.","Crowd control immunity effects will break Drop Anchor's chaining effect immediatly."],"unlockedAtLevel":20,"releaseDate":"29/08/2013","extra":"In the beginning, Swiggins was a part of the 2012 Create-A-Naut contest, in which hundreds of characer concepts were sent in, with only one making it in game. Admiral Swiggins was initially chosen by Ronimo Games staff to be in the top 5, of which would then be voted on by the community in order to decide which of the 5 would be made. User Channfree's Admiral Swiggins was chosen.\nAnother contest was later made to decide how Admiral Swiggins would look. Once again, the community was able to send in their entries, showcasing many different depictions of the character. In the end, user coffeybean4 won the contest with the design seen below."},{"name":"Ayla","backstory":"Ayla is a devious little girl. She comes from an old species called the Sadak, known for their great psychokinetic powers. Her parents were killed during the great Sevenelevian Coupon Wars and she was adopted by a sweet alien family. The couple grew fearful, however, when suspicious things started happening around the house: evil drawings on the wall, weird sounds at night and dead rapper frogs in the garden.\nWhen they finally figured out Ayla's \"gifts\" and dark sense of humor, they turned her over to the Sunny-daisy School of Social Re-adjustment. A few short days and several fires later, she got transferred to a maximum security psychiatric ward where she went berserk and chose the nearest wall for her stage exit.\nUsing her cute puppy-dog eye routine she managed to hitchhike her way across the galaxy and ended up with the Awesomenauts who, after her tantrums left half the ship in ruins, couldn't wait to get her in a droppod and away from their precious belongings. Still, she's a cherished member of the group, requiring only a gold-star sticker for her efforts on the field of battle!","stats":{"health":135,"healthBonus":30,"moveSpeed":7,"attackType":"Melee","role":["Fighter","Damage_Dealer"],"mobility":"Balanced"},"skills":[{"name":"Evil Eye","description":"Unleash your third eye. The evil eye is more effective the less health you have.","value":135,"attributes":[{"name":"Health stages","value":"<100% <75% <50% <25%"},{"name":"Damage","value":30},{"name":"Extra Damage per Stage","value":10},{"name":"Slowing Power","value":7.5},{"name":"Extra Slowing per Stage","value":"+7.5%"},{"name":"Slow Duration","value":"2.5s"},{"name":"Range","value":9.2},{"name":"Cooldown","value":"7.5s"}],"upgrades":[{"name":"Fresh Scrubs","description":"Reduces the cooldown of evil eye","value":155,"flavor":"Nuclear steamed to remove any alien bits and blood.","levelUpgrade":[{"level":1,"attrName":"Cooldown","attrValue":"-1"},{"level":2,"attrName":"Cooldown","attrValue":"-2"}]},{"name":"Toothbrush Shank","description":"Increases damage of evil eye","value":155,"flavor":"Game rules: 1.) Form a circle with your cellmates 2.) Spin the toothbrush in the middle 3.) Whoever the toothbrush points at, stab that person! Have fun!.","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"20%"},{"level":2,"attrName":"Damage","attrValue":"40%"},{"level":3,"attrName":"Damage","attrValue":"60%"}]},{"name":"Fake Family Pictures","description":"Reduces the amount of missing health needed per evil eye stage","value":125,"flavor":"For those depressing dark moments when you need a family smile.","levelUpgrade":[{"level":1,"attrName":"Health Stages","attrValue":"10%"},{"level":2,"attrName":"Health Stages","attrValue":"20%"}]},{"name":"Biter Mask","description":"Increases the slow effect of evil eye","value":160,"flavor":"Good against braineaters.","levelUpgrade":[{"level":1,"attrName":"Slowing Power","attrValue":"15%"},{"level":2,"attrName":"Slowing Power","attrValue":"30%"}]},{"name":"Jail Food","description":"Adds a damage over time effect to evil eye","value":215,"flavor":"Today's deal 50% off! (best before August 3251)","levelUpgrade":[{"level":1,"attrName":"Damage Over Time","attrValue":"+15"},{"level":2,"attrName":"Damage Over Time","attrValue":"+30"},{"level":1,"attrName":"Damage Duration","attrValue":"4s"},{"level":2,"attrName":"Damage Duration","attrValue":"4s"}]},{"name":"Dummy Prisoner","description":"Increases the range of evil eye","value":165,"flavor":"ATTENTION! When bought, the vending machine will warn the authorities that you might be planning an escape!","levelUpgrade":[{"level":1,"attrName":"Range","attrValue":"+4"}]}]},{"name":"Rage","description":"Toggle rage mode on/off making Ayla float, and deal heavy damage","value":135,"attributes":[{"name":"Damage","value":6},{"name":"Attack Speed","value":240},{"name":"Damage to Self","value":"6.7 Hp/s"},{"name":"Size","value":7},{"name":"Lifesteal","value":"33.3%"}],"upgrades":[{"name":"Angry Drawings","description":"Increases damage of rage","value":235,"flavor":"\"Don't look.. or it takes you!\"","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"+2"},{"level":2,"attrName":"Damage","attrValue":"+4"},{"level":1,"attrName":"Damage Self","attrValue":"+1.7Hp/s"},{"level":2,"attrName":"Damage Self","attrValue":"+3.4Hp/s"}]},{"name":"Rip-Apart Bear","description":"Reduces damage done to you by enemies while enraged","value":160,"flavor":"So cute! You want to kill him!","levelUpgrade":[{"level":1,"attrName":"Shield","attrValue":"+12.5%"},{"level":2,"attrName":"Shield","attrValue":"+25%"}]},{"name":"Neon Jumping Rope","description":"Increases the size of rage","value":175,"flavor":"Increase you skills, up to lightspeed.","levelUpgrade":[{"level":1,"attrName":"Size","attrValue":"+1"}]},{"name":"Blue Three-Wheeler","description":"Increases your movement speed while enraged","value":220,"flavor":"Here's Danny!","levelUpgrade":[{"level":1,"attrName":"Movement","attrValue":"+1.6"}]},{"name":"Rubberband Ball","description":"Rage will leave a blood trail in which friendly units move faster","value":200,"flavor":"Bounce right back into action!","levelUpgrade":[{"level":1,"attrName":"Movement of Friendlies","attrValue":"+1.6"},{"level":1,"attrName":"Duration","attrValue":"5s"},{"level":1,"attrName":"Life time","attrValue":"+4s"}]},{"name":"Fiery Jawbreakers","description":"Increases attack speed of rage","value":190,"flavor":"New flavors: Nitroglycerine and gasoline!","levelUpgrade":[{"level":1,"attrName":"Attack Speed","attrValue":"+25%"},{"level":1,"attrName":"Damage Self","attrValue":"+50%"}]}]},{"name":"Chain Whack","description":"Ayla swings the lock on her chain","value":0,"attributes":[{"name":"Damage","value":8},{"name":"Attack Speed","value":150},{"name":"Range","value":2.5}],"upgrades":[{"name":"Thief Tools","description":"Increases attack speed of chain whack","value":150,"flavor":"Opens many locks as well as canned food.","levelUpgrade":[{"level":1,"attrName":"Attack Speed","attrValue":"+20%"},{"level":2,"attrName":"Attack Speed","attrValue":"+40%"}]},{"name":"Hungry Zurian","description":"Add lifesteal effect to chain whack","value":180,"flavor":"Zurians are a tough species, their hunger for metals makes them perfect for junkyard work.","levelUpgrade":[{"level":1,"attrName":"Lifesteal","attrValue":"+30%"}]},{"name":"Explosive Neckband","description":"Increases damage of chain whack","value":220,"flavor":"Let things escalate quickly!","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"+2"},{"level":2,"attrName":"Damage","attrValue":"+4"}]},{"name":"Prison Guard Keys","description":"Increases the max hitpoints after killing an opponent","value":0,"flavor":"Stealthly stolen from a Kremzon prison guard.","levelUpgrade":[{"level":1,"attrName":"Extra Health","attrValue":"+15"},{"level":2,"attrName":"Extra Health","attrValue":"+15"},{"level":1,"attrName":"Maximum","attrValue":"+15"},{"level":2,"attrName":"Maximum","attrValue":"+30"}]},{"name":"Ion Blowtorch","description":"Increaes damage of chain whack when wounded heroes with less than 40% HP are near","value":0,"flavor":"Crème brûlée anyone?","levelUpgrade":[{"level":1,"attrName":"Damage","attrValue":"+3"},{"level":2,"attrName":"Damage","attrValue":"+6"}]},{"name":"Sonic Listening Device","description":"Mark critters to let them drop more health","value":160,"flavor":"Can you hear the Solar bubble?","levelUpgrade":[{"level":1,"attrName":"Extra Health","attrValue":"+20"}]}]},{"name":"Hop Skip","description":"Ayla's favored mode of transportation is the ancient art of hop skipping. Constantly using this natural force of propulsion, her resulting muscles allow her stubby little legs to propel her into the great (depending on the current planet) blue yonder!","value":0,"attributes":[],"upgrades":[{"name":"Power Pills Light","description":"Increases maximum health.","value":130,"flavor":"Insert pill into rear end of digestive tract.","levelUpgrade":[{"level":1,"attrName":"Health","attrValue":"+18"},{"level":2,"attrName":"Health","attrValue":"+36"},{"level":3,"attrName":"Health","attrValue":"+54"}]},{"name":"Med-i'-can","description":"Automatically regenerate health.","value":120,"flavor":"Hello... anyone there? Please get me out of here!!!","levelUpgrade":[{"level":1,"attrName":"Health Per Min","attrValue":100},{"level":2,"attrName":"Health Per Min","attrValue":200}]},{"name":"Space Air Max","description":"Increases movement speed.","value":135,"flavor":"Fashionable and Fast.","levelUpgrade":[{"level":1,"attrName":"Movement","attrValue":1.6}]},{"name":"Solar Tree","description":"Gain additional Solar over time.","value":50,"flavor":"These rare plants grow near Solar veins. Keep away from light and water..","levelUpgrade":[{"level":1,"attrName":"Solar Per Min","attrValue":17}]},{"name":"Piggy Bank","description":"Gives 115 Solar.","value":0,"flavor":"This product was brought to you by Zork industries, exploiting Zurians since 2780..","levelUpgrade":[{"level":1,"attrName":"Solar","attrValue":115}]},{"name":"Baby Kuri Mammoth","description":"Reduces the effect of all debuffs","value":110,"flavor":"LOOK!!! A FLYING ELEPHANT!","levelUpgrade":[{"level":1,"attrName":"Debuffs","attrValue":25},{"level":1,"attrName":"Debuffs","attrValue":50}]}]}],"tipsPlayingAs":["Boots will increase movement speed as well as jump height, allowing Ayla to reach some platforms that were previously too high in a single jump.","Evil Eye becomes more powerful as Ayla's health drops. This ability's icon will change to reflect this at the corresponding damage thresholds","When focusing on an Evil Eye build, it might be a good idea to skip Med-i'-can, as the regeneration will bump Ayla's heath up, reducing Evil Eye's damage in the long run.","Evil Eye damages turrets. If no enemies are nearby, it might be a good idea to use it against them.","Be careful of enemies that may try and ambush you when you are low on health before you can use your Evil Eye.","Activating Rage disables Evil Eye and Chain Whack. They'll reactivate once Rage is cancelled.","It is possible to kill yourself using Rage. Be careful and keep an eye on your health bar!","Activating Rage isn't enough! You must press the jump button to fly.","If Rage is the focus of your build, it might be a good idea to use Evil Eye as an opener purely for its slowing effect, as it makes chasing targets with Rage easier. Biter Mask makes this even more effective.","Save Rage for when the enemies' high burst abilities are on cooldown.","Don't rely on Rage's Lifestealing effect to tank turrets.","Rage goes through terrain. Use this to kill unsuspecting enemies at low health, to kill creeps, and to damage enemies from a safe distance.","With proper upgrades, Chain Whack can play a supporting role in a Rage-focused build, helping Ayla increase or regain lost health. Hungry Zurian, Sonic Listening Device and Prison Guard Keys are examples of such upgrades.","Ayla can use Sonic Listening Device, attack a creep without killing it and allowing an ally to deal the killing blow, so he gets increased health. Be careful, however, as an enemy may steal the creep and get the health bonus instead!"],"tipsPlayingAgainst":["Ayla is considered a Brawler. A one on one fight against her will likely end in her favor. Go as a team instead.","Similarly to Coco, Ayla has some inertia when moving around, specially during rage. Watch where she's going and go the opposite way. You may spend a few seconds into her bubble, but she'll have a harder time adjusting her movement and resuming her chase, giving you an opportunity to flee.","Ayla may have no collision when Rage is active, but she can still be hit by bull, mines, tongue and other projectiles normally.","Be very careful when approaching a low health Ayla, specially if she has purchased Toothbrush Shank and/or Dummy Prisoner. Evil Eye deals high damage, slows the target and is a fast-moving projectile.","Silence is a very powerful tool against Ayla. Many of them will try to get low on health to finish you off with a more powerful Evil Eye. Silence prevents that.","Save your burst damage to kill Ayla instead of damaging her. If she has enough health to survive your abilities, she'll likely be low enough for a powerful Evil Eye."],"unlockedAtLevel":18,"releaseDate":"13/06/2013","extra":""}]
+[
+  {
+    "name": "Admiral Swiggins",
+    "backstory": "Raised in the Swiggins Navy Family on the Kraken planet Titan. Charles Swiggins was the youngest of 30 siblings. Graduating from Wet Point with top honors, he quickly rose through the ranks to become Captain of his very first ship in the Royal Fleet. This ship was called the ‘Sweet Homboldt’.\n\nTasked with finding and defeating Pirates, Swiggins set out with a loyal crew on many succesfull sortees. One day, the Homboldt chanced upon the massive Pirateship 'Colossus' helmed by the dreaded Captain Inkbeard!\n\nAfter a furious battle, which reduced both ships to floating heaps of debris, the two captains were the only ones alive for a final showdown. Being nearly overpowered, Swiggins' grasping tentacle found a chain just below the surface of the churning water. Powered by his desperation he hurled the object at his foe. This object was Sweet Homboldts anchor! With one massive blow, Swiggins ended the biggest Pirate threat on Titan once and for all.\n\nNow an Admiral, he has exchanged the seas for the voids of space where his fame and leadership skills have found him a contract among the Awesomenauts!",
+    "stats": {
+      "health": 155,
+      "healthBonus": 30,
+      "moveSpeed": 6.8,
+      "attackType": "Melee",
+      "role": [
+        "Fighter",
+        "Initiator",
+        "Crowd_Control"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Anchor Hook",
+        "description": "Swiggins hurls Homboldt forward, and grapples towards whatever he hits. If you thought getting hit by an anchor is bad, wait for the iron-clad squid that's coming after it!",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": "25"
+          },
+          {
+            "name": "Flying Damage",
+            "value": "10"
+          },
+          {
+            "name": "Cooldown",
+            "value": "7s"
+          },
+          {
+            "name": "Range",
+            "value": "11"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Flying Fish Compass",
+            "description": "Reduces the cooldown of anchor hook",
+            "value": 145,
+            "flavor": "In the winter they point south, in the summer they point north, easy!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Cooldown",
+                "attrValue": ["-1s","-2s"]
+              }
+            ]
+          },
+          {
+            "name": "Blue Heart Medal",
+            "description": "Increases the damage of anchor hook",
+            "value": 165,
+            "flavor": "Draw me like one of your French girls. :3",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["+10","+20"]
+              },
+              {
+                
+                "attrName": "Flying Damage",
+                "attrValue": ["+5","+10"]
+              }
+            ]
+          },
+          {
+            "name": "Mobile Periscope",
+            "description": "Increases the range of anchor hook",
+            "value": 185,
+            "flavor": "Penguins on iceplanet Rill use these to find flying fish.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Range",
+                "attrValue": ["+4"]
+              }
+            ]
+          },
+          {
+            "name": "Treasure Lottery Map",
+            "description": "Increases the Solar gain for the whole team when killing an Awesomenaut with Anchor Hook.",
+            "value": 80,
+            "flavor": "Do you have what it takes to find the treasure? This months treasure jackpot is 1.4 million Solar!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Team Solar per Kill",
+                "attrValue": ["+15"]
+              }
+            ]
+          },
+          {
+            "name": "Kraken Statue",
+            "description": "Increases the stun duration on anchor hook",
+            "value": 200,
+            "flavor": "Resembles Kewlu the ancient one, ruler of the flying seas on Okeanos.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Stun Duration",
+                "attrValue": ["+0.5s"]
+              }
+            ]
+          },
+          {
+            "name": "Ancient Octant",
+            "description": "Makes anchor hook do damage in an area",
+            "value": 240,
+            "flavor": "The must have hipster item in sea warfare.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Explosion Size",
+                "attrValue": ["+3.4"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drop Anchor",
+        "description": "Swiggins throws Homboldt in an arch. If it hits an enemy Awesomenaut, it will be chained to homboldt for a couple of seconds. The anchor can be destroyed. Now that's anchor management!",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": "10"
+          },
+          {
+            "name": "Cooldown",
+            "value": "11s"
+          },
+          {
+            "name": "Duration",
+            "value": "4s"
+          },
+          {
+            "name": "Homboldt Health",
+            "value": "30"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Bovinian Skimmed Milk",
+            "description": "Increases movement speed when not holding Homboldt",
+            "value": 145,
+            "flavor": "Can also be used as car paint.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Movement",
+                "attrValue": ["+1.2"]
+              }
+            ]
+          },
+          {
+            "name": "Palladium Teabag Chain",
+            "description": "Increases the duration of the chain",
+            "value": 170,
+            "flavor": "No more rusty tea!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Duration",
+                "attrValue": ["+1s","+2s"]
+              }
+            ]
+          },
+          {
+            "name": "Alien Sweetener",
+            "description": "Increases the health of Homboldt",
+            "value": 135,
+            "flavor": "That just kicks it up a little bit!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Max Health",
+                "attrValue": ["+20","+40","+60"]
+              }
+            ]
+          },
+          {
+            "name": "Pneumatic Spoon",
+            "description": "When the chain breaks the caught enemy will receive extra damage",
+            "value": 190,
+            "flavor": "Creates a little hurricane in your cup!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["+10","+20","+30"]
+              }
+            ]
+          },
+          {
+            "name": "Magnetic Anchor",
+            "description": "Adds a damage over time effect to drop anchor",
+            "value": 170,
+            "flavor": "Clean the sea of mines and spiky objects!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage per s.",
+                "attrValue": ["3.3","6.6"]
+              }
+            ]
+          },
+          {
+            "name": "Double Glazed Royal Porcelain",
+            "description": "Adds a healing effect to picking up Homboldt",
+            "value": 170,
+            "flavor": "Property of the Bouquet residence.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Heal",
+                "attrValue": ["+10","+20"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anchor Swing/Ink Spray",
+        "description": "Admiral Swiggins carries his trustworthy anchor Homboldt anywhere. Quite handy for smacking people on the head with! Especially when they fail to pay a highborn squid admiral his properly earned respect!",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Anchor Damage",
+            "value": 11
+          },
+          {
+            "name": "Anchor Attack Speed",
+            "value": 95.2
+          },
+          {
+            "name": "Anchor Range",
+            "value": 3.2
+          },
+          {
+            "name": "Ink Damage",
+            "value": 7
+          },
+          {
+            "name": "Ink Attack Speed",
+            "value": 130.4
+          },
+          {
+            "name": "Ink Range",
+            "value": 7.2
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Aquarium Pump",
+            "description": "Increases the attackspeed of anchor swing and ink spray",
+            "value": 135,
+            "flavor": "For deepsea fish tanks.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Attack Speed",
+                "attrValue": ["+10%","+20%","+30%"]
+              }
+            ]
+          },
+          {
+            "name": "Bag of Gravel",
+            "description": "Increases the damage of anchor swing and ink spray",
+            "value": 155,
+            "flavor": "Keep your litter box clean and fresh.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Anchor Damage",
+                "attrValue": ["+3","+6","+9"]
+              },
+              {
+                
+                "attrName": "Ink Damage",
+                "attrValue": ["+2","+4","+6"]
+              }
+            ]
+          },
+          {
+            "name": "Krill Biscuits",
+            "description": "Increases your max health when holding Homboldt",
+            "value": 140,
+            "flavor": "Twist, lick and puke!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Max Health",
+                "attrValue": ["+20","+40"]
+              }
+            ]
+          },
+          {
+            "name": "Not Seeweed",
+            "description": "Adds a blinding effect to ink spray",
+            "value": 175,
+            "flavor": "It isn't.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Blind Duration",
+                "attrValue": ["+0.1s"]
+              }
+            ]
+          },
+          {
+            "name": "Royal Toy Castle",
+            "description": "You gain a damage-reducing shield when not holding Homboldt",
+            "value": 165,
+            "flavor": "Resembles the sunken castle Windsor.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Shield",
+                "attrValue": ["+12.5%","+25%"]
+              }
+            ]
+          },
+          {
+            "name": "Pool Boy",
+            "description": "Doubles the damage of the next anchor swing and ink spray when switching between weapons",
+            "value": 240,
+            "flavor": "Comes with denim cut-off shorts.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["x2"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ink Propulsion",
+        "description": "Who said tentacles are only good for swimming in a weird manner? The admiral has no issues whatsoever with manouvering ground based obstacles. Swiggins can also perform a hovering technique by propelling himself upward with ink squirts. Quite splendid.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Companion",
+            "description": "Increases maximum health of both you and your summons.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Health",
+                "attrValue": ["+25","+50","+75"]
+              },
+              {
+                
+                "attrName": "Max Summon Health",
+                "attrValue": ["+5","+10","+15"]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Health Per Min",
+                "attrValue": ["+100","+200"]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Movement",
+                "attrValue": ["+1.6"]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Solar Per Min",
+                "attrValue": ["+17"]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Solar",
+                "attrValue": ["+115"]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Debuffs",
+                "attrValue": ["-25%","-50%"]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "While Anchor Hook can be used on terrain for a faster escape, it can be unreliable as the terrain hitbox often differ from the actual textures. Only attempt this if you are positive you'll be able to land it properly, or your escape will be delayed instead.",
+      "Swiggins becomes lighter and faster after dropping the anchor, allowing him a bit of extra mobility. Bovinian Skimmed Milk increases this bonus even further.",
+      "Always try to pick your anchor back up after dropping it, as not only it gives you your powerful Anchor Swing back, but it enables you to use Anchor Hook again.",
+      "If a ranged ally ('naut or non-buzzsaw droid) is tanking a turret for you, it might be a good idea to use Drop Anchor just to enable your ranged Ink Spray to attack it without taking damage. Alternatively, with proper upgrades, the anchor itself can have a large amount of health, enabling it to tank the turret shots while you attack it with Ink Shot."
+    ],
+    "tipsPlayingAgainst": [
+      "When trapped by Drop Anchor, destroying the anchor is almost always better than staying and fighting. Specially if Swiggins has his team nearby.",
+      "If the anchor fails to latch on to you after it hits the ground, it will not do so again. Approach it without fear.",
+      "If you are anchored, make sure not to fall through platforms. They might hold you in the air, making you very vulnerable to all attacks. If you do happen to get in this situation, use a ranged attack or ability to take the anchor out as soon a possible and use the help command to get your allies to help you.",
+      "Swiggins is very vulnerable to snares himself. As his only long-ranged move forces him to close the gap. Use traps like Yuri's mines or Derpl's grid traps to keep him from diving.",
+      "Swiggins is tipically more vulnerable without his anchor, if you can avoid it when thrown, you are likely to have an advantage over him.",
+      "Crowd control immunity effects will break Drop Anchor's chaining effect immediatly."
+    ],
+    "unlockedAtLevel": 20,
+    "releaseDate": "29/08/2013",
+    "extra": "In the beginning, Swiggins was a part of the 2012 Create-A-Naut contest, in which hundreds of characer concepts were sent in, with only one making it in game. Admiral Swiggins was initially chosen by Ronimo Games staff to be in the top 5, of which would then be voted on by the community in order to decide which of the 5 would be made. User Channfree's Admiral Swiggins was chosen.\nAnother contest was later made to decide how Admiral Swiggins would look. Once again, the community was able to send in their entries, showcasing many different depictions of the character. In the end, user coffeybean4 won the contest with the design seen below."
+  },
+  {
+    "name": "Ayla",
+    "backstory": "Ayla is a devious little girl. She comes from an old species called the Sadak, known for their great psychokinetic powers. Her parents were killed during the great Sevenelevian Coupon Wars and she was adopted by a sweet alien family. The couple grew fearful, however, when suspicious things started happening around the house: evil drawings on the wall, weird sounds at night and dead rapper frogs in the garden.\nWhen they finally figured out Ayla's \"gifts\" and dark sense of humor, they turned her over to the Sunny-daisy School of Social Re-adjustment. A few short days and several fires later, she got transferred to a maximum security psychiatric ward where she went berserk and chose the nearest wall for her stage exit.\nUsing her cute puppy-dog eye routine she managed to hitchhike her way across the galaxy and ended up with the Awesomenauts who, after her tantrums left half the ship in ruins, couldn't wait to get her in a droppod and away from their precious belongings. Still, she's a cherished member of the group, requiring only a gold-star sticker for her efforts on the field of battle!",
+    "stats": {
+      "health": 135,
+      "healthBonus": 30,
+      "moveSpeed": 7,
+      "attackType": "Melee",
+      "role": [
+        "Fighter",
+        "Damage_Dealer"
+      ],
+      "mobility": "Balanced"
+    },
+    "skills": [
+      {
+        "name": "Evil Eye",
+        "description": "Unleash your third eye. The evil eye is more effective the less health you have.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Health stages",
+            "value": "<100% <75% <50% <25%"
+          },
+          {
+            "name": "Damage",
+            "value": 30
+          },
+          {
+            "name": "Extra Damage per Stage",
+            "value": 10
+          },
+          {
+            "name": "Slowing Power",
+            "value": 7.5
+          },
+          {
+            "name": "Extra Slowing per Stage",
+            "value": "+7.5%"
+          },
+          {
+            "name": "Slow Duration",
+            "value": "2.5s"
+          },
+          {
+            "name": "Range",
+            "value": 9.2
+          },
+          {
+            "name": "Cooldown",
+            "value": "7.5s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Fresh Scrubs",
+            "description": "Reduces the cooldown of evil eye",
+            "value": 155,
+            "flavor": "Nuclear steamed to remove any alien bits and blood.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Cooldown",
+                "attrValue": ["-1","-2"]
+              }
+            ]
+          },
+          {
+            "name": "Toothbrush Shank",
+            "description": "Increases damage of evil eye",
+            "value": 155,
+            "flavor": "Game rules: 1.) Form a circle with your cellmates 2.) Spin the toothbrush in the middle 3.) Whoever the toothbrush points at, stab that person! Have fun!.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["20%","40%","60%"]
+              }
+            ]
+          },
+          {
+            "name": "Fake Family Pictures",
+            "description": "Reduces the amount of missing health needed per evil eye stage",
+            "value": 125,
+            "flavor": "For those depressing dark moments when you need a family smile.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Health Stages",
+                "attrValue": ["10%","20%"]
+              }
+            ]
+          },
+          {
+            "name": "Biter Mask",
+            "description": "Increases the slow effect of evil eye",
+            "value": 160,
+            "flavor": "Good against braineaters.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Slowing Power",
+                "attrValue": ["15%","+30%"]
+              }
+            ]
+          },
+          {
+            "name": "Jail Food",
+            "description": "Adds a damage over time effect to evil eye",
+            "value": 215,
+            "flavor": "Today's deal 50% off! (best before August 3251)",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage Over Time",
+                "attrValue": ["+15","+30"]
+              },
+              {
+                
+                "attrName": "Damage Duration",
+                "attrValue": ["4s","4s"]
+              }
+            ]
+          },
+          {
+            "name": "Dummy Prisoner",
+            "description": "Increases the range of evil eye",
+            "value": 165,
+            "flavor": "ATTENTION! When bought, the vending machine will warn the authorities that you might be planning an escape!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Range",
+                "attrValue": ["+4"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rage",
+        "description": "Toggle rage mode on/off making Ayla float, and deal heavy damage",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 6
+          },
+          {
+            "name": "Attack Speed",
+            "value": 240
+          },
+          {
+            "name": "Damage to Self",
+            "value": "6.7 Hp/s"
+          },
+          {
+            "name": "Size",
+            "value": 7
+          },
+          {
+            "name": "Lifesteal",
+            "value": "33.3%"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Angry Drawings",
+            "description": "Increases damage of rage",
+            "value": 235,
+            "flavor": "\"Don't look.. or it takes you!\"",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["+2","+4"]
+              },
+              {
+                
+                "attrName": "Damage Self",
+                "attrValue": ["+1.7Hp/s","+3.4Hp/s"]
+              }
+            ]
+          },
+          {
+            "name": "Rip-Apart Bear",
+            "description": "Reduces damage done to you by enemies while enraged",
+            "value": 160,
+            "flavor": "So cute! You want to kill him!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Shield",
+                "attrValue": ["+12.5%","+25%"]
+              }
+            ]
+          },
+          {
+            "name": "Neon Jumping Rope",
+            "description": "Increases the size of rage",
+            "value": 175,
+            "flavor": "Increase you skills, up to lightspeed.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Size",
+                "attrValue": ["+1"]
+              }
+            ]
+          },
+          {
+            "name": "Blue Three-Wheeler",
+            "description": "Increases your movement speed while enraged",
+            "value": 220,
+            "flavor": "Here's Danny!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Movement",
+                "attrValue": ["+1.6"]
+              }
+            ]
+          },
+          {
+            "name": "Rubberband Ball",
+            "description": "Rage will leave a blood trail in which friendly units move faster",
+            "value": 200,
+            "flavor": "Bounce right back into action!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Movement of Friendlies",
+                "attrValue": ["+1.6"]
+              },
+              {
+                
+                "attrName": "Duration",
+                "attrValue": ["5s"]
+              },
+              {
+                
+                "attrName": "Life time",
+                "attrValue": ["+4s"]
+              }
+            ]
+          },
+          {
+            "name": "Fiery Jawbreakers",
+            "description": "Increases attack speed of rage",
+            "value": 190,
+            "flavor": "New flavors: Nitroglycerine and gasoline!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Attack Speed",
+                "attrValue": ["+25%"]
+              },
+              {
+                
+                "attrName": "Damage Self",
+                "attrValue": ["+50%"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chain Whack",
+        "description": "Ayla swings the lock on her chain",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 8
+          },
+          {
+            "name": "Attack Speed",
+            "value": 150
+          },
+          {
+            "name": "Range",
+            "value": 2.5
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Thief Tools",
+            "description": "Increases attack speed of chain whack",
+            "value": 150,
+            "flavor": "Opens many locks as well as canned food.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Attack Speed",
+                "attrValue": ["+20%","+40%"]
+              }
+            ]
+          },
+          {
+            "name": "Hungry Zurian",
+            "description": "Add lifesteal effect to chain whack",
+            "value": 180,
+            "flavor": "Zurians are a tough species, their hunger for metals makes them perfect for junkyard work.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Lifesteal",
+                "attrValue": ["+30%"]
+              }
+            ]
+          },
+          {
+            "name": "Explosive Neckband",
+            "description": "Increases damage of chain whack",
+            "value": 220,
+            "flavor": "Let things escalate quickly!",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["+2","+4"]
+              }
+            ]
+          },
+          {
+            "name": "Prison Guard Keys",
+            "description": "Increases the max hitpoints after killing an opponent",
+            "value": 0,
+            "flavor": "Stealthly stolen from a Kremzon prison guard.",
+            "levelUpgrade": [
+              {
+                "attrName": "Extra Health",
+                "attrValue": ["+15","+15"]
+              },
+              {
+                "attrName": "Maximum",
+                "attrValue": ["+15","+30"]
+              }
+            ]
+          },
+          {
+            "name": "Ion Blowtorch",
+            "description": "Increaes damage of chain whack when wounded heroes with less than 40% HP are near",
+            "value": 0,
+            "flavor": "Crème brûlée anyone?",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Damage",
+                "attrValue": ["+3","+6"]
+              }
+            ]
+          },
+          {
+            "name": "Sonic Listening Device",
+            "description": "Mark critters to let them drop more health",
+            "value": 160,
+            "flavor": "Can you hear the Solar bubble?",
+            "levelUpgrade": [
+              {
+                "attrName": "Extra Health",
+                "attrValue": ["+20"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hop Skip",
+        "description": "Ayla's favored mode of transportation is the ancient art of hop skipping. Constantly using this natural force of propulsion, her resulting muscles allow her stubby little legs to propel her into the great (depending on the current planet) blue yonder!",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Health",
+                "attrValue": ["+18","+36","+54"]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [100,200]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Movement",
+                "attrValue": [1.6]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Solar Per Min",
+                "attrValue": [17]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                
+                "attrName": "Solar",
+                "attrValue": [115]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": ["25","50"]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Boots will increase movement speed as well as jump height, allowing Ayla to reach some platforms that were previously too high in a single jump.",
+      "Evil Eye becomes more powerful as Ayla's health drops. This ability's icon will change to reflect this at the corresponding damage thresholds",
+      "When focusing on an Evil Eye build, it might be a good idea to skip Med-i'-can, as the regeneration will bump Ayla's heath up, reducing Evil Eye's damage in the long run.",
+      "Evil Eye damages turrets. If no enemies are nearby, it might be a good idea to use it against them.",
+      "Be careful of enemies that may try and ambush you when you are low on health before you can use your Evil Eye.",
+      "Activating Rage disables Evil Eye and Chain Whack. They'll reactivate once Rage is cancelled.",
+      "It is possible to kill yourself using Rage. Be careful and keep an eye on your health bar!",
+      "Activating Rage isn't enough! You must press the jump button to fly.",
+      "If Rage is the focus of your build, it might be a good idea to use Evil Eye as an opener purely for its slowing effect, as it makes chasing targets with Rage easier. Biter Mask makes this even more effective.",
+      "Save Rage for when the enemies' high burst abilities are on cooldown.",
+      "Don't rely on Rage's Lifestealing effect to tank turrets.",
+      "Rage goes through terrain. Use this to kill unsuspecting enemies at low health, to kill creeps, and to damage enemies from a safe distance.",
+      "With proper upgrades, Chain Whack can play a supporting role in a Rage-focused build, helping Ayla increase or regain lost health. Hungry Zurian, Sonic Listening Device and Prison Guard Keys are examples of such upgrades.",
+      "Ayla can use Sonic Listening Device, attack a creep without killing it and allowing an ally to deal the killing blow, so he gets increased health. Be careful, however, as an enemy may steal the creep and get the health bonus instead!"
+    ],
+    "tipsPlayingAgainst": [
+      "Ayla is considered a Brawler. A one on one fight against her will likely end in her favor. Go as a team instead.",
+      "Similarly to Coco, Ayla has some inertia when moving around, specially during rage. Watch where she's going and go the opposite way. You may spend a few seconds into her bubble, but she'll have a harder time adjusting her movement and resuming her chase, giving you an opportunity to flee.",
+      "Ayla may have no collision when Rage is active, but she can still be hit by bull, mines, tongue and other projectiles normally.",
+      "Be very careful when approaching a low health Ayla, specially if she has purchased Toothbrush Shank and/or Dummy Prisoner. Evil Eye deals high damage, slows the target and is a fast-moving projectile.",
+      "Silence is a very powerful tool against Ayla. Many of them will try to get low on health to finish you off with a more powerful Evil Eye. Silence prevents that.",
+      "Save your burst damage to kill Ayla instead of damaging her. If she has enough health to survive your abilities, she'll likely be low enough for a powerful Evil Eye."
+    ],
+    "unlockedAtLevel": 18,
+    "releaseDate": "13/06/2013",
+    "extra": ""
+  },
+  {
+    "name": "Clunk",
+    "backstory": "Clunk is a robot suffering from anger management issues. He's saving up money to pay for therapy but keeps losing it due to damage compensations. Originally created as part of a robot army to combat an immensely powerful super villain terrorizing the outer star systems, Clunk found himself without a job when the villain accidentally died of a nasty bacterial infection before the robot army was completed.\nThis was actually a blessing in disguise for Clunk, since he was never designed to return in one piece from his mission. He was refitted to do standard house-keeping work, but soon found himself out of work once more as he kept blowing aggression inhibitors and subsequently went into immensely destrucive tantrums.\nEventually, Clunk signed up as a mercenary to do what he is best at: wrecking things. He found that finally giving in to his aggressive nature has given him great inner peace. Nowadays he takes great pleasure in jetting around the battlefield, blowing up in peoples' faces to the sound of heavy metal.",
+    "stats": {
+      "health": 205,
+      "healthBonus": 30,
+      "moveSpeed": 7.2,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Tank",
+        "Crowd_Control",
+        "Nuker"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Vacuum Bite",
+        "description": "Enables a lifestealing bite.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 30
+          },
+          {
+            "name": "Cooldown",
+            "value": "5s"
+          },
+          {
+            "name":"lifesteal",
+            "value": "100%"
+            },
+          {
+            "name": "Range",
+            "value": 4.2
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Quick'n Cleaner",
+            "description": "Increases lifesteal and damage of vacuum bite.",
+            "value": 155,
+            "flavor": "Got your fine shirt covered in hitpoints? Try Quick 'n Cleaner!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": ["+6","+12"]
+              }
+            ]
+          },
+          {
+            "name": "Medical Pump",
+            "description": "Adds health to your maximum health for every successful bite. This health is removed upon death.",
+            "value": 230,
+            "flavor": "Clean up with surgical precision.",
+            "levelUpgrade": [
+              {
+                "attrName": "Extra Health",
+                "attrValue": ["+15","+15"]
+              },
+              {
+                "attrName": "Maximum",
+                "attrValue": ["+45","+90"]
+              }
+            ]
+          },
+          {
+            "name": "Multi Hose",
+            "description": "Your bite will affect additional nearby enemies.",
+            "value": 230,
+            "flavor": "For robo-maid model 34-Y or models with same amount of arms.",
+            "levelUpgrade": [
+              {
+                "attrName": "Target",
+                "attrValue": ["+1"]
+              }
+            ]
+          },
+          {
+            "name": "Screamer Engine",
+            "description": "Vacuum bite will ensnare enemies.",
+            "value": 190,
+            "flavor": "WHAT ARE YOU SAYING!?! I CAN'T HEAR YOU!",
+            "levelUpgrade": [
+              {
+                "attrName": "Snare Duration",
+                "attrValue": ["+0.6s","+1.2s"]
+              }
+            ]
+          },
+          {
+            "name": "Power Converter",
+            "description": "Get an adittional heal over time whenever you bite an enemy.",
+            "value": 150,
+            "flavor": "Makes cleaning up a walk in the park.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal Over Time",
+                "attrValue": ["+15","+30"]
+              },
+              {
+                
+                "attrName": "Heal Duration",
+                "attrValue": ["10s","10s"]
+              }
+            ]
+          },
+          {
+            "name": "The Suckanator Power 9000 Cleaner",
+            "description": "Increases lifesteal and damage of vacuum bite.",
+            "value": 250,
+            "flavor": "Free coupon inside for a Nurian ants facial.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": ["+12"]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Tapping the jump button instead of holding it down allows Clunk to remain in air longer as well as reach places that would otherwise be too high.",
+      "When playing as Clunk, you will most likely want boots to improve his slow movement speed.",
+      "Using Vacuum Bite on a neutral creep will not only give you the normal lifesteal, but the healthpack it drops as well for a more powerful heal.",
+      "When using Medical Pump, it might be a good idea to play more passively and focus on biting targets until you reach its health cap.",
+      "When using Multi Hose, try to save Vacuum Bite for two targets as often as possible, as you will get twice as much lifesteal. Just remember it doesn't affect the same target twice.",
+      "Pairing Multi Hose with Screamer Engine can grant Clunk powerful crowd control during a teamfight.",
+      "It is possible to kill yourself with Explode! Think twice before activating it.",
+      "Biting two targets at once with Multi Hose will not cause two healing over time effects from Power Converter to take place, however, biting two targets with two separate bites will.",
+      "A popular tactic among Clunk players involves charging up Explode and dropping from a high place on top of unsuspecting enemies, giving them less time to escape the blast radius.",
+      "Both Screamer Engine and Grease Lightning Snail are effective ways of keeping enemies in range of Clunk's Explode.",
+      "Remember: Thermonuclear Cleaner increases damage dealt to enemies and to yourself! Consider pairing it with Titanium Hard Hat.",
+      "Explode can be used to save an ally from danger. Simply activate it and block their pursuers' path. Most of them will give up chase or take severe damage, maybe even allowing you to finish them off. It can also be used to discourage enemies that would otherwise attack you if you feel you can't take them down.",
+      "With Fragmenting Shells, Clunk is able to damage the Solar Drill from above. He is also able to hit the top turrets in Ribbit IV from underneath.",
+      "When using either Missile Barrage, The Juggernaut \"Fat Pete\" or Salvo Value Pack, it is possible to keep track of your launch string. That way, you can store a more powerful missile just before a teamfight. These upgrades also stack, meaning Clunk can fire two missiles at once."
+    ],
+    "tipsPlayingAgainst": [
+      "The absolutely best moment to attack an enemy Clunk is when both Explode and Vacuum Bite are on cooldown, especially if he misses the bite trying to get extra health.",
+      "Aside from missiles, Clunk's abilities have relatively short range. Try to keep him a safe distance from you.",
+      "Use the score screen to see if Clunk has dangerous upgrades such as Screamer Engine, Grease Lightning Snail or Thermonuclear Cleaner. This information might help you when approaching him if you have to.",
+      "Being a very slow and big awesomenaut, Clunk is naturally vulnerable to poking. Try to attack him from a safe distance, specially when he approaches Droids for a healing bite. That way he can end up taking more damage than he can heal and may be forced to retreat.",
+      "Being a lifesteal, bite does not remove damage over time effects.",
+      "Cocoon interrupts Clunk's Explode and puts it on full cooldown.",
+      "Jump around Clunk and if he uses his Explode, use any crowd control or escape ability.",
+      "If Clunks flies up out of your view, beware! He may be trying to divebomb you!"
+    ],
+    "unlockedAtLevel": 3,
+    "releaseDate": "01/05/2012",
+    "extra": ""
+  }
+]

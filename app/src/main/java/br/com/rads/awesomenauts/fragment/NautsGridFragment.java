@@ -19,6 +19,7 @@ import br.com.rads.awesomenauts.activity.NautActivity;
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.adapter.GridImageAdapter;
 import br.com.rads.awesomenauts.model.Awesomenaut;
+import br.com.rads.awesomenauts.util.DataManager;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
@@ -27,7 +28,7 @@ import butterknife.InjectView;
  */
 public class NautsGridFragment extends Fragment {
 
-    private List<Awesomenaut> awesomenauts = null;
+    private List<Awesomenaut> awesomenauts;
 
     @InjectView(R.id.gridView)
     public GridView grid;
@@ -53,7 +54,7 @@ public class NautsGridFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_nauts_grid, container, false);
         ButterKnife.inject(this,rootView);
 
-        grid.setAdapter( new GridImageAdapter(this.getActivity(),awesomenauts));
+        grid.setAdapter( new GridImageAdapter(this.getActivity(), DataManager.getInstance().getAwesomenauts()));
         grid.setOnItemClickListener( new GridClickListener());
 
         return rootView;
