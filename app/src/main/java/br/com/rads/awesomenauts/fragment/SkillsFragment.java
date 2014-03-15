@@ -13,6 +13,7 @@ import android.widget.TextView;
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.model.Awesomenaut;
 import br.com.rads.awesomenauts.model.Skill;
+import br.com.rads.awesomenauts.view.SkillExpandCard;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import it.gmariotti.cardslib.library.internal.Card;
@@ -73,9 +74,11 @@ public class SkillsFragment extends Fragment {
     }
 
     private Card createNewCard(View view, Skill skill) {
-        CardExpand expand = new CardExpand(getActivity());
-        String attributes = skill.getAttributesAsString();
-        expand.setTitle(attributes.isEmpty() ? "Jump" : attributes);
+//        CardExpand expand = new CardExpand(getActivity());
+//        String attributes = skill.getAttributesAsString();
+//        expand.setTitle(attributes.isEmpty() ? "Jump" : attributes);
+
+        SkillExpandCard expand = new SkillExpandCard(getActivity(), skill.getAttributes());
 
         Card c = new Card(getActivity(), R.layout.card_skill);
         c.addCardExpand(expand);

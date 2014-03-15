@@ -1,5 +1,7 @@
 package br.com.rads.awesomenauts.model;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -11,6 +13,8 @@ import java.util.List;
  * Created by rafael_2 on 18/02/14.
  */
 public class LevelUpgrade {
+
+    private static final String TAG = "LEVEL_UPGRADE";
 
     private String attrName;
     private List<String> attrValue;
@@ -61,5 +65,14 @@ public class LevelUpgrade {
         sb.append(attrValue);
 
         return sb.toString();
+    }
+
+    public String getAttrValueAsString() {
+
+        String valuesAsString = String.valueOf(attrValue);
+        valuesAsString = valuesAsString.replace("[","");
+        valuesAsString = valuesAsString.replace("]","");
+
+        return valuesAsString;
     }
 }

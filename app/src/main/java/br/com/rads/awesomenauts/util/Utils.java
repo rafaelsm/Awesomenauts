@@ -21,4 +21,5 @@ public class Utils {
                 false);
         return new BitmapDrawable(context.getResources(),b);
     }
+
 }

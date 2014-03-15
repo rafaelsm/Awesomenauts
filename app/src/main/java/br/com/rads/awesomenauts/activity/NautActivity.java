@@ -78,6 +78,8 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
 
         loadTabs();
 
+        actionBar.setTitle(awesomenaut.getName());
+
 //        if (savedInstanceState == null) {
 //
 //            Bundle arguments = new Bundle();

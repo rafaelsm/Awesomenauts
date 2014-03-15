@@ -1,6 +1,7 @@
 package br.com.rads.awesomenauts.adapter;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,9 +66,24 @@ public class UpgradeListAdapter extends ArrayAdapter<LevelUpgrade> {
 
     private void populateLevels(LinearLayout linear, LevelUpgrade levelUpgrade) {
 
-        TextView upgradeRow = new TextView(context);
-        upgradeRow.setText(levelUpgrade.getAttrName() + "\t" + levelUpgrade.getAttrValue());
-        linear.addView(upgradeRow);
+        LinearLayout wrapper = new LinearLayout(context);
+        wrapper.setLayoutParams( new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        wrapper.setOrientation(LinearLayout.HORIZONTAL);
+        wrapper.setWeightSum(2f);
+
+        TextView upgradeName = new TextView(context);
+        upgradeName.setText(levelUpgrade.getAttrName());
+        upgradeName.setLayoutParams( new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT,1f));
+
+        TextView upgradeValues = new TextView(context);
+        upgradeValues.setText(levelUpgrade.getAttrValueAsString());
+        upgradeValues.setGravity(Gravity.RIGHT);
+        upgradeValues.setLayoutParams( new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT,1f));
+
+        wrapper.addView(upgradeName);
+        wrapper.addView(upgradeValues);
+
+        linear.addView(wrapper);
 
     }
 }

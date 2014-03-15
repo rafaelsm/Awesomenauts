@@ -5,4 +5,18 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="CardSubText">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CardSubText.Flavor">
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
 </resources>

@@ -79,7 +79,7 @@ public class InformationFragment extends Fragment {
         try {
             imageResource = getResources().getIdentifier(awesomenaut.getImage(), "drawable", getActivity().getPackageName());
         } catch (Resources.NotFoundException e) {
-            Log.e(TAG, "Not found image drawable " + (awesomenaut.getImage() + " for skill: " + awesomenaut.getName()));
+            Log.e(TAG, "Not found image drawable " + (awesomenaut.getImage() + " for naut: " + awesomenaut.getName()));
         }
 
         if (imageResource == 0)

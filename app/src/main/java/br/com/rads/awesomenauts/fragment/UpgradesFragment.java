@@ -55,11 +55,6 @@ public class UpgradesFragment extends Fragment {
         ButterKnife.inject(this, view);
 
         loadSpinnerItems();
-        loadUpgradesForSkill(awesomenaut.getSkills().get(0));
-        loadUpgradesForSkill(awesomenaut.getSkills().get(1));
-        loadUpgradesForSkill(awesomenaut.getSkills().get(2));
-        loadUpgradesForSkill(awesomenaut.getSkills().get(3));
-
         setSpinnerListener();
 
         return view;
@@ -70,14 +65,6 @@ public class UpgradesFragment extends Fragment {
         SpinnerUpgradesAdapter adapter = new SpinnerUpgradesAdapter(getActivity(), R.layout.spinner_upgrade_row, awesomenaut.getSkills());
         spinner.setAdapter(adapter);
 
-    }
-
-    private void loadUpgradesForSkill(Skill skill) {
-        for (Upgrade upgrade : skill.getUpgrades()) {
-            for (LevelUpgrade levelUpgrade : upgrade.getLevelUpgrades()) {
-                Log.d(TAG, "Upgrade: " + upgrade.getName() + " - " + levelUpgrade);
-            }
-        }
     }
 
     private void setSpinnerListener() {

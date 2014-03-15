@@ -14,12 +14,17 @@
     <dimen name="grid_horizontal_margin">0dp</dimen>
     <dimen name="grid_vertical_margin">0dp</dimen>
 
-    <!-- Detail -->
+    <!-- Padding -->
     <dimen name="small_padding">8dp</dimen>
     <dimen name="medium_padding">16dp</dimen>
     <dimen name="large_padding">24dp</dimen>
 
+    <!-- Margin -->
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
 
+    <!-- Text -->
     <dimen name="large_text">40sp</dimen>
     <dimen name="medium_text">20sp</dimen>
     <dimen name="small_text">10sp</dimen>

@@ -36,16 +36,11 @@
         />
 
     <TextView
+        style="@style/CardSubText"
         android:id="@+id/skill_desc_textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text=" First Skill Description"
         android:layout_toRightOf="@id/skill_image"
         android:layout_below="@id/skill_name_textview"
-        android:layout_alignBottom="@id/skill_image"
-        android:layout_marginBottom="@dimen/small_padding"
-        android:textSize="@dimen/small_text"
-        android:textColor="@android:color/darker_gray"
-        android:layout_marginTop="@dimen/small_padding"/>
+        android:layout_alignBottom="@id/skill_image"/>
 
 </RelativeLayout>
