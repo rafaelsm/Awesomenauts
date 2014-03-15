@@ -5,9 +5,18 @@ package br.com.rads.awesomenauts.model;
  */
 public enum AttackType {
 
-    MELEE,
-    SHORT_RANGE,
-    MEDIUM_RANGE,
-    LONG_RANGE
+    MELEE("Melee"),
+    SHORT_RANGE("Short range"),
+    MEDIUM_RANGE("Medium range"),
+    LONG_RANGE("Long range");
 
+    private String label;
+
+    AttackType(String label){
+        this.label = label;
+    }
+
+    public String getLabel() {
+        return label;
+    }
 }

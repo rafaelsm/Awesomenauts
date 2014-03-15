@@ -933,156 +933,458 @@
     "extra": ""
   },
   {
-    "name": "Clunk",
-    "backstory": "Clunk is a robot suffering from anger management issues. He's saving up money to pay for therapy but keeps losing it due to damage compensations. Originally created as part of a robot army to combat an immensely powerful super villain terrorizing the outer star systems, Clunk found himself without a job when the villain accidentally died of a nasty bacterial infection before the robot army was completed.\nThis was actually a blessing in disguise for Clunk, since he was never designed to return in one piece from his mission. He was refitted to do standard house-keeping work, but soon found himself out of work once more as he kept blowing aggression inhibitors and subsequently went into immensely destrucive tantrums.\nEventually, Clunk signed up as a mercenary to do what he is best at: wrecking things. He found that finally giving in to his aggressive nature has given him great inner peace. Nowadays he takes great pleasure in jetting around the battlefield, blowing up in peoples' faces to the sound of heavy metal.",
-    "stats": {
-      "health": 205,
-      "healthBonus": 30,
-      "moveSpeed": 7.2,
-      "attackType": "MEDIUM_RANGE",
-      "role": [
-        "Tank",
-        "Crowd_Control",
-        "Nuker"
-      ],
-      "mobility": "Tactical"
-    },
-    "skills": [
-      {
-        "name": "Vacuum Bite",
-        "description": "Enables a lifestealing bite.",
-        "value": 135,
-        "attributes": [
-          {
-            "name": "Damage",
-            "value": 30
-          },
-          {
-            "name": "Cooldown",
-            "value": "5s"
-          },
-          {
-            "name":"lifesteal",
-            "value": "100%"
-            },
-          {
-            "name": "Range",
-            "value": 4.2
-          }
+      "name": "Clunk",
+      "backstory": "Clunk is a robot suffering from anger management issues. He's saving up money to pay for therapy but keeps losing it due to damage compensations. Originally created as part of a robot army to combat an immensely powerful super villain terrorizing the outer star systems, Clunk found himself without a job when the villain accidentally died of a nasty bacterial infection before the robot army was completed.\nThis was actually a blessing in disguise for Clunk, since he was never designed to return in one piece from his mission. He was refitted to do standard house-keeping work, but soon found himself out of work once more as he kept blowing aggression inhibitors and subsequently went into immensely destrucive tantrums.\nEventually, Clunk signed up as a mercenary to do what he is best at: wrecking things. He found that finally giving in to his aggressive nature has given him great inner peace. Nowadays he takes great pleasure in jetting around the battlefield, blowing up in peoples' faces to the sound of heavy metal.",
+      "stats": {
+        "health": 205,
+        "healthBonus": 30,
+        "moveSpeed": 7.2,
+        "attackType": "MEDIUM_RANGE",
+        "role": [
+          "Tank",
+          "Crowd_Control",
+          "Nuker"
         ],
-        "upgrades": [
-          {
-            "name": "Quick'n Cleaner",
-            "description": "Increases lifesteal and damage of vacuum bite.",
-            "value": 155,
-            "flavor": "Got your fine shirt covered in hitpoints? Try Quick 'n Cleaner!",
-            "levelUpgrade": [
-              {
-                "attrName": "Damage",
-                "attrValue": ["+6","+12"]
-              }
-            ]
-          },
-          {
-            "name": "Medical Pump",
-            "description": "Adds health to your maximum health for every successful bite. This health is removed upon death.",
-            "value": 230,
-            "flavor": "Clean up with surgical precision.",
-            "levelUpgrade": [
-              {
-                "attrName": "Extra Health",
-                "attrValue": ["+15","+15"]
+        "mobility": "Tactical"
+      },
+      "skills": [
+        {
+          "name": "Vacuum Bite",
+          "description": "Enables a lifestealing bite.",
+          "value": 135,
+          "attributes": [
+            {
+              "name": "Damage",
+              "value": 30
+            },
+            {
+              "name": "Cooldown",
+              "value": "5s"
+            },
+            {
+              "name":"lifesteal",
+              "value": "100%"
               },
-              {
-                "attrName": "Maximum",
-                "attrValue": ["+45","+90"]
-              }
-            ]
-          },
-          {
-            "name": "Multi Hose",
-            "description": "Your bite will affect additional nearby enemies.",
-            "value": 230,
-            "flavor": "For robo-maid model 34-Y or models with same amount of arms.",
-            "levelUpgrade": [
-              {
-                "attrName": "Target",
-                "attrValue": ["+1"]
-              }
-            ]
-          },
-          {
-            "name": "Screamer Engine",
-            "description": "Vacuum bite will ensnare enemies.",
-            "value": 190,
-            "flavor": "WHAT ARE YOU SAYING!?! I CAN'T HEAR YOU!",
-            "levelUpgrade": [
-              {
-                "attrName": "Snare Duration",
-                "attrValue": ["+0.6s","+1.2s"]
-              }
-            ]
-          },
-          {
-            "name": "Power Converter",
-            "description": "Get an adittional heal over time whenever you bite an enemy.",
-            "value": 150,
-            "flavor": "Makes cleaning up a walk in the park.",
-            "levelUpgrade": [
-              {
-                "attrName": "Heal Over Time",
-                "attrValue": ["+15","+30"]
+            {
+              "name": "Range",
+              "value": 4.2
+            }
+          ],
+          "upgrades": [
+            {
+              "name": "Quick'n Cleaner",
+              "description": "Increases lifesteal and damage of vacuum bite.",
+              "value": 155,
+              "flavor": "Got your fine shirt covered in hitpoints? Try Quick 'n Cleaner!",
+              "levelUpgrade": [
+                {
+                  "attrName": "Damage",
+                  "attrValue": ["+6","+12"]
+                }
+              ]
+            },
+            {
+              "name": "Medical Pump",
+              "description": "Adds health to your maximum health for every successful bite. This health is removed upon death.",
+              "value": 230,
+              "flavor": "Clean up with surgical precision.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Extra Health",
+                  "attrValue": ["+15","+15"]
+                },
+                {
+                  "attrName": "Maximum",
+                  "attrValue": ["+45","+90"]
+                }
+              ]
+            },
+            {
+              "name": "Multi Hose",
+              "description": "Your bite will affect additional nearby enemies.",
+              "value": 230,
+              "flavor": "For robo-maid model 34-Y or models with same amount of arms.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Target",
+                  "attrValue": ["+1"]
+                }
+              ]
+            },
+            {
+              "name": "Screamer Engine",
+              "description": "Vacuum bite will ensnare enemies.",
+              "value": 190,
+              "flavor": "WHAT ARE YOU SAYING!?! I CAN'T HEAR YOU!",
+              "levelUpgrade": [
+                {
+                  "attrName": "Snare Duration",
+                  "attrValue": ["+0.6s","+1.2s"]
+                }
+              ]
+            },
+            {
+              "name": "Power Converter",
+              "description": "Get an adittional heal over time whenever you bite an enemy.",
+              "value": 150,
+              "flavor": "Makes cleaning up a walk in the park.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Heal Over Time",
+                  "attrValue": ["+15","+30"]
+                },
+                {
+
+                  "attrName": "Heal Duration",
+                  "attrValue": ["10s","10s"]
+                }
+              ]
+            },
+            {
+              "name": "The Suckanator Power 9000 Cleaner",
+              "description": "Increases lifesteal and damage of vacuum bite.",
+              "value": 250,
+              "flavor": "Free coupon inside for a Nurian ants facial.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Damage",
+                  "attrValue": ["+12"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Explode",
+          "description": "Enables a self-damaging explosion, dealing damage to yourself and enemies around you.",
+          "value": 135,
+          "attributes": [
+            {
+              "name": "Damage",
+              "value": 50
+            },
+            {
+            	"name" : "Self Damage",
+            	"value" : 30
+            },
+            {
+              "name": "Cooldown",
+              "value": "13.5s"
+            },
+            {
+              "name":"Explosive Size",
+              "value": 9
               },
-              {
-                
-                "attrName": "Heal Duration",
-                "attrValue": ["10s","10s"]
-              }
-            ]
-          },
-          {
-            "name": "The Suckanator Power 9000 Cleaner",
-            "description": "Increases lifesteal and damage of vacuum bite.",
-            "value": 250,
-            "flavor": "Free coupon inside for a Nurian ants facial.",
-            "levelUpgrade": [
-              {
-                "attrName": "Damage",
-                "attrValue": ["+12"]
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "tipsPlayingAs": [
-      "Tapping the jump button instead of holding it down allows Clunk to remain in air longer as well as reach places that would otherwise be too high.",
-      "When playing as Clunk, you will most likely want boots to improve his slow movement speed.",
-      "Using Vacuum Bite on a neutral creep will not only give you the normal lifesteal, but the healthpack it drops as well for a more powerful heal.",
-      "When using Medical Pump, it might be a good idea to play more passively and focus on biting targets until you reach its health cap.",
-      "When using Multi Hose, try to save Vacuum Bite for two targets as often as possible, as you will get twice as much lifesteal. Just remember it doesn't affect the same target twice.",
-      "Pairing Multi Hose with Screamer Engine can grant Clunk powerful crowd control during a teamfight.",
-      "It is possible to kill yourself with Explode! Think twice before activating it.",
-      "Biting two targets at once with Multi Hose will not cause two healing over time effects from Power Converter to take place, however, biting two targets with two separate bites will.",
-      "A popular tactic among Clunk players involves charging up Explode and dropping from a high place on top of unsuspecting enemies, giving them less time to escape the blast radius.",
-      "Both Screamer Engine and Grease Lightning Snail are effective ways of keeping enemies in range of Clunk's Explode.",
-      "Remember: Thermonuclear Cleaner increases damage dealt to enemies and to yourself! Consider pairing it with Titanium Hard Hat.",
-      "Explode can be used to save an ally from danger. Simply activate it and block their pursuers' path. Most of them will give up chase or take severe damage, maybe even allowing you to finish them off. It can also be used to discourage enemies that would otherwise attack you if you feel you can't take them down.",
-      "With Fragmenting Shells, Clunk is able to damage the Solar Drill from above. He is also able to hit the top turrets in Ribbit IV from underneath.",
-      "When using either Missile Barrage, The Juggernaut \"Fat Pete\" or Salvo Value Pack, it is possible to keep track of your launch string. That way, you can store a more powerful missile just before a teamfight. These upgrades also stack, meaning Clunk can fire two missiles at once."
-    ],
-    "tipsPlayingAgainst": [
-      "The absolutely best moment to attack an enemy Clunk is when both Explode and Vacuum Bite are on cooldown, especially if he misses the bite trying to get extra health.",
-      "Aside from missiles, Clunk's abilities have relatively short range. Try to keep him a safe distance from you.",
-      "Use the score screen to see if Clunk has dangerous upgrades such as Screamer Engine, Grease Lightning Snail or Thermonuclear Cleaner. This information might help you when approaching him if you have to.",
-      "Being a very slow and big awesomenaut, Clunk is naturally vulnerable to poking. Try to attack him from a safe distance, specially when he approaches Droids for a healing bite. That way he can end up taking more damage than he can heal and may be forced to retreat.",
-      "Being a lifesteal, bite does not remove damage over time effects.",
-      "Cocoon interrupts Clunk's Explode and puts it on full cooldown.",
-      "Jump around Clunk and if he uses his Explode, use any crowd control or escape ability.",
-      "If Clunks flies up out of your view, beware! He may be trying to divebomb you!"
-    ],
-    "unlockedAtLevel": 3,
-    "releaseDate": "01/05/2012",
-    "extra": ""
-  }
+            {
+              "name": "Charge Time",
+              "value": "1.5s"
+            }
+          ],
+          "upgrades": [
+            {
+              "name": "Thermonuclear Cleaner",
+              "description": "Increases damage of explode.",
+              "value": 240,
+              "flavor": "Clean any room in one big swipe!",
+              "levelUpgrade": [
+                {
+                  "attrName": "Damage",
+                  "attrValue": ["+25","+50"]
+                },
+                {
+                  "attrName": "Damage Self",
+                  "attrValue": ["+10","+20"]
+                }
+              ]
+            },
+            {
+              "name": "Titanium Hard Hat",
+              "description": "Reduce the damage you inflict upon yourself when using explode.",
+              "value": 145,
+              "flavor": "Approved Calias mining equipment. Safety first.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Damage Self",
+                  "attrValue": ["-15","-30"]
+                }
+              ]
+            },
+            {
+              "name": "Grease Lightning Snail",
+              "description": "Slows enemies near you while charging explode.",
+              "value": 165,
+              "flavor": "WARNING: Do not eat!",
+              "levelUpgrade": [
+                {
+                  "attrName": "Slowing Power",
+                  "attrValue": ["+20%","+40%"]
+                }
+              ]
+            },
+            {
+              "name": "Blueprints container",
+              "description": "Reduces incoming damage while exploding.",
+              "value": 200,
+              "flavor": "Where does this part go?",
+              "levelUpgrade": [
+                {
+                  "attrName": "Shield",
+                  "attrValue": ["+40%"]
+                }
+              ]
+            },
+            {
+              "name": "Reactor Cooler",
+              "description": "Reduces cooldown time on explode.",
+              "value": 200,
+              "flavor": "Explosions, so hot right now.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Cooldown",
+                  "attrValue": ["-5s"]
+                }
+              ]
+            },
+            {
+              "name": "Universal Charger",
+              "description": "Reduces the charging time of explode.",
+              "value": 170,
+              "flavor": "When you look closely at the jar, you will see thousands of little stars and planets.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Charge Time",
+                  "attrValue": ["-0.5s"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Missiles",
+          "description": "Shoot valleys of missiles at your opponents.",
+          "value": 0,
+          "attributes": [
+            {
+              "name": "Damage",
+              "value": "14 | 18 | 22 | 26"
+            },
+            {
+            	"name" : "Attack Speed",
+            	"value" : 60
+            },
+            {
+              "name": "Range",
+              "value": "9.4s"
+            },
+            {
+              "name":"Homing",
+              "value": 0
+            }
+          ],
+          "upgrades": [
+            {
+              "name": "Fragmenting Shells",
+              "description": "Makes missiles do damage in an area.",
+              "value": 150,
+              "flavor": "Anti bugs, rodents and trucks.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Explosive Size",
+                  "attrValue": ["+3.4"]
+                }
+              ]
+            },
+            {
+              "name": "Free Flight Fins",
+              "description": "Reduces cooldown on missile shot and increases missile speed.",
+              "value": 130,
+              "flavor": "Faster deploying, faster destroying.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Attack Speed",
+                  "attrValue": ["+12.5%","+25%"]
+                },
+                {
+                	"attrName": "Speed",
+                  "attrValue": ["+2","+4"]
+                }
+              ]
+            },
+            {
+              "name": "Missile Barrage",
+              "description": "Adds a more powerful missile to your launch string.",
+              "value": 160,
+              "flavor": "Keep away from children and trigger happy Kremzons.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Missile 2",
+                  "attrValue": ["+1","+1"]
+                },
+                {
+                  "attrName": "Missile 3",
+                  "attrValue": ["0","+1"]
+                }
+              ]
+            },
+            {
+              "name": "The Juggernaut \"Fat Pete\"",
+              "description": "Adds a giant missile to your launch string.",
+              "value": 160,
+              "flavor": "Property of Earth's Liberation Front. Made in 2991",
+              "levelUpgrade": [
+                {
+                  "attrName": "Missile 4",
+                  "attrValue": ["+1"]
+                }
+              ]
+            },
+            {
+              "name": "Improved Homing Sensor",
+              "description": "Makes your missiles better at following enemies.",
+              "value": 110,
+              "flavor": "Pow! Right in the kisser.",
+              "levelUpgrade": [
+                {
+                  "attrName": "Homing",
+                  "attrValue": ["+380"]
+                }
+              ]
+            },
+            {
+              "name": "Salvo Value Pack",
+              "description": "Adds a full missile barrage and juggernaut to your launch string.",
+              "value": 400,
+              "flavor": "WARNING!: Do not aim at eye(s) or face(s).",
+              "levelUpgrade": [
+                {
+                  "attrName": "Missile 2",
+                  "attrValue": ["+1"]
+                },
+                {
+                  "attrName": "Missile 3",
+                  "attrValue": ["+1"]
+                },
+                {
+                  "attrName": "Missile 4",
+                  "attrValue": ["+1"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jet Boost",
+          "description": "Clunk has a temporary jet boost.",
+          "value": 0,
+          "attributes": [],
+          "upgrades": [
+            {
+              "name": "Power Pills Turbo",
+              "description": "ncreases maximum health.",
+              "value": 130,
+              "flavor": "Insert pill into rear end of digestive tract.",
+              "levelUpgrade": [
+                {
+
+                  "attrName": "Health",
+                  "attrValue": ["+25","+50","+75"]
+                }
+              ]
+            },
+            {
+              "name": "Med-i'-can",
+              "description": "Automatically regenerate health.",
+              "value": 120,
+              "flavor": "Hello... anyone there? Please get me out of here!!!",
+              "levelUpgrade": [
+                {
+                  "attrName": "Health Per Min",
+                  "attrValue": [100,200]
+                }
+              ]
+            },
+            {
+              "name": "Space Air Max",
+              "description": "Increases movement speed.",
+              "value": 135,
+              "flavor": "Fashionable and Fast.",
+              "levelUpgrade": [
+                {
+
+                  "attrName": "Movement",
+                  "attrValue": [1.6]
+                }
+              ]
+            },
+            {
+              "name": "Solar Tree",
+              "description": "Gain additional Solar over time.",
+              "value": 50,
+              "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+              "levelUpgrade": [
+                {
+
+                  "attrName": "Solar Per Min",
+                  "attrValue": [17]
+                }
+              ]
+            },
+            {
+              "name": "Piggy Bank",
+              "description": "Gives 115 Solar.",
+              "value": 0,
+              "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+              "levelUpgrade": [
+                {
+
+                  "attrName": "Solar",
+                  "attrValue": [115]
+                }
+              ]
+            },
+            {
+              "name": "Baby Kuri Mammoth",
+              "description": "Reduces the effect of all debuffs",
+              "value": 110,
+              "flavor": "LOOK!!! A FLYING ELEPHANT!",
+              "levelUpgrade": [
+                {
+                  "attrName": "Debuffs",
+                  "attrValue": ["25","50"]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tipsPlayingAs": [
+        "Tapping the jump button instead of holding it down allows Clunk to remain in air longer as well as reach places that would otherwise be too high.",
+        "When playing as Clunk, you will most likely want boots to improve his slow movement speed.",
+        "Using Vacuum Bite on a neutral creep will not only give you the normal lifesteal, but the healthpack it drops as well for a more powerful heal.",
+        "When using Medical Pump, it might be a good idea to play more passively and focus on biting targets until you reach its health cap.",
+        "When using Multi Hose, try to save Vacuum Bite for two targets as often as possible, as you will get twice as much lifesteal. Just remember it doesn't affect the same target twice.",
+        "Pairing Multi Hose with Screamer Engine can grant Clunk powerful crowd control during a teamfight.",
+        "It is possible to kill yourself with Explode! Think twice before activating it.",
+        "Biting two targets at once with Multi Hose will not cause two healing over time effects from Power Converter to take place, however, biting two targets with two separate bites will.",
+        "A popular tactic among Clunk players involves charging up Explode and dropping from a high place on top of unsuspecting enemies, giving them less time to escape the blast radius.",
+        "Both Screamer Engine and Grease Lightning Snail are effective ways of keeping enemies in range of Clunk's Explode.",
+        "Remember: Thermonuclear Cleaner increases damage dealt to enemies and to yourself! Consider pairing it with Titanium Hard Hat.",
+        "Explode can be used to save an ally from danger. Simply activate it and block their pursuers' path. Most of them will give up chase or take severe damage, maybe even allowing you to finish them off. It can also be used to discourage enemies that would otherwise attack you if you feel you can't take them down.",
+        "With Fragmenting Shells, Clunk is able to damage the Solar Drill from above. He is also able to hit the top turrets in Ribbit IV from underneath.",
+        "When using either Missile Barrage, The Juggernaut \"Fat Pete\" or Salvo Value Pack, it is possible to keep track of your launch string. That way, you can store a more powerful missile just before a teamfight. These upgrades also stack, meaning Clunk can fire two missiles at once."
+      ],
+      "tipsPlayingAgainst": [
+        "The absolutely best moment to attack an enemy Clunk is when both Explode and Vacuum Bite are on cooldown, especially if he misses the bite trying to get extra health.",
+        "Aside from missiles, Clunk's abilities have relatively short range. Try to keep him a safe distance from you.",
+        "Use the score screen to see if Clunk has dangerous upgrades such as Screamer Engine, Grease Lightning Snail or Thermonuclear Cleaner. This information might help you when approaching him if you have to.",
+        "Being a very slow and big awesomenaut, Clunk is naturally vulnerable to poking. Try to attack him from a safe distance, specially when he approaches Droids for a healing bite. That way he can end up taking more damage than he can heal and may be forced to retreat.",
+        "Being a lifesteal, bite does not remove damage over time effects.",
+        "Cocoon interrupts Clunk's Explode and puts it on full cooldown.",
+        "Jump around Clunk and if he uses his Explode, use any crowd control or escape ability.",
+        "If Clunks flies up out of your view, beware! He may be trying to divebomb you!"
+      ],
+      "unlockedAtLevel": 3,
+      "releaseDate": "01/05/2012",
+      "extra": ""
+    }
 ]

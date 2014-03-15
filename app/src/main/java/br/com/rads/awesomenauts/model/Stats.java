@@ -72,4 +72,18 @@ public class Stats {
     private int sumHealthAndBonus() {
         return getBonusHealth()+getHealth();
     }
+
+    public String getRolesAsString() {
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < this.roles.size(); i++){
+            sb.append(this.roles.get(i).getLabel());
+
+            if(i+1 < this.roles.size())
+                sb.append(", ");
+        }
+
+        return sb.toString();
+    }
 }

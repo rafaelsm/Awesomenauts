@@ -5,9 +5,18 @@ package br.com.rads.awesomenauts.model;
  */
 public enum Mobility {
 
-    AERIAL,
-    BALANCED,
-    SWIFT,
-    TACTICAL
+    AERIAL("Aerial"),
+    BALANCED("Balanced"),
+    SWIFT("Swift"),
+    TACTICAL("Tactical");
 
+    private String label;
+
+    Mobility(String label){
+        this.label = label;
+    }
+
+    public String getLabel() {
+        return label;
+    }
 }

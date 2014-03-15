@@ -14,8 +14,6 @@ import java.util.List;
  */
 public class LevelUpgrade {
 
-    private static final String TAG = "LEVEL_UPGRADE";
-
     private String attrName;
     private List<String> attrValue;
 

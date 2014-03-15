@@ -82,6 +82,7 @@ public class NautsGridFragment extends Fragment {
                 Intent i = new Intent(getActivity(), NautActivity.class);
                 i.putExtra(Awesomenaut.TAG, position);
                 startActivity(i);
+                getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         }
     }

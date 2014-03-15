@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.model.Attribute;
@@ -39,33 +38,45 @@ public class SkillExpandCard extends CardExpand {
 
         ButterKnife.inject(this, view);
 
-        for (int i = 0; i < attributes.size(); i++){
-
-            Attribute a = attributes.get(i);
-
-            LinearLayout wrapper = new LinearLayout(context);
-            wrapper.setLayoutParams( new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-            wrapper.setOrientation(LinearLayout.HORIZONTAL);
-            wrapper.setWeightSum(2f);
-            wrapper.setPadding(5,5,5,5);
-
-            TextView attributeName = new TextView(context);
-            attributeName.setText(a.getName());
-            attributeName.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
-            attributeName.setTextColor(Color.WHITE);
-
-            TextView attributeValues = new TextView(context);
-            attributeValues.setText(a.getValue());
-            attributeValues.setGravity(Gravity.RIGHT);
-            attributeValues.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
-            attributeValues.setTextColor(Color.WHITE);
-
-            wrapper.addView(attributeName);
-            wrapper.addView(attributeValues);
-
-            linear.addView(wrapper);
-
+        if(attributes.isEmpty()){
+            Attribute jump = new Attribute();
+            jump.setName("JUMP");
+            expandLayoutForAttribute(jump);
         }
 
+
+        for (int i = 0; i < attributes.size(); i++){
+            Attribute a = attributes.get(i);
+            expandLayoutForAttribute(a);
+        }
+
+    }
+
+    private void expandLayoutForAttribute(Attribute a) {
+        LinearLayout wrapper = getExpandLayout(a);
+        linear.addView(wrapper);
+    }
+
+    private LinearLayout getExpandLayout(Attribute a) {
+        LinearLayout wrapper = new LinearLayout(context);
+        wrapper.setLayoutParams( new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        wrapper.setOrientation(LinearLayout.HORIZONTAL);
+        wrapper.setWeightSum(2f);
+        wrapper.setPadding(5,5,5,5);
+
+        TextView attributeName = new TextView(context);
+        attributeName.setText(a.getName());
+        attributeName.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
+        attributeName.setTextColor(Color.WHITE);
+
+        TextView attributeValues = new TextView(context);
+        attributeValues.setText(a.getValue());
+        attributeValues.setGravity(Gravity.RIGHT);
+        attributeValues.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
+        attributeValues.setTextColor(Color.WHITE);
+
+        wrapper.addView(attributeName);
+        wrapper.addView(attributeValues);
+        return wrapper;
     }
 }
