@@ -45,9 +45,11 @@
             "flavor": "In the winter they point south, in the summer they point north, easy!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Cooldown",
-                "attrValue": ["-1s","-2s"]
+                "attrValue": [
+                  "-1s",
+                  "-2s"
+                ]
               }
             ]
           },
@@ -58,14 +60,18 @@
             "flavor": "Draw me like one of your French girls. :3",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["+10","+20"]
+                "attrValue": [
+                  "+10",
+                  "+20"
+                ]
               },
               {
-                
                 "attrName": "Flying Damage",
-                "attrValue": ["+5","+10"]
+                "attrValue": [
+                  "+5",
+                  "+10"
+                ]
               }
             ]
           },
@@ -76,9 +82,10 @@
             "flavor": "Penguins on iceplanet Rill use these to find flying fish.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Range",
-                "attrValue": ["+4"]
+                "attrValue": [
+                  "+4"
+                ]
               }
             ]
           },
@@ -89,9 +96,10 @@
             "flavor": "Do you have what it takes to find the treasure? This months treasure jackpot is 1.4 million Solar!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Team Solar per Kill",
-                "attrValue": ["+15"]
+                "attrValue": [
+                  "+15"
+                ]
               }
             ]
           },
@@ -102,9 +110,10 @@
             "flavor": "Resembles Kewlu the ancient one, ruler of the flying seas on Okeanos.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Stun Duration",
-                "attrValue": ["+0.5s"]
+                "attrValue": [
+                  "+0.5s"
+                ]
               }
             ]
           },
@@ -115,9 +124,10 @@
             "flavor": "The must have hipster item in sea warfare.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Explosion Size",
-                "attrValue": ["+3.4"]
+                "attrValue": [
+                  "+3.4"
+                ]
               }
             ]
           }
@@ -153,9 +163,10 @@
             "flavor": "Can also be used as car paint.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Movement",
-                "attrValue": ["+1.2"]
+                "attrValue": [
+                  "+1.2"
+                ]
               }
             ]
           },
@@ -166,9 +177,11 @@
             "flavor": "No more rusty tea!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Duration",
-                "attrValue": ["+1s","+2s"]
+                "attrValue": [
+                  "+1s",
+                  "+2s"
+                ]
               }
             ]
           },
@@ -179,9 +192,12 @@
             "flavor": "That just kicks it up a little bit!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Max Health",
-                "attrValue": ["+20","+40","+60"]
+                "attrValue": [
+                  "+20",
+                  "+40",
+                  "+60"
+                ]
               }
             ]
           },
@@ -192,9 +208,12 @@
             "flavor": "Creates a little hurricane in your cup!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["+10","+20","+30"]
+                "attrValue": [
+                  "+10",
+                  "+20",
+                  "+30"
+                ]
               }
             ]
           },
@@ -205,9 +224,11 @@
             "flavor": "Clean the sea of mines and spiky objects!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage per s.",
-                "attrValue": ["3.3","6.6"]
+                "attrValue": [
+                  "3.3",
+                  "6.6"
+                ]
               }
             ]
           },
@@ -218,9 +239,11 @@
             "flavor": "Property of the Bouquet residence.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Heal",
-                "attrValue": ["+10","+20"]
+                "attrValue": [
+                  "+10",
+                  "+20"
+                ]
               }
             ]
           }
@@ -264,9 +287,12 @@
             "flavor": "For deepsea fish tanks.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Attack Speed",
-                "attrValue": ["+10%","+20%","+30%"]
+                "attrValue": [
+                  "+10%",
+                  "+20%",
+                  "+30%"
+                ]
               }
             ]
           },
@@ -277,14 +303,20 @@
             "flavor": "Keep your litter box clean and fresh.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Anchor Damage",
-                "attrValue": ["+3","+6","+9"]
+                "attrValue": [
+                  "+3",
+                  "+6",
+                  "+9"
+                ]
               },
               {
-                
                 "attrName": "Ink Damage",
-                "attrValue": ["+2","+4","+6"]
+                "attrValue": [
+                  "+2",
+                  "+4",
+                  "+6"
+                ]
               }
             ]
           },
@@ -295,9 +327,11 @@
             "flavor": "Twist, lick and puke!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Max Health",
-                "attrValue": ["+20","+40"]
+                "attrValue": [
+                  "+20",
+                  "+40"
+                ]
               }
             ]
           },
@@ -308,9 +342,10 @@
             "flavor": "It isn't.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Blind Duration",
-                "attrValue": ["+0.1s"]
+                "attrValue": [
+                  "+0.1s"
+                ]
               }
             ]
           },
@@ -321,9 +356,11 @@
             "flavor": "Resembles the sunken castle Windsor.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Shield",
-                "attrValue": ["+12.5%","+25%"]
+                "attrValue": [
+                  "+12.5%",
+                  "+25%"
+                ]
               }
             ]
           },
@@ -334,9 +371,10 @@
             "flavor": "Comes with denim cut-off shorts.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["x2"]
+                "attrValue": [
+                  "x2"
+                ]
               }
             ]
           }
@@ -355,14 +393,20 @@
             "flavor": "Insert pill into rear end of digestive tract.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Health",
-                "attrValue": ["+25","+50","+75"]
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
               },
               {
-                
                 "attrName": "Max Summon Health",
-                "attrValue": ["+5","+10","+15"]
+                "attrValue": [
+                  "+5",
+                  "+10",
+                  "+15"
+                ]
               }
             ]
           },
@@ -373,9 +417,11 @@
             "flavor": "Hello... anyone there? Please get me out of here!!!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Health Per Min",
-                "attrValue": ["+100","+200"]
+                "attrValue": [
+                  "+100",
+                  "+200"
+                ]
               }
             ]
           },
@@ -386,9 +432,10 @@
             "flavor": "Fashionable and Fast.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Movement",
-                "attrValue": ["+1.6"]
+                "attrValue": [
+                  "+1.6"
+                ]
               }
             ]
           },
@@ -399,9 +446,10 @@
             "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
             "levelUpgrade": [
               {
-                
                 "attrName": "Solar Per Min",
-                "attrValue": ["+17"]
+                "attrValue": [
+                  "+17"
+                ]
               }
             ]
           },
@@ -412,9 +460,10 @@
             "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
             "levelUpgrade": [
               {
-                
                 "attrName": "Solar",
-                "attrValue": ["+115"]
+                "attrValue": [
+                  "+115"
+                ]
               }
             ]
           },
@@ -425,9 +474,11 @@
             "flavor": "LOOK!!! A FLYING ELEPHANT!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Debuffs",
-                "attrValue": ["-25%","-50%"]
+                "attrValue": [
+                  "-25%",
+                  "-50%"
+                ]
               }
             ]
           }
@@ -513,9 +564,11 @@
             "flavor": "Nuclear steamed to remove any alien bits and blood.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Cooldown",
-                "attrValue": ["-1","-2"]
+                "attrValue": [
+                  "-1",
+                  "-2"
+                ]
               }
             ]
           },
@@ -526,9 +579,12 @@
             "flavor": "Game rules: 1.) Form a circle with your cellmates 2.) Spin the toothbrush in the middle 3.) Whoever the toothbrush points at, stab that person! Have fun!.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["20%","40%","60%"]
+                "attrValue": [
+                  "20%",
+                  "40%",
+                  "60%"
+                ]
               }
             ]
           },
@@ -539,9 +595,11 @@
             "flavor": "For those depressing dark moments when you need a family smile.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Health Stages",
-                "attrValue": ["10%","20%"]
+                "attrValue": [
+                  "10%",
+                  "20%"
+                ]
               }
             ]
           },
@@ -552,9 +610,11 @@
             "flavor": "Good against braineaters.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Slowing Power",
-                "attrValue": ["15%","+30%"]
+                "attrValue": [
+                  "15%",
+                  "+30%"
+                ]
               }
             ]
           },
@@ -565,14 +625,18 @@
             "flavor": "Today's deal 50% off! (best before August 3251)",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage Over Time",
-                "attrValue": ["+15","+30"]
+                "attrValue": [
+                  "+15",
+                  "+30"
+                ]
               },
               {
-                
                 "attrName": "Damage Duration",
-                "attrValue": ["4s","4s"]
+                "attrValue": [
+                  "4s",
+                  "4s"
+                ]
               }
             ]
           },
@@ -583,9 +647,10 @@
             "flavor": "ATTENTION! When bought, the vending machine will warn the authorities that you might be planning an escape!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Range",
-                "attrValue": ["+4"]
+                "attrValue": [
+                  "+4"
+                ]
               }
             ]
           }
@@ -625,14 +690,18 @@
             "flavor": "\"Don't look.. or it takes you!\"",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["+2","+4"]
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
               },
               {
-                
                 "attrName": "Damage Self",
-                "attrValue": ["+1.7Hp/s","+3.4Hp/s"]
+                "attrValue": [
+                  "+1.7Hp/s",
+                  "+3.4Hp/s"
+                ]
               }
             ]
           },
@@ -643,9 +712,11 @@
             "flavor": "So cute! You want to kill him!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Shield",
-                "attrValue": ["+12.5%","+25%"]
+                "attrValue": [
+                  "+12.5%",
+                  "+25%"
+                ]
               }
             ]
           },
@@ -656,9 +727,10 @@
             "flavor": "Increase you skills, up to lightspeed.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Size",
-                "attrValue": ["+1"]
+                "attrValue": [
+                  "+1"
+                ]
               }
             ]
           },
@@ -669,9 +741,10 @@
             "flavor": "Here's Danny!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Movement",
-                "attrValue": ["+1.6"]
+                "attrValue": [
+                  "+1.6"
+                ]
               }
             ]
           },
@@ -682,19 +755,22 @@
             "flavor": "Bounce right back into action!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Movement of Friendlies",
-                "attrValue": ["+1.6"]
+                "attrValue": [
+                  "+1.6"
+                ]
               },
               {
-                
                 "attrName": "Duration",
-                "attrValue": ["5s"]
+                "attrValue": [
+                  "5s"
+                ]
               },
               {
-                
                 "attrName": "Life time",
-                "attrValue": ["+4s"]
+                "attrValue": [
+                  "+4s"
+                ]
               }
             ]
           },
@@ -705,14 +781,16 @@
             "flavor": "New flavors: Nitroglycerine and gasoline!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Attack Speed",
-                "attrValue": ["+25%"]
+                "attrValue": [
+                  "+25%"
+                ]
               },
               {
-                
                 "attrName": "Damage Self",
-                "attrValue": ["+50%"]
+                "attrValue": [
+                  "+50%"
+                ]
               }
             ]
           }
@@ -744,9 +822,11 @@
             "flavor": "Opens many locks as well as canned food.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Attack Speed",
-                "attrValue": ["+20%","+40%"]
+                "attrValue": [
+                  "+20%",
+                  "+40%"
+                ]
               }
             ]
           },
@@ -757,9 +837,10 @@
             "flavor": "Zurians are a tough species, their hunger for metals makes them perfect for junkyard work.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Lifesteal",
-                "attrValue": ["+30%"]
+                "attrValue": [
+                  "+30%"
+                ]
               }
             ]
           },
@@ -770,9 +851,11 @@
             "flavor": "Let things escalate quickly!",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["+2","+4"]
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
               }
             ]
           },
@@ -784,11 +867,17 @@
             "levelUpgrade": [
               {
                 "attrName": "Extra Health",
-                "attrValue": ["+15","+15"]
+                "attrValue": [
+                  "+15",
+                  "+15"
+                ]
               },
               {
                 "attrName": "Maximum",
-                "attrValue": ["+15","+30"]
+                "attrValue": [
+                  "+15",
+                  "+30"
+                ]
               }
             ]
           },
@@ -799,9 +888,11 @@
             "flavor": "Crème brûlée anyone?",
             "levelUpgrade": [
               {
-                
                 "attrName": "Damage",
-                "attrValue": ["+3","+6"]
+                "attrValue": [
+                  "+3",
+                  "+6"
+                ]
               }
             ]
           },
@@ -813,7 +904,9 @@
             "levelUpgrade": [
               {
                 "attrName": "Extra Health",
-                "attrValue": ["+20"]
+                "attrValue": [
+                  "+20"
+                ]
               }
             ]
           }
@@ -832,9 +925,12 @@
             "flavor": "Insert pill into rear end of digestive tract.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Health",
-                "attrValue": ["+18","+36","+54"]
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
               }
             ]
           },
@@ -846,7 +942,10 @@
             "levelUpgrade": [
               {
                 "attrName": "Health Per Min",
-                "attrValue": [100,200]
+                "attrValue": [
+                  100,
+                  200
+                ]
               }
             ]
           },
@@ -857,9 +956,10 @@
             "flavor": "Fashionable and Fast.",
             "levelUpgrade": [
               {
-                
                 "attrName": "Movement",
-                "attrValue": [1.6]
+                "attrValue": [
+                  1.6
+                ]
               }
             ]
           },
@@ -870,9 +970,10 @@
             "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
             "levelUpgrade": [
               {
-                
                 "attrName": "Solar Per Min",
-                "attrValue": [17]
+                "attrValue": [
+                  17
+                ]
               }
             ]
           },
@@ -883,9 +984,10 @@
             "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
             "levelUpgrade": [
               {
-                
                 "attrName": "Solar",
-                "attrValue": [115]
+                "attrValue": [
+                  115
+                ]
               }
             ]
           },
@@ -897,7 +999,10 @@
             "levelUpgrade": [
               {
                 "attrName": "Debuffs",
-                "attrValue": ["25","50"]
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
               }
             ]
           }
@@ -933,458 +1038,1564 @@
     "extra": ""
   },
   {
-      "name": "Clunk",
-      "backstory": "Clunk is a robot suffering from anger management issues. He's saving up money to pay for therapy but keeps losing it due to damage compensations. Originally created as part of a robot army to combat an immensely powerful super villain terrorizing the outer star systems, Clunk found himself without a job when the villain accidentally died of a nasty bacterial infection before the robot army was completed.\nThis was actually a blessing in disguise for Clunk, since he was never designed to return in one piece from his mission. He was refitted to do standard house-keeping work, but soon found himself out of work once more as he kept blowing aggression inhibitors and subsequently went into immensely destrucive tantrums.\nEventually, Clunk signed up as a mercenary to do what he is best at: wrecking things. He found that finally giving in to his aggressive nature has given him great inner peace. Nowadays he takes great pleasure in jetting around the battlefield, blowing up in peoples' faces to the sound of heavy metal.",
-      "stats": {
-        "health": 205,
-        "healthBonus": 30,
-        "moveSpeed": 7.2,
-        "attackType": "MEDIUM_RANGE",
-        "role": [
-          "Tank",
-          "Crowd_Control",
-          "Nuker"
+    "name": "Clunk",
+    "backstory": "Clunk is a robot suffering from anger management issues. He's saving up money to pay for therapy but keeps losing it due to damage compensations. Originally created as part of a robot army to combat an immensely powerful super villain terrorizing the outer star systems, Clunk found himself without a job when the villain accidentally died of a nasty bacterial infection before the robot army was completed.\nThis was actually a blessing in disguise for Clunk, since he was never designed to return in one piece from his mission. He was refitted to do standard house-keeping work, but soon found himself out of work once more as he kept blowing aggression inhibitors and subsequently went into immensely destrucive tantrums.\nEventually, Clunk signed up as a mercenary to do what he is best at: wrecking things. He found that finally giving in to his aggressive nature has given him great inner peace. Nowadays he takes great pleasure in jetting around the battlefield, blowing up in peoples' faces to the sound of heavy metal.",
+    "stats": {
+      "health": 205,
+      "healthBonus": 30,
+      "moveSpeed": 7.2,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Tank",
+        "Crowd_Control",
+        "Nuker"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Vacuum Bite",
+        "description": "Enables a lifestealing bite.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 30
+          },
+          {
+            "name": "Cooldown",
+            "value": "5s"
+          },
+          {
+            "name": "lifesteal",
+            "value": "100%"
+          },
+          {
+            "name": "Range",
+            "value": 4.2
+          }
         ],
-        "mobility": "Tactical"
+        "upgrades": [
+          {
+            "name": "Quick'n Cleaner",
+            "description": "Increases lifesteal and damage of vacuum bite.",
+            "value": 155,
+            "flavor": "Got your fine shirt covered in hitpoints? Try Quick 'n Cleaner!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+6",
+                  "+12"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Medical Pump",
+            "description": "Adds health to your maximum health for every successful bite. This health is removed upon death.",
+            "value": 230,
+            "flavor": "Clean up with surgical precision.",
+            "levelUpgrade": [
+              {
+                "attrName": "Extra Health",
+                "attrValue": [
+                  "+15",
+                  "+15"
+                ]
+              },
+              {
+                "attrName": "Maximum",
+                "attrValue": [
+                  "+45",
+                  "+90"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Multi Hose",
+            "description": "Your bite will affect additional nearby enemies.",
+            "value": 230,
+            "flavor": "For robo-maid model 34-Y or models with same amount of arms.",
+            "levelUpgrade": [
+              {
+                "attrName": "Target",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Screamer Engine",
+            "description": "Vacuum bite will ensnare enemies.",
+            "value": 190,
+            "flavor": "WHAT ARE YOU SAYING!?! I CAN'T HEAR YOU!",
+            "levelUpgrade": [
+              {
+                "attrName": "Snare Duration",
+                "attrValue": [
+                  "+0.6s",
+                  "+1.2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Power Converter",
+            "description": "Get an adittional heal over time whenever you bite an enemy.",
+            "value": 150,
+            "flavor": "Makes cleaning up a walk in the park.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal Over Time",
+                "attrValue": [
+                  "+15",
+                  "+30"
+                ]
+              },
+              {
+                "attrName": "Heal Duration",
+                "attrValue": [
+                  "10s",
+                  "10s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Suckanator Power 9000 Cleaner",
+            "description": "Increases lifesteal and damage of vacuum bite.",
+            "value": 250,
+            "flavor": "Free coupon inside for a Nurian ants facial.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+12"
+                ]
+              }
+            ]
+          }
+        ]
       },
-      "skills": [
-        {
-          "name": "Vacuum Bite",
-          "description": "Enables a lifestealing bite.",
-          "value": 135,
-          "attributes": [
-            {
-              "name": "Damage",
-              "value": 30
-            },
-            {
-              "name": "Cooldown",
-              "value": "5s"
-            },
-            {
-              "name":"lifesteal",
-              "value": "100%"
+      {
+        "name": "Explode",
+        "description": "Enables a self-damaging explosion, dealing damage to yourself and enemies around you.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 50
+          },
+          {
+            "name": "Self Damage",
+            "value": 30
+          },
+          {
+            "name": "Cooldown",
+            "value": "13.5s"
+          },
+          {
+            "name": "Explosive Size",
+            "value": 9
+          },
+          {
+            "name": "Charge Time",
+            "value": "1.5s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Thermonuclear Cleaner",
+            "description": "Increases damage of explode.",
+            "value": 240,
+            "flavor": "Clean any room in one big swipe!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+25",
+                  "+50"
+                ]
               },
-            {
-              "name": "Range",
-              "value": 4.2
-            }
-          ],
-          "upgrades": [
-            {
-              "name": "Quick'n Cleaner",
-              "description": "Increases lifesteal and damage of vacuum bite.",
-              "value": 155,
-              "flavor": "Got your fine shirt covered in hitpoints? Try Quick 'n Cleaner!",
-              "levelUpgrade": [
-                {
-                  "attrName": "Damage",
-                  "attrValue": ["+6","+12"]
-                }
-              ]
-            },
-            {
-              "name": "Medical Pump",
-              "description": "Adds health to your maximum health for every successful bite. This health is removed upon death.",
-              "value": 230,
-              "flavor": "Clean up with surgical precision.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Extra Health",
-                  "attrValue": ["+15","+15"]
-                },
-                {
-                  "attrName": "Maximum",
-                  "attrValue": ["+45","+90"]
-                }
-              ]
-            },
-            {
-              "name": "Multi Hose",
-              "description": "Your bite will affect additional nearby enemies.",
-              "value": 230,
-              "flavor": "For robo-maid model 34-Y or models with same amount of arms.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Target",
-                  "attrValue": ["+1"]
-                }
-              ]
-            },
-            {
-              "name": "Screamer Engine",
-              "description": "Vacuum bite will ensnare enemies.",
-              "value": 190,
-              "flavor": "WHAT ARE YOU SAYING!?! I CAN'T HEAR YOU!",
-              "levelUpgrade": [
-                {
-                  "attrName": "Snare Duration",
-                  "attrValue": ["+0.6s","+1.2s"]
-                }
-              ]
-            },
-            {
-              "name": "Power Converter",
-              "description": "Get an adittional heal over time whenever you bite an enemy.",
-              "value": 150,
-              "flavor": "Makes cleaning up a walk in the park.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Heal Over Time",
-                  "attrValue": ["+15","+30"]
-                },
-                {
-
-                  "attrName": "Heal Duration",
-                  "attrValue": ["10s","10s"]
-                }
-              ]
-            },
-            {
-              "name": "The Suckanator Power 9000 Cleaner",
-              "description": "Increases lifesteal and damage of vacuum bite.",
-              "value": 250,
-              "flavor": "Free coupon inside for a Nurian ants facial.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Damage",
-                  "attrValue": ["+12"]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Explode",
-          "description": "Enables a self-damaging explosion, dealing damage to yourself and enemies around you.",
-          "value": 135,
-          "attributes": [
-            {
-              "name": "Damage",
-              "value": 50
-            },
-            {
-            	"name" : "Self Damage",
-            	"value" : 30
-            },
-            {
-              "name": "Cooldown",
-              "value": "13.5s"
-            },
-            {
-              "name":"Explosive Size",
-              "value": 9
+              {
+                "attrName": "Damage Self",
+                "attrValue": [
+                  "+10",
+                  "+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Titanium Hard Hat",
+            "description": "Reduce the damage you inflict upon yourself when using explode.",
+            "value": 145,
+            "flavor": "Approved Calias mining equipment. Safety first.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Self",
+                "attrValue": [
+                  "-15",
+                  "-30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Grease Lightning Snail",
+            "description": "Slows enemies near you while charging explode.",
+            "value": 165,
+            "flavor": "WARNING: Do not eat!",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+20%",
+                  "+40%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blueprints container",
+            "description": "Reduces incoming damage while exploding.",
+            "value": 200,
+            "flavor": "Where does this part go?",
+            "levelUpgrade": [
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+40%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reactor Cooler",
+            "description": "Reduces cooldown time on explode.",
+            "value": 200,
+            "flavor": "Explosions, so hot right now.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Universal Charger",
+            "description": "Reduces the charging time of explode.",
+            "value": 170,
+            "flavor": "When you look closely at the jar, you will see thousands of little stars and planets.",
+            "levelUpgrade": [
+              {
+                "attrName": "Charge Time",
+                "attrValue": [
+                  "-0.5s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Missiles",
+        "description": "Shoot valleys of missiles at your opponents.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": "14 | 18 | 22 | 26"
+          },
+          {
+            "name": "Attack Speed",
+            "value": 60
+          },
+          {
+            "name": "Range",
+            "value": "9.4s"
+          },
+          {
+            "name": "Homing",
+            "value": 0
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Fragmenting Shells",
+            "description": "Makes missiles do damage in an area.",
+            "value": 150,
+            "flavor": "Anti bugs, rodents and trucks.",
+            "levelUpgrade": [
+              {
+                "attrName": "Explosive Size",
+                "attrValue": [
+                  "+3.4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Free Flight Fins",
+            "description": "Reduces cooldown on missile shot and increases missile speed.",
+            "value": 130,
+            "flavor": "Faster deploying, faster destroying.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+12.5%",
+                  "+25%"
+                ]
               },
-            {
-              "name": "Charge Time",
-              "value": "1.5s"
-            }
-          ],
-          "upgrades": [
-            {
-              "name": "Thermonuclear Cleaner",
-              "description": "Increases damage of explode.",
-              "value": 240,
-              "flavor": "Clean any room in one big swipe!",
-              "levelUpgrade": [
-                {
-                  "attrName": "Damage",
-                  "attrValue": ["+25","+50"]
-                },
-                {
-                  "attrName": "Damage Self",
-                  "attrValue": ["+10","+20"]
-                }
-              ]
-            },
-            {
-              "name": "Titanium Hard Hat",
-              "description": "Reduce the damage you inflict upon yourself when using explode.",
-              "value": 145,
-              "flavor": "Approved Calias mining equipment. Safety first.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Damage Self",
-                  "attrValue": ["-15","-30"]
-                }
-              ]
-            },
-            {
-              "name": "Grease Lightning Snail",
-              "description": "Slows enemies near you while charging explode.",
-              "value": 165,
-              "flavor": "WARNING: Do not eat!",
-              "levelUpgrade": [
-                {
-                  "attrName": "Slowing Power",
-                  "attrValue": ["+20%","+40%"]
-                }
-              ]
-            },
-            {
-              "name": "Blueprints container",
-              "description": "Reduces incoming damage while exploding.",
-              "value": 200,
-              "flavor": "Where does this part go?",
-              "levelUpgrade": [
-                {
-                  "attrName": "Shield",
-                  "attrValue": ["+40%"]
-                }
-              ]
-            },
-            {
-              "name": "Reactor Cooler",
-              "description": "Reduces cooldown time on explode.",
-              "value": 200,
-              "flavor": "Explosions, so hot right now.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Cooldown",
-                  "attrValue": ["-5s"]
-                }
-              ]
-            },
-            {
-              "name": "Universal Charger",
-              "description": "Reduces the charging time of explode.",
-              "value": 170,
-              "flavor": "When you look closely at the jar, you will see thousands of little stars and planets.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Charge Time",
-                  "attrValue": ["-0.5s"]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Missiles",
-          "description": "Shoot valleys of missiles at your opponents.",
-          "value": 0,
-          "attributes": [
-            {
-              "name": "Damage",
-              "value": "14 | 18 | 22 | 26"
-            },
-            {
-            	"name" : "Attack Speed",
-            	"value" : 60
-            },
-            {
-              "name": "Range",
-              "value": "9.4s"
-            },
-            {
-              "name":"Homing",
-              "value": 0
-            }
-          ],
-          "upgrades": [
-            {
-              "name": "Fragmenting Shells",
-              "description": "Makes missiles do damage in an area.",
-              "value": 150,
-              "flavor": "Anti bugs, rodents and trucks.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Explosive Size",
-                  "attrValue": ["+3.4"]
-                }
-              ]
-            },
-            {
-              "name": "Free Flight Fins",
-              "description": "Reduces cooldown on missile shot and increases missile speed.",
-              "value": 130,
-              "flavor": "Faster deploying, faster destroying.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Attack Speed",
-                  "attrValue": ["+12.5%","+25%"]
-                },
-                {
-                	"attrName": "Speed",
-                  "attrValue": ["+2","+4"]
-                }
-              ]
-            },
-            {
-              "name": "Missile Barrage",
-              "description": "Adds a more powerful missile to your launch string.",
-              "value": 160,
-              "flavor": "Keep away from children and trigger happy Kremzons.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Missile 2",
-                  "attrValue": ["+1","+1"]
-                },
-                {
-                  "attrName": "Missile 3",
-                  "attrValue": ["0","+1"]
-                }
-              ]
-            },
-            {
-              "name": "The Juggernaut \"Fat Pete\"",
-              "description": "Adds a giant missile to your launch string.",
-              "value": 160,
-              "flavor": "Property of Earth's Liberation Front. Made in 2991",
-              "levelUpgrade": [
-                {
-                  "attrName": "Missile 4",
-                  "attrValue": ["+1"]
-                }
-              ]
-            },
-            {
-              "name": "Improved Homing Sensor",
-              "description": "Makes your missiles better at following enemies.",
-              "value": 110,
-              "flavor": "Pow! Right in the kisser.",
-              "levelUpgrade": [
-                {
-                  "attrName": "Homing",
-                  "attrValue": ["+380"]
-                }
-              ]
-            },
-            {
-              "name": "Salvo Value Pack",
-              "description": "Adds a full missile barrage and juggernaut to your launch string.",
-              "value": 400,
-              "flavor": "WARNING!: Do not aim at eye(s) or face(s).",
-              "levelUpgrade": [
-                {
-                  "attrName": "Missile 2",
-                  "attrValue": ["+1"]
-                },
-                {
-                  "attrName": "Missile 3",
-                  "attrValue": ["+1"]
-                },
-                {
-                  "attrName": "Missile 4",
-                  "attrValue": ["+1"]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Jet Boost",
-          "description": "Clunk has a temporary jet boost.",
-          "value": 0,
-          "attributes": [],
-          "upgrades": [
-            {
-              "name": "Power Pills Turbo",
-              "description": "ncreases maximum health.",
-              "value": 130,
-              "flavor": "Insert pill into rear end of digestive tract.",
-              "levelUpgrade": [
-                {
-
-                  "attrName": "Health",
-                  "attrValue": ["+25","+50","+75"]
-                }
-              ]
-            },
-            {
-              "name": "Med-i'-can",
-              "description": "Automatically regenerate health.",
-              "value": 120,
-              "flavor": "Hello... anyone there? Please get me out of here!!!",
-              "levelUpgrade": [
-                {
-                  "attrName": "Health Per Min",
-                  "attrValue": [100,200]
-                }
-              ]
-            },
-            {
-              "name": "Space Air Max",
-              "description": "Increases movement speed.",
-              "value": 135,
-              "flavor": "Fashionable and Fast.",
-              "levelUpgrade": [
-                {
-
-                  "attrName": "Movement",
-                  "attrValue": [1.6]
-                }
-              ]
-            },
-            {
-              "name": "Solar Tree",
-              "description": "Gain additional Solar over time.",
-              "value": 50,
-              "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
-              "levelUpgrade": [
-                {
-
-                  "attrName": "Solar Per Min",
-                  "attrValue": [17]
-                }
-              ]
-            },
-            {
-              "name": "Piggy Bank",
-              "description": "Gives 115 Solar.",
-              "value": 0,
-              "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
-              "levelUpgrade": [
-                {
-
-                  "attrName": "Solar",
-                  "attrValue": [115]
-                }
-              ]
-            },
-            {
-              "name": "Baby Kuri Mammoth",
-              "description": "Reduces the effect of all debuffs",
-              "value": 110,
-              "flavor": "LOOK!!! A FLYING ELEPHANT!",
-              "levelUpgrade": [
-                {
-                  "attrName": "Debuffs",
-                  "attrValue": ["25","50"]
-                }
-              ]
-            }
-          ]
-        }
+              {
+                "attrName": "Speed",
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Missile Barrage",
+            "description": "Adds a more powerful missile to your launch string.",
+            "value": 160,
+            "flavor": "Keep away from children and trigger happy Kremzons.",
+            "levelUpgrade": [
+              {
+                "attrName": "Missile 2",
+                "attrValue": [
+                  "+1",
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Missile 3",
+                "attrValue": [
+                  "0",
+                  "+1"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Juggernaut \"Fat Pete\"",
+            "description": "Adds a giant missile to your launch string.",
+            "value": 160,
+            "flavor": "Property of Earth's Liberation Front. Made in 2991",
+            "levelUpgrade": [
+              {
+                "attrName": "Missile 4",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Improved Homing Sensor",
+            "description": "Makes your missiles better at following enemies.",
+            "value": 110,
+            "flavor": "Pow! Right in the kisser.",
+            "levelUpgrade": [
+              {
+                "attrName": "Homing",
+                "attrValue": [
+                  "+380"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Salvo Value Pack",
+            "description": "Adds a full missile barrage and juggernaut to your launch string.",
+            "value": 400,
+            "flavor": "WARNING!: Do not aim at eye(s) or face(s).",
+            "levelUpgrade": [
+              {
+                "attrName": "Missile 2",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Missile 3",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Missile 4",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jet Boost",
+        "description": "Clunk has a temporary jet boost.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "ncreases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Tapping the jump button instead of holding it down allows Clunk to remain in air longer as well as reach places that would otherwise be too high.",
+      "When playing as Clunk, you will most likely want boots to improve his slow movement speed.",
+      "Using Vacuum Bite on a neutral creep will not only give you the normal lifesteal, but the healthpack it drops as well for a more powerful heal.",
+      "When using Medical Pump, it might be a good idea to play more passively and focus on biting targets until you reach its health cap.",
+      "When using Multi Hose, try to save Vacuum Bite for two targets as often as possible, as you will get twice as much lifesteal. Just remember it doesn't affect the same target twice.",
+      "Pairing Multi Hose with Screamer Engine can grant Clunk powerful crowd control during a teamfight.",
+      "It is possible to kill yourself with Explode! Think twice before activating it.",
+      "Biting two targets at once with Multi Hose will not cause two healing over time effects from Power Converter to take place, however, biting two targets with two separate bites will.",
+      "A popular tactic among Clunk players involves charging up Explode and dropping from a high place on top of unsuspecting enemies, giving them less time to escape the blast radius.",
+      "Both Screamer Engine and Grease Lightning Snail are effective ways of keeping enemies in range of Clunk's Explode.",
+      "Remember: Thermonuclear Cleaner increases damage dealt to enemies and to yourself! Consider pairing it with Titanium Hard Hat.",
+      "Explode can be used to save an ally from danger. Simply activate it and block their pursuers' path. Most of them will give up chase or take severe damage, maybe even allowing you to finish them off. It can also be used to discourage enemies that would otherwise attack you if you feel you can't take them down.",
+      "With Fragmenting Shells, Clunk is able to damage the Solar Drill from above. He is also able to hit the top turrets in Ribbit IV from underneath.",
+      "When using either Missile Barrage, The Juggernaut \"Fat Pete\" or Salvo Value Pack, it is possible to keep track of your launch string. That way, you can store a more powerful missile just before a teamfight. These upgrades also stack, meaning Clunk can fire two missiles at once."
+    ],
+    "tipsPlayingAgainst": [
+      "The absolutely best moment to attack an enemy Clunk is when both Explode and Vacuum Bite are on cooldown, especially if he misses the bite trying to get extra health.",
+      "Aside from missiles, Clunk's abilities have relatively short range. Try to keep him a safe distance from you.",
+      "Use the score screen to see if Clunk has dangerous upgrades such as Screamer Engine, Grease Lightning Snail or Thermonuclear Cleaner. This information might help you when approaching him if you have to.",
+      "Being a very slow and big awesomenaut, Clunk is naturally vulnerable to poking. Try to attack him from a safe distance, specially when he approaches Droids for a healing bite. That way he can end up taking more damage than he can heal and may be forced to retreat.",
+      "Being a lifesteal, bite does not remove damage over time effects.",
+      "Cocoon interrupts Clunk's Explode and puts it on full cooldown.",
+      "Jump around Clunk and if he uses his Explode, use any crowd control or escape ability.",
+      "If Clunks flies up out of your view, beware! He may be trying to divebomb you!"
+    ],
+    "unlockedAtLevel": 3,
+    "releaseDate": "01/05/2012",
+    "extra": ""
+  },
+  {
+    "name": "Coco Nebulon",
+    "backstory": "Hailing from a psyonic race near the outer brim of the galaxy, comes Coco Nebulon, the cosmic waveblazer. Coco rides her combat waveboard into battle, using her psyonic powers to subdue her adversaries. Why Coco fights in the war is a bit unclear, as no-one can really understand her when she talks.\nExcerpt from her spacelog: \"It's just like, dude, I was cruisin' the galaxy, you know, in this totally tubular, space-van, searching for the best cosmic waves man. And, you know, like, when I was, like, you know, like acing these waves once, there was like this giant robot corporation that wanted to make like these waves like into a giant galactic like battlefield you know? And I was all like, oh man, that's so un-gnarly dude. But those robots were all like 10100111001 or whatever. So I was all like, yeah but ok, you know? And then these robots were all like, ohh we have to fight each other. And they were like shooting lasers at eachother man. And I was like, man, I gotta fight, you know, like totally with these robots against the other robots because it's like, you know, whatever.\"",
+    "stats": {
+      "health": 140,
+      "healthBonus": 30,
+      "moveSpeed": 9,
+      "attackType": "MELEE",
+      "role": [
+        "Fighter",
+        "Area_Control",
+        "Harasser"
       ],
-      "tipsPlayingAs": [
-        "Tapping the jump button instead of holding it down allows Clunk to remain in air longer as well as reach places that would otherwise be too high.",
-        "When playing as Clunk, you will most likely want boots to improve his slow movement speed.",
-        "Using Vacuum Bite on a neutral creep will not only give you the normal lifesteal, but the healthpack it drops as well for a more powerful heal.",
-        "When using Medical Pump, it might be a good idea to play more passively and focus on biting targets until you reach its health cap.",
-        "When using Multi Hose, try to save Vacuum Bite for two targets as often as possible, as you will get twice as much lifesteal. Just remember it doesn't affect the same target twice.",
-        "Pairing Multi Hose with Screamer Engine can grant Clunk powerful crowd control during a teamfight.",
-        "It is possible to kill yourself with Explode! Think twice before activating it.",
-        "Biting two targets at once with Multi Hose will not cause two healing over time effects from Power Converter to take place, however, biting two targets with two separate bites will.",
-        "A popular tactic among Clunk players involves charging up Explode and dropping from a high place on top of unsuspecting enemies, giving them less time to escape the blast radius.",
-        "Both Screamer Engine and Grease Lightning Snail are effective ways of keeping enemies in range of Clunk's Explode.",
-        "Remember: Thermonuclear Cleaner increases damage dealt to enemies and to yourself! Consider pairing it with Titanium Hard Hat.",
-        "Explode can be used to save an ally from danger. Simply activate it and block their pursuers' path. Most of them will give up chase or take severe damage, maybe even allowing you to finish them off. It can also be used to discourage enemies that would otherwise attack you if you feel you can't take them down.",
-        "With Fragmenting Shells, Clunk is able to damage the Solar Drill from above. He is also able to hit the top turrets in Ribbit IV from underneath.",
-        "When using either Missile Barrage, The Juggernaut \"Fat Pete\" or Salvo Value Pack, it is possible to keep track of your launch string. That way, you can store a more powerful missile just before a teamfight. These upgrades also stack, meaning Clunk can fire two missiles at once."
+      "mobility": "Swift"
+    },
+    "skills": [
+      {
+        "name": "Ball Lightning",
+        "description": "Enables a ball lightning. Detonate it at any time with a second press.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 40
+          },
+          {
+            "name": "Cooldown",
+            "value": "7s"
+          },
+          {
+            "name": "Range",
+            "value": 8
+          },
+          {
+            "name": "Knockback",
+            "value": 1.5
+          },
+          {
+            "name": "Speed",
+            "value": 9.6
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Voltage Amplifier",
+            "description": "Increases the damage of ball lightning.",
+            "value": 170,
+            "flavor": "Like being hit by Thor himself.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+9",
+                  "+18",
+                  "+27"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gyroscopic Dynamo",
+            "description": "Reduces cooldown time on ball lightning.",
+            "value": 160,
+            "flavor": "Turns you on!",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Thunder Striker",
+            "description": "Increases the knockback effect of ball lightning.",
+            "value": 140,
+            "flavor": "You've been... thunderstruck!",
+            "levelUpgrade": [
+              {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Stun",
+                "attrValue": [
+                  "0.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Conducting Gel",
+            "description": "Increases the range of ball lightning.",
+            "value": 165,
+            "flavor": "Greased lightning!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+5"
+                ]
+              },
+              {
+                "attrName": "Speed",
+                "attrValue": [
+                  "+1.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flashing Lights",
+            "description": "Adds a blinding effect to ball lightning.",
+            "value": 160,
+            "flavor": "Also works great with picture recording devices.",
+            "levelUpgrade": [
+              {
+                "attrName": "Blind Duration",
+                "attrValue": [
+                  "+3s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavenly Fire",
+            "description": "Adds a blaze effect to ball lightning.",
+            "value": 205,
+            "flavor": "A storm is coming.",
+            "levelUpgrade": [
+              {
+                "attrName": "Blaze",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blaze",
+        "description": "Enables your hoverboard to leave a trail of slowing electricity.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage Over Time",
+            "value": 15
+          },
+          {
+            "name": "Damage Duration",
+            "value": "2s"
+          },
+          {
+            "name": "Cooldown",
+            "value": "7s"
+          },
+          {
+            "name": "Length",
+            "value": 8
+          },
+          {
+            "name": "Time",
+            "value": "2s"
+          },
+          {
+            "name": "Slow Power",
+            "value": "20%"
+          },
+          {
+            "name": "Slow Duration",
+            "value": "1s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Silver Coating",
+            "description": "Increases movement speed during blaze.",
+            "value": 145,
+            "flavor": "One coat only, withstands the four elements.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+3",
+                  "+6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chuck's Board",
+            "description": "Increases damage of blaze.",
+            "value": 140,
+            "flavor": "With this, you can surf through land!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+5",
+                  "+10",
+                  "+15",
+                  "+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Disruptor",
+            "description": "Increases slowing effect of blaze.",
+            "value": 120,
+            "flavor": "For smooth surfing on rough seas.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+7%",
+                  "+14%",
+                  "+21%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Time Travel Turbine",
+            "description": "Increases time blaze stays on the floor.",
+            "value": 100,
+            "flavor": "The board is modified to reach a speed of 88.",
+            "levelUpgrade": [
+              {
+                "attrName": "Time",
+                "attrValue": [
+                  "+1s",
+                  "+2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Syphon Disruptor",
+            "description": "Increases slowing effect of blaze.",
+            "value": 300,
+            "flavor": "Far out dude!",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+20%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wave Raiser",
+            "description": "Leave a longer blaze trail.",
+            "value": 145,
+            "flavor": "Turns calm water into a tsunami, wicked!",
+            "levelUpgrade": [
+              {
+                "attrName": "Length",
+                "attrValue": [
+                  "+6"
+                ]
+              },
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "+1.5s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shock",
+        "description": "Channel Coco's psycho-electric powers through her unfortunate enemies.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": "5"
+          },
+          {
+            "name": "Attack Speed",
+            "value": 214.3
+          },
+          {
+            "name": "Range",
+            "value": "3.3"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Static Gloves",
+            "description": "Increases damage of Shock attack.",
+            "value": 185,
+            "flavor": "Yes. Bigger IS better!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flexible Heat Sinks",
+            "description": "Increases the attack speed of Shock attack.",
+            "value": 160,
+            "flavor": "A combination of thermo infatuation and superconductive aerobics should keep the temperature stable.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+20%",
+                  "+40%"
+                ]
+              },
+              {
+                "attrName": "Speed",
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wetsuit ",
+            "description": "Adds a slowing effect to Shock attack.",
+            "value": 175,
+            "flavor": "WARNING: does not protect against actual water.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+25%"
+                ]
+              },
+              {
+                "attrName": "Slowing Duration",
+                "attrValue": [
+                  "+0.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Power Gloves",
+            "description": "Increases damage of Shock attack against structures.",
+            "value": 150,
+            "flavor": "Dominating video play leagues since 2368",
+            "levelUpgrade": [
+              {
+                "attrName": "Structure Damage",
+                "attrValue": [
+                  "+25%",
+                  "+50%",
+                  "+75%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hoover Hands",
+            "description": "Adds a lifesteal effect to Shock attack.",
+            "value": 185,
+            "flavor": "Hard rubbing no longer necessary.",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+25%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Super Conductor",
+            "description": "Adds homing electricity particles to Shock attack.",
+            "value": 170,
+            "flavor": "They'll never know what zapped 'em!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2,+4"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "200",
+                  "400"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ollie",
+        "description": "Hoverboard jump, with a chance to do a front-flip. Tubular!",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Coco can be played as a harasser, focusing on poking enemies with Ball Lightning while using Blaze to keep enemies at bay, or as a fighter, via powerful autoattack upgrades.",
+      "When autoattacking Droids and turrets, keep in mind that Coco does not stop immediatly after moving. You may end up taking unecessary damage if you are not careful.",
+      "As with every 'naut, boots will increase Coco's jump height slightly, allowing her to have an easier time reaching certain platforms.",
+      "With Ball Lightning's natural range and ability to pierce through terrain, you may use it to farm neutral creeps wihout actually going into the jungle areas. This is specially useful on Ribbit IV and Aiguillon.",
+      "If you manage to launch a Ball Lightning behind your enemy, the explosion will launch him towards you. Use this tactic to throw your enemy at turrets or on your team. Thunder Striker helps with this.",
+      "Slowing enemies with Blaze makes it easier to land Ball Lightning on them.",
+      "Disruptor and Syphon Disruptor stack with each other for a very powerful slowing effect.",
+      "Silver Coating gives Coco very high mobility, allowing her to escape or chase targets much more effectively.",
+      "Upon activating Blaze, going through a high-traffic jumppad may cause enemies who are using it to be effected by the blaze, causing them to be hit by it. It can also work as short-term area denial.",
+      "Blaze can be used to create a \"barrier\" to discourage enemy pursuers that may want to engage you or your allies."
+    ],
+    "tipsPlayingAgainst": [
+      "Ball Lightning can pierce through terrain and deal high damage, but it moves slowly. Timing your jumps can help you avoid it.",
+      "Dying is always worse than retreating. Keep an eye on your health bar and see if you can survive another Ball Lightning. If the answer is no, it is better to retreat and heal.",
+      "If Coco uses her Silver Coating to quickly join a fight, she just lost a powerful escape tool. Punish her for it.",
+      "Coco cannot detonate Ball Lightning while stunned, silenced or cocooned."
+    ],
+    "unlockedAtLevel": 9,
+    "releaseDate": "23/07/2012",
+    "extra": ""
+  },
+  {
+    "name": "Derpl Zork",
+    "backstory": "Riding his combat walker onto the battlefield, comes Derpl Zork. The nephew of Blabl Zork, president of Zork industries. Derpl Zork lacks his uncle's business-smarts. In fact he lacks any kind of smarts, managing to get his IQ rated under the level of plankton in the official galaxial IQ test.\n\nNevertheless Derpl is the heir apparent to Blabl's galaxy-spanning business empire. This is something that doesn't sit well with Blabl, not well at all. Dreading the day Derpl would inherit the company and run all the hardfought accomplishments into the ground, Blabl put Derpl in charge of fieldtesting the new Specialized Universal Secretary Interface (S.U.S.I. for short) in one of Zork Industries' combat walkers. Asking Derpl what form of devastation should be issued forth from his vehicle of destruction he simply drooled and said: \"I wuv cats!\"\n\nNow Blabl is anxiously awaiting the day that Derpl would suffer a fatal blow on the fields of battle but as of yet Derpl's combat walker has proven to keep making up for its dimwitted driver.",
+    "stats": {
+      "health": 195,
+      "healthBonus": 30,
+      "moveSpeed": 6.8,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Tank",
+        "Area_Control",
+        "Nuker"
       ],
-      "tipsPlayingAgainst": [
-        "The absolutely best moment to attack an enemy Clunk is when both Explode and Vacuum Bite are on cooldown, especially if he misses the bite trying to get extra health.",
-        "Aside from missiles, Clunk's abilities have relatively short range. Try to keep him a safe distance from you.",
-        "Use the score screen to see if Clunk has dangerous upgrades such as Screamer Engine, Grease Lightning Snail or Thermonuclear Cleaner. This information might help you when approaching him if you have to.",
-        "Being a very slow and big awesomenaut, Clunk is naturally vulnerable to poking. Try to attack him from a safe distance, specially when he approaches Droids for a healing bite. That way he can end up taking more damage than he can heal and may be forced to retreat.",
-        "Being a lifesteal, bite does not remove damage over time effects.",
-        "Cocoon interrupts Clunk's Explode and puts it on full cooldown.",
-        "Jump around Clunk and if he uses his Explode, use any crowd control or escape ability.",
-        "If Clunks flies up out of your view, beware! He may be trying to divebomb you!"
-      ],
-      "unlockedAtLevel": 3,
-      "releaseDate": "01/05/2012",
-      "extra": ""
-    }
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Grid Trap / Nuke",
+        "description": "Enables a static siege mode in which you have two alternative skills: turret fire and nuke. Detonate the nuke at any time with a second press. Siege mode also provides debuff immunity.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Trap Cooldown",
+            "value": "6s"
+          },
+          {
+            "name": "Time",
+            "value": "10s"
+          },
+          {
+            "name": "Snare Duration",
+            "value": "1.5s"
+          },
+          {
+            "name": "Nuke Damage",
+            "value": 50
+          },
+          {
+            "name": "Nuke Cooldown",
+            "value": "14s"
+          },
+          {
+            "name": "Explosion Size",
+            "value": "8"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Empowered Grid",
+            "description": "Increases snare duration of grid trap.",
+            "value": 150,
+            "flavor": "Perfect for catching rare and endangered aliens.",
+            "levelUpgrade": [
+              {
+                "attrName": "Snare Duration",
+                "attrValue": [
+                  "+0.4s",
+                  "+0.8s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Strengthened Trap",
+            "description": "Increases lifetime of grid trap.",
+            "value": 195,
+            "flavor": "Licensed to be used by R.E.T.A staff only.",
+            "levelUpgrade": [
+              {
+                "attrName": "Time",
+                "attrValue": [
+                  "+8s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hydrocollision Lava Lamp",
+            "description": "Increases damage of nuke.",
+            "value": 185,
+            "flavor": "Keeps away mosquitoes, grime flies, and other insects.",
+            "levelUpgrade": [
+              {
+                "attrName": "Nuke Damage",
+                "attrValue": [
+                  "+15",
+                  "+30",
+                  "+45"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Combustion Lava Lamp",
+            "description": "Increases nuke explosion size.",
+            "value": 185,
+            "flavor": "Lights up your campsite. Literally!",
+            "levelUpgrade": [
+              {
+                "attrName": "Explosion Size",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lead Casing",
+            "description": "Adds a silencing effect to grid trap.",
+            "value": 180,
+            "flavor": "Be vewy vewy quiet. I'm hunting wats.",
+            "levelUpgrade": [
+              {
+                "attrName": "Silence",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Super-powered Nuke",
+            "description": "Increases nuke speed.",
+            "value": 165,
+            "flavor": "Essential part of the Kwark cheetah hunting pack.",
+            "levelUpgrade": [
+              {
+                "attrName": "Speed",
+                "attrValue": [
+                  "+50%"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Siege Mode",
+        "description": "When the going gets tough, the tough get tougher! Transform the combat walker into a stationary siege turret of doom, brandishing a free rotating machine gun in the process.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "1.5/4.5s"
+          },
+          {
+            "name": "Turret Damage",
+            "value": 10
+          },
+          {
+            "name": "Turret Attack Speed",
+            "value": 240
+          },
+          {
+            "name": "Turret Range",
+            "value": 7.4
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Sniper Bullets",
+            "description": "Increases range of turretshot.",
+            "value": 110,
+            "flavor": "Take out your prey from a safe distance.",
+            "levelUpgrade": [
+              {
+                "attrName": "Turret Range",
+                "attrValue": [
+                  "+1.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Force Field",
+            "description": "You gain a damage-absorbing shield when transforming into siege mode.",
+            "value": 100,
+            "flavor": "Protect yourself from claws, horns, teeth and missiles.",
+            "levelUpgrade": [
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+7%",
+                  "+14%",
+                  "+21%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solid Fist Missles",
+            "description": "Adds slow-loading missles to your turretshot, which explode.",
+            "value": 225,
+            "flavor": "Modelled after the famous handmodel B. Grimm",
+            "levelUpgrade": [
+              {
+                "attrName": "Missles",
+                "attrValue": [
+                  "4"
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "10"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "25"
+                ]
+              },
+              {
+                "attrName": "Homing",
+                "attrValue": [
+                  "300"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hollow Point Bullets",
+            "description": "Increases damage of turretshot.",
+            "value": 220,
+            "flavor": "WARNING: Will shred your prey, not suitable for trophy hunting.",
+            "levelUpgrade": [
+              {
+                "attrName": "Turret Damage",
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Deployment Pads",
+            "description": "Deal a knockback pulse when transforming out of turret mode.",
+            "value": 160,
+            "flavor": "Get a chance to win a fishing trip to Okeanos.",
+            "levelUpgrade": [
+              {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+1.5"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Brim Force Field",
+            "description": "You gain a damage absorbing shield when transforming into siege mode.",
+            "value": 290,
+            "flavor": "Be the coolest guy at the fishing pond!",
+            "levelUpgrade": [
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+21%"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cat Shot / Gatling",
+        "description": "Mew enenies into oblivion by shooting explosive holocats. Gatling fire in siege mode.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 8
+          },
+          {
+            "name": "Attack Speed",
+            "value": 100
+          },
+          {
+            "name": "Range",
+            "value": 9.8
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Longcat",
+            "description": "Increases the range of cat shot.",
+            "value": 160,
+            "flavor": "Well yeah... he is long, but he is also great with children and likes to play keyboards.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+3",
+                  "+6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kitty Catsuit ",
+            "description": "Increases damage of cat shot.",
+            "value": 140,
+            "flavor": "He is your personal superhero.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2",
+                  "+4",
+                  "+6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "CAT Package ",
+            "description": "Increases fire rate of cat shot.",
+            "value": 150,
+            "flavor": "Please adopt this poor cat family.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+23%",
+                  "+46%",
+                  "+69%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Split Personality Cat",
+            "description": "Splits cats into two smaller cats after impact on enemies.",
+            "value": 235,
+            "flavor": "These cats are best friends. They love books and gardening.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+35%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fat Cat",
+            "description": "Adds an explosive cat to your cat shot.",
+            "value": 185,
+            "flavor": "This breed of cat feels most comfortable in zero gravity and has a great appetite.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+20"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bat Catsuit",
+            "description": "Increases damage of cat shot.",
+            "value": 340,
+            "flavor": "Comes with a fully equipped gadgets belt.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+6"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Booster Rocket",
+        "description": "Derpl's walking desk has a temporary jet boost.",
+         "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "ncreases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Tapping the jump button slowly instead of holding it down allows Derpl to remain airborne for a longer period of time.",
+      "It is possible to drop down glass platforms, even when you are in Siege Mode.",
+      "The Longcat upgrade for Derpl's cats allows Derpl to outrange Turrets with ease.",
+      "Try to use your Grid Traps to block your enemies' paths or place them in areas they may go through, such as jump pad paths and hide areas.",
+      "Placing your Grid Traps high up is also helpful, as enemy 'Nauts such as Raelynn can accidentally jump into them, due to their simple jump.",
+      "Staying near your Grid Traps is usually a good idea: if an enemy is caught on one of them, Siege up and fire a nuke at them while firing your bullets for massive amounts of damage.",
+      "Getting the Empowered Grid upgrade makes this tactic even more effective, allowing you to deal more damage, enough to kill most 'Nauts.",
+      "Combining Super-powered Nuke and Combustion Lava Lamp can make it very hard for your enemies to escape from your Nuke, due to the high speed and large explosion radius of the Nuke.",
+      "Derpl can't be pushed while in Siege Mode.",
+      "You are immune to all forms of Crowd Control while in Siege Mode, except for Cocoon and Slowdowns.",
+      "It is possible to Siege up and charge your Nuke mid-air. This can give your enemies less time to escape the explosion.",
+      "Combining multiple defensive upgrades such as the Shields from Siege Mode or Med-i'-can and Power Pills Turbo can make Derpl extremely hard to kill.",
+      "Deployment Pads are extremely useful for escaping in a pinch while using Siege Mode, especially when fighting multiple enemy 'Nauts at once.",
+      "When facing a Raelynn, avoid entering Siege Mode on solid ground. She may easily trap you with her Timerift. Choose a glass platform instead, so you can drop down and escape her."
+    ],
+    "tipsPlayingAgainst": [
+      "Don't waste your crowd control effects while Derpl is on Siege Mode. He is immune to all forms of crowd control except for Cocoon and Slowdowns.",
+      "Derpl can be very difficult to approach while in Siege Mode. Consider waiting until he fires his Nuke before doing so.",
+      "If you must approach Derpl while he's sieged, try to get your team to help and approach him from different sides, so that his nuke hits less people.",
+      "With the exception of Nuke's manual detonation, Derpl has no way of dealing damage to enemies that are using Reflection or Deflection effects.",
+      "Nuke has a very clear charge-up animation before launch. Run away from Derpl if you see it!"
+    ],
+    "unlockedAtLevel": 15,
+    "releaseDate": "23/07/2012",
+    "extra": ""
+  }
 ]
