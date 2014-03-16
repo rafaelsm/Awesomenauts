@@ -1,5 +1,7 @@
 package br.com.rads.awesomenauts.model;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,6 +14,7 @@ import java.util.List;
  */
 public class Upgrade {
 
+    private static final String TAG = "UPGRADE";
     private String name;
     private String description;
     private int solar;
@@ -62,7 +65,10 @@ public class Upgrade {
     public String getImage() {
 
         StringBuilder imagePath = new StringBuilder("up_");
-        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/","_").replace("'","").replace("-","_").replace("\"",""));
+        imagePath.append(name.toLowerCase()
+                .replace(" ", "_").replace("/","_").replace("'","")
+                .replace("-","_").replace("\"","").replace(".","").replace("!","").replace(":", ""));
+        
         return imagePath.toString();
 
     }

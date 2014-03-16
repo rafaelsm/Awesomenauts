@@ -1,5 +1,7 @@
 package br.com.rads.awesomenauts.model;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,6 +14,7 @@ import java.util.List;
  */
 public class Skill {
 
+    private static final String TAG = "SKILL";
     private String name;
     private String description;
     private int solar;
@@ -62,8 +65,18 @@ public class Skill {
 
     public String getImage() {
 
+        if(name.contains("45")){
+            String testeNome = name;
+            Log.d(TAG, "nome antes: " + testeNome);
+            StringBuilder teste = new StringBuilder("up_");
+            teste.append(testeNome.toLowerCase()
+                    .replace(" ", "_").replace("/", "_").replace("'", "")
+                    .replace("-", "_").replace("\"", "").replace(".", "").replace("!", "").replace(":", ""));
+            Log.d(TAG, "nome depois: "+ teste.toString());
+        }
+
         StringBuilder imagePath = new StringBuilder("sk_");
-        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/","_").replace("\"",""));
+        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/", "_").replace("\"","").replace(".","").replace("!","").replace(":", ""));
 
         return imagePath.toString();
 

@@ -2109,7 +2109,7 @@
     },
     "skills": [
       {
-        "name": "Grid Trap / Nuke",
+        "name": "Grid Trap/Nuke",
         "description": "Enables a static siege mode in which you have two alternative skills: turret fire and nuke. Detonate the nuke at any time with a second press. Siege mode also provides debuff immunity.",
         "value": 135,
         "attributes": [
@@ -2359,7 +2359,7 @@
         ]
       },
       {
-        "name": "Cat Shot / Gatling",
+        "name": "Cat Shot/Gatling",
         "description": "Mew enenies into oblivion by shooting explosive holocats. Gatling fire in siege mode.",
         "value": 0,
         "attributes": [
@@ -2596,6 +2596,482 @@
     ],
     "unlockedAtLevel": 15,
     "releaseDate": "23/07/2012",
+    "extra": ""
+  },
+  {
+    "name": "Froggy G",
+    "backstory": "Straight out of the marsh pond ghettos of planet Ribbit IV comes the amphibious B.I.G., also known as Nate Frogg, but mostly known as Froggy G. Growing up in the baddest part of town, struggle and incarceration surrounded Froggy from an early age. Taking part in his first swim-by shootout as a tadpole, Froggy seemed destined for a life of crime and prison.\n\nAfter a bloody gangwar with the neighbouring Toad-unit posse ended in a 5 year jail sentence, Froggy G vowed to end his gangsta ways. Instead, Froggy G started earning his keep as a beatboxing streetdancer and rapper, hoping to be picked up by a major record label. Unfortunately, his tracks titled \"Pond Pimpin\", \"Froggin' dirty\" and \"Motherfrogger bounce!\" didn't earn him much.\n\nIn order to make some money, and then make some mo', Froggy G became a hired gun. Combining his shoot-out experiences with lethal watery dance-moves and beatboxing techniques, Froggy G now spins and dashes across intergalactic battlefields, droppin foo's left and right with his fishgun, hoping to make some money to take his momma out of the hood.",
+    "stats": {
+      "health": 115,
+      "healthBonus": 30,
+      "moveSpeed": 8,
+      "attackType": "SHORT_RANGE",
+      "role": [
+        "Assassin",
+        "Initiator",
+        "Nuker"
+      ],
+      "mobility": "Swift"
+    },
+    "skills": [
+      {
+        "name": "Splash Dash",
+        "description": "Enables a dash through enemies, which stuns and damages them.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 25
+          },
+          {
+            "name": "Cooldown",
+            "value": "7.5s"
+          },
+          {
+            "name": "Stun Duration",
+            "value": "0.7s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Hydro Splash",
+            "description": "Increases damage of splash dash.",
+            "value": 120,
+            "flavor": "...for those moments when you feel out of the pond.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+5",
+                  "+10",
+                  "+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ice Cubes",
+            "description": "Adds a slowing effect to Splash Dash.",
+            "value": 175,
+            "flavor": "Head cool, game cool.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+15%",
+                  "+30%"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "2s",
+                  "2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Golden Watch",
+            "description": "Reduces cooldown on splash dash.",
+            "value": 110,
+            "flavor": "Manufactured in the Psy Universe. Clock will run backwards in any other universe.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "0.6s",
+                  "1.2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hammer Pants",
+            "description": "Adds a ground pound ability to splash dash. Aim at the ground to execute.",
+            "value": 150,
+            "flavor": "Disclaimer: Pants may or may not contain actual hammer.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+12","+24"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Clock Necklace",
+            "description": "Reduces cooldown on splash dash.",
+            "value": 200,
+            "flavor": "Manufactured in the Psy Universe. Clock will run backwards in any other universe.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "1.2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hydro Smash",
+            "description": "Increases damage of splash dash.",
+            "value": 280,
+            "flavor": "WARNING: Water was used for plutonium cooling. Non-Zurians: DO NOT DRINK!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+15"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tornado Move",
+        "description": "Enables a rapid spinning technique that damages nearby enemies.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 15
+          },
+          {
+            "name": "Attack Speed",
+            "value": 150
+          },
+          {
+            "name": "Cooldown",
+            "value": "11.6s"
+          },
+          {
+            "name": "Duration",
+            "value": "1.6s"
+          },
+          {
+            "name": "Movement",
+            "value": 6
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Boom Box",
+            "description": "Increases damage of tornado.",
+            "value": 220,
+            "flavor": "Antique piece of music apparatus.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+4","+8"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Turbo Tape",
+            "description": "Increase movement speed during tornado.",
+            "value": 140,
+            "flavor": "Who thought ancient hiphop music would be popular amongst frogs?",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+4",
+                  "+8"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Can't Touch This",
+            "description": "You gain a damage absorbing shield during tornado.",
+            "value": 220,
+            "flavor": "Newest hit from MC Green.",
+            "levelUpgrade": [
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+40"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bio Fuel Cells",
+            "description": "Increases the duration of tornado.",
+            "value": 150,
+            "flavor": "WARNING: Close all your noses when opening package. Bovinian seal of quality.",
+            "levelUpgrade": [
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "+0.6s",
+                  "+1.2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Twister Tweeters",
+            "description": "Upon wearing off, the tornado effect will explode and deal damage to all nearby enemies.",
+            "value": 150,
+            "flavor": "Gives that extra boost for those small amphibious earholes.",
+            "levelUpgrade": [
+              {
+                "attrName": "End Damage",
+                "attrValue": [
+                  "+20","+40"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Right Back At Ya!",
+            "description": "Reflects most enemy projectiles during tornado.",
+            "value": 300,
+            "flavor": "From the legendary Mud Deep.",
+            "levelUpgrade": [
+              {
+                "attrName": "Reflect",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bolt .45 Fish-gun",
+        "description": "Bolt .45 fish-gun. Short ranged but deadly.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 6
+          },
+          {
+            "name": "Attack Speed",
+            "value": 133.3
+          },
+          {
+            "name": "Range",
+            "value": 4.8
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Swirling Octopus Cartridges",
+            "description": "Increases range of shots.",
+            "value": 145,
+            "flavor": "Freshly caught from the flying seas on planet Okeanos.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+75%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piranha Cartridges",
+            "description": "Increases damage of shots.",
+            "value": 200,
+            "flavor": "May contain traces of human flesh.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2",
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mutant Worms",
+            "description": "Increases attack speed of shots.",
+            "value": 130,
+            "flavor": "Straight out of the pond (swamp planet Ribbit IV).",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15%",
+                  "+30%",
+                  "+45%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Viridian Eel Cartridges",
+            "description": "Your shots will pierce through enemies, hitting additional enemies in their path.",
+            "value": 140,
+            "flavor": "Handle with care, use rubber gloves or Zurians.",
+            "levelUpgrade": [
+              {
+                "attrName": "Piercing",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mutant Worms: Limited Ninja Edition",
+            "description": "The next shot deals extra damage after hitting an enemy with Splash Dash or Tornado. Effect lasts for 5 seconds.",
+            "value": 190,
+            "flavor": "Ingredients: 7+7% Mutant Worm, 25% Minigun, 3% Bandana.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+12"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Thorn Fish",
+            "description": "Adds two smaller bullets to your shot.",
+            "value": 300,
+            "flavor": "WARNING: Do not threaten the thornfish.",
+            "levelUpgrade": [
+              {
+                "attrName": "Bullets",
+                "attrValue": [
+                  "+2"
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frog Jump",
+        "description": "Charging his waterpack, Froggy can leap higher than any frog has leaped before. The longer the charge, the higher the jump!",
+         "value": 0,
+        "attributes": [],
+       "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Using your Splash Dash in a way that you end right next to your target will give you a larger window of opportunity to damage your enemy with Tornado Move or the Bolt .45 Fish-gun.",
+      "Hammer Pants upgrade description explains that you must \"aim at the ground to execute\". In reality, the effect will occur if you hit any kind of terrain, including walls, the ceiling and enemy structures.",
+      "Both Can't Touch This and Right Back At Ya! allow Froggy G to damage turrets with little to no punishment.",
+      "Turbo Tape can turn Tornado Move into a powerful chasing and escaping tool.",
+      "If you purchase Mutant Worms: Limited Ninja Edition, try to attack between skills to make the most use of it."
+    ],
+    "tipsPlayingAgainst": [
+      "While Froggy G is immune to all forms of direct damage during Splash Dash, debuffs will still be applied to him.",
+      "As a brawler, Froggy G excels in one versus one combat. Be sure to stick to your team and avoid being lined up as to make sure at least one team member avoids Splash Dash's stun and is ready to punish him for it.",
+      "If Froggy G is using Right Back At Ya!, stop using attacks that can be reflected until it wears off. See a list of what can be reflected and what cannot here.",
+      "Tornado Move can be interrupted by some crowd control effects, like stuns. Rubber Ducky Choker and Cortex Tank's ministun are particularly good for this.",
+      "If an enemy Froggy G is constantly using his Splash Dash to attack, save a Crowd Control to punish him afterwards or even maybe kill him."
+    ],
+    "unlockedAtLevel": 1,
+    "releaseDate": "01/05/2012",
     "extra": ""
   }
 ]
