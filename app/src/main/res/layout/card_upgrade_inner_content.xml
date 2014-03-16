@@ -20,12 +20,14 @@
         android:layout_centerVertical="true"/>
 
     <TextView
+        style="@style/card.base_simple_title"
         android:id="@+id/upgrade_name_text_view"
         android:layout_toRightOf="@id/upgrade_image_view"
         android:layout_marginLeft="@dimen/small_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upgrade entire name" />
+        android:text="Upgrade entire name"
+        />
 
     <TextView
         style="@style/CardSubText.Flavor"
@@ -33,7 +35,8 @@
         android:layout_toRightOf="@id/upgrade_image_view"
         android:layout_below="@id/upgrade_name_text_view"
         android:layout_alignLeft="@+id/upgrade_name_text_view"
-        android:text="Upgrade flavor test, and a big text placeholder" />
+        android:text="Upgrade flavor test, and a big text placeholder"
+        android:textColor="@android:color/darker_gray"/>
 
     <TextView
         style="@style/CardSubText"
@@ -41,7 +44,8 @@
         android:layout_toRightOf="@id/upgrade_image_view"
         android:layout_below="@id/upgrade_flavor_text_view"
         android:layout_alignLeft="@+id/upgrade_flavor_text_view"
-        android:text="Upgrade complete description placeholder" />
+        android:text="Upgrade complete description placeholder"
+        android:fontFamily="sans-serif"/>
 
     <TextView
         android:id="@+id/upgrade_solar_text_view"

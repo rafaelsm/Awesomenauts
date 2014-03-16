@@ -9,4 +9,5 @@
     android:drawableLeft="@drawable/placeholder_skill"
     android:drawablePadding="@dimen/medium_padding"
     android:gravity="center_vertical"
+    style="@style/card.header_simple_title"
     />

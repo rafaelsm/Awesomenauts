@@ -25,13 +25,13 @@
         android:padding="@dimen/small_padding"/>
 
     <TextView
+        style="@style/card.header_simple_title"
         android:id="@+id/skill_name_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=" First Skill Name"
         android:layout_toRightOf="@id/skill_image"
         android:layout_alignTop="@id/skill_image"
-        android:layout_toLeftOf="@id/skill_solar"
         android:layout_marginTop="@dimen/small_padding"
         />
 
@@ -41,6 +41,7 @@
         android:text=" First Skill Description"
         android:layout_toRightOf="@id/skill_image"
         android:layout_below="@id/skill_name_textview"
-        android:layout_alignBottom="@id/skill_image"/>
+        android:layout_alignLeft="@id/skill_name_textview"
+        />
 
 </RelativeLayout>

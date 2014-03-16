@@ -65,18 +65,9 @@ public class Skill {
 
     public String getImage() {
 
-        if(name.contains("45")){
-            String testeNome = name;
-            Log.d(TAG, "nome antes: " + testeNome);
-            StringBuilder teste = new StringBuilder("up_");
-            teste.append(testeNome.toLowerCase()
-                    .replace(" ", "_").replace("/", "_").replace("'", "")
-                    .replace("-", "_").replace("\"", "").replace(".", "").replace("!", "").replace(":", ""));
-            Log.d(TAG, "nome depois: "+ teste.toString());
-        }
-
         StringBuilder imagePath = new StringBuilder("sk_");
-        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/", "_").replace("\"","").replace(".","").replace("!","").replace(":", ""));
+        imagePath.append(name.toLowerCase().replace(" ", "_").replace("/", "_").replace("'", "")
+                .replace("-", "_").replace("\"", "").replace(".", "").replace("!", "").replace(":", ""));
 
         return imagePath.toString();
 

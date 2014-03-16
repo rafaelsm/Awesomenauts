@@ -87,14 +87,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="BackStory"
-                android:textSize="@dimen/medium_text" />
+                android:textSize="@dimen/medium_text"
+                android:fontFamily="sans-serif-condensed"/>
 
             <TextView
                 android:id="@+id/naut_backstory_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Raised in the Swiggins Navy Family on the Kraken planet Titan... "
-                android:layout_marginTop="@dimen/small_padding"/>
+                android:layout_marginTop="@dimen/small_padding"
+                android:fontFamily="sans-serif"/>
 
         </LinearLayout>
     </ScrollView>
