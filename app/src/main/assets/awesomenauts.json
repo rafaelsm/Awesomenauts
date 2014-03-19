@@ -3073,5 +3073,549 @@
     "unlockedAtLevel": 1,
     "releaseDate": "01/05/2012",
     "extra": ""
+  },
+  {
+    "name": "Genji the Pollen Prophet",
+    "backstory": "Genji is one of the last of his species: an Entin. The Entin are rapidly reproducing caterpillars with a high libido and no sense of limitation. Any planet the Entin visit, they leave ravaged in their wake. They have been labeled a pest in need of extermination for eating entire continents worth of crops and terrorizing the local populace with late night techno raves. As a result, their kind has been bugsprayed to the brink of extinction.\n\nTrying to better their ways, the remaining Entin have created the Order of Popae Monks on the fungi moon Pulvan. Fasting heavily they devote everything to their beloved deity: The Grand Space Butterfly!\n\nGenji sinned with snacks and dirty literature however, and after repeated solitary cocoonfinements failed to make him better his ways, he was sent out on an emergency soul-cleansing pilgrimage through the galaxy.\n\nJoining the Awesomenauts to cut back on the traveling costs of his journey, Genji has been the scourge of many a ship's pantry and is rumored to be the main reason some of the smaller more edible-looking 'naut recruits have gone missing.",
+    "stats": {
+      "health": 135,
+      "healthBonus": 30,
+      "moveSpeed": 8,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Support",
+        "Initiator",
+        "Crowd_Control"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Cocoon",
+        "description": "Entin silk is not only very fashionble in some parts of the galaxy, but it's also one of the most sturdy materials around! Gurgling and spitting out a ball of the webbed silk, Genji can envelop his enemies in a cocoon, making them unable to attack or be attack for a short period of time.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "9s"
+          },
+          {
+            "name": "Duration",
+            "value": "2s"
+          },
+          {
+            "name": "Range",
+            "value": 6
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Butterfly Nebula Dust",
+            "description": "Adds a slowing effect to cocoon.",
+            "value": 165,
+            "flavor": "The sacred glowing dust is only available to monks who have completed the trial of the deep sleep.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+20%",
+                  "+40%"
+                ]
+              },
+              {
+                "attrName": "Slow Duration",
+                "attrValue": [
+                  "2s",
+                  "2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Last Pieridae Transformae",
+            "description": "Makes cocooned sawblade droids polymorph into friendly humming droids.",
+            "value": 200,
+            "flavor": "This rare butterfly has been hunted to almost extinction for its transforming capabilities.",
+            "levelUpgrade": [
+              {
+                "attrName": "Droid",
+                "attrValue": [
+                  "Hummingbird"
+                ]
+              },
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  60
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  7
+                ]
+              },
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  7.2
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Jagra Eggs",
+            "description": "RAdds a lifestealing effect to cocoon.",
+            "value": 175,
+            "flavor": "Jagra worms dwell on the fungus moon Pulvan. They can produce over 10.000 eggs a day. A delicacy under catterpillars.",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "100%",
+                  "100%"
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+15","+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Misfortune Cookie",
+            "description": "Makes cocoon reduce the health of the target.",
+            "value": 215,
+            "flavor": "This batch of flawed fortune cookies contains offensive and vulgar language.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "-10%","20%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Prefab Cocoons",
+            "description": "Lets the cocoon explode violently at the end, dealing damage to nearby enemies",
+            "value": 205,
+            "flavor": "Easy to use folding cocoon for canopy camping.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+25","+50"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Moon Nectar",
+            "description": "Makes cocooned enemies drop healing nectar.",
+            "value": 200,
+            "flavor": "Highly addictive substance also known as \"nectar of the gods\". Prohibited in many starsystems.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "0.5s"
+                ]
+              },
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "2x 5"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Monarch Blessing",
+        "description": "Offering a prayer to the great and allmighty Space-Butterfly, Genji receives such a powerful blessing that it spills from his body to every nearby ally, wrapping them in a glowing blanket of protective goodness!",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Shield",
+            "value": "25%"
+          },
+          {
+            "name": "Cooldown",
+            "value": "11.6s"
+          },
+          {
+            "name": "Duration",
+            "value": "3s"
+          },
+          {
+            "name": "Range",
+            "value": 8
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Hidden Leaves",
+            "description": "Increases damage absorption of monarch blessing",
+            "value": 175,
+            "flavor": "\"Popae 1:23 Staring into the vastness of space the great papillon realized that it was not him looking at the universe, it was the universe looking at him.\"",
+            "levelUpgrade": [
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+7.5%","+15%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gettin' Out of Da Hood",
+            "description": "Adds an effect to monarch blessing that increases the speed of teammates.",
+            "value": 175,
+            "flavor": "It's signed by Froggy G. himself!",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Cat Pillar",
+            "description": "Adds a healing effect to monarch blessing",
+            "value": 150,
+            "flavor": "New edition: Carmen covered in moonnectar tell us her deepest secrets.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal",
+                "attrValue": [
+                  "+10","+20","+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bronco Yeast",
+            "description": "Reduce incoming damage by an additional flat amount.",
+            "value": 155,
+            "flavor": "Free popcorn car inside!",
+            "levelUpgrade": [
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+1",
+                  "+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kremzon Calendar",
+            "description": "Reduces the cooldown of monarch blessing",
+            "value": 165,
+            "flavor": "This ancient cyclus calendar has an end date of March 2013.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1.5s","-3s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spiritual Cooking",
+            "description": "Monarch blessing will increase max health of teammates.",
+            "value": 195,
+            "flavor": "Nutricious almost vegan recipes for very hungry caterpillars.",
+            "levelUpgrade": [
+              {
+                "attrName": "Max Health",
+                "attrValue": [
+                  "+15","+30"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "30s","30s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Butterfly Shot",
+        "description": "Carrying the staff of the Popae office, Genji can shoot ethereal butterflies from its tip, sending them out in a flurry and making them return to cause another hit on their way back!",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 5
+          },
+          {
+            "name": "Attack Speed",
+            "value": 75
+          },
+          {
+            "name": "Range",
+            "value": 7.4
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Storm Drum",
+            "description": "Adds a storm effect to butterfly shot.",
+            "value": 165,
+            "flavor": "Beat that drum like it owes you money!.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "200","200"
+                ]
+              },
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "4.8s","4.8s"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "2s","2s"
+                ]
+              },
+              {
+                "attrName": "Size",
+                "attrValue": [
+                  "7.2","7.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Plastic Praying Beads",
+            "description": "Increases damage of butterfly shot.",
+            "value": 120,
+            "flavor": "Universal multi-religion praying beads.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+1",
+                  "+2",
+                  "+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Glow Bracelets",
+            "description": "Increases attack speed of butterfly shot.",
+            "value": 140,
+            "flavor": "Rave all night long!",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+10%",
+                  "+20%",
+                  "+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Caterpillar King Statue",
+            "description": "Makes butterfly shot heal allied Awesomenauts.",
+            "value": 165,
+            "flavor": "Small statue of Julnas the hungry.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space-Hippo Manure Incense",
+            "description": "Adds a damage over time effect to butterfly shot.",
+            "value": 165,
+            "flavor": "Burns slowly not advisable to species with nostrils.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+10"
+                ]
+              },
+              {
+                "attrName": "Damage Duration",
+                "attrValue": [
+                  "4s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wool Shawl",
+            "description": "Increases the range of butterfly shot.",
+            "value": 165,
+            "flavor": "Keeps your throat and silk glands nice and warm.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+2.4"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flutter Jump",
+        "description": "Genji can fling himself up and can hover with the help of the butterfly spirit.",
+         "value": 0,
+        "attributes": [],
+       "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Tapping the jump button will keep you in the air for longer than just holding it down.",
+      "Genji is able to play a variety of roles. He can set up ganks, push droids or focus on supportting with shields and heals.",
+      "Genji will stop moving to cast Monarch Blessing. This can be annoying or even dangerous depending on where you do it, due to his poor acceleration. His movement will not be interrupted if Monarch Blessing is cast while he's in the air, however, making it a safer option.",
+      "While inside Cocoon, enemies are invulnerable to all sorts of external damage. Tell your allies to save their abilities for when the target comes out of it.",
+      "Cocoon will bounce off of walls and the ceiling until it hits the ground, a target, or it disappears.",
+      "Cocoon is able to interrupt some enemy abilities, such as Self-Destruct, Nuke and Snipe.",
+      "Cocoon is one of the most versatile abilities in the game. It can be used to secure a kill, allowing your teammates time to proper position themselves against the victim, as an escape mechanism or (with the proper upgrades) as a powerful pushing tool. Experiment with different upgrades to find your playstyle.",
+      "Despite being a crowd control effect, Cocoon will ignore cc-immunity shields and will not have its effect reduced by Baby Kuri Mammoth.",
+      "Cocoon can be reflected. It might be useful to cast it anyway, to shield yourself from enemy damage.",
+      "Voltar's Drones activate as soon as he's cocooned. Be careful when trying this if you are low on health.",
+      "Space-Hippo Manure Incense is applied to structures at reduced damage.",
+      "Caterpillar King Statue heals Awesomenauts only, unlike Voltar's Healing Wave.",
+      "Storm Drum spawns at the maximum range of Butterfly Shot. To avoid spawning clouds behind droids when farming, fly above them and fire downwards so that the cloud spawns on the ground.",
+      "Storm Drum clouds affect a large area around them and ignores terrain. It is possible to kill an enemy hiding behind a turret with it.",
+      "When an enemy is cocooned, use Storm Drum right before they exit the cocoon to ensure they'll take the extra damage."
+    ],
+    "tipsPlayingAgainst": [
+      "Avoid staying in a line with your team when facing a Genji, since his autoattack has innate piercing. That way you won't take as much damage as a whole.",
+      "Genji is one of the worst 'nauts when it comes to farming Solar early game. Punish him when he tries to farm to harm his late game.",
+      "Genji has average speed and poor acceleration, especially before buying boots, making him easier to land abilities on.",
+      "Monarch Blessing will reduce damage taken by a significant percentage. Consider saving your more powerful abilities for when the shield duration ends.",
+      "Genji can play many different roles in a match. Use the score screen (Tab on keyboards, select on controllers) to see what upgrades he has purchased and plan accordingly.",
+      "Being a projectile, cocoon is susceptible to reflect and deflect mechanics.",
+      "Silencing Genji before he can use his powerful abilities can greatly assist in bringing him down.",
+      "Netting Genji away from his team and using much CC on him is a very good way to shut him down, because other than his abilities he has poor escape mechanics, especially when ganged up on.",
+      "The best way to trap Genji is by using hard CC abilities, such as snares and stuns. Due to his low acceleration, throws, heavy knockback, and stuns will keep in one place better."
+    ],
+    "unlockedAtLevel": 17,
+    "releaseDate": "28/02/2013",
+    "extra": ""
   }
 ]
