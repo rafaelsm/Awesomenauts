@@ -3617,5 +3617,1506 @@
     "unlockedAtLevel": 17,
     "releaseDate": "28/02/2013",
     "extra": ""
+  },
+  {
+    "name": "Gnaw",
+    "backstory": "Skroggle infestations have been reported on over a dozen planets. The highly adaptable Skroggle physiology allows them to thrive in almost any atmosphere. Skroggles are omnivorous and their bizarre metabolism enables them to vomit plant-like creatures that excrete volatile acidic spores.\n\nGnaw was taken from his home-planet as a Skroggle specimen by Kremzonian scientists. But Gnaw was not a beast that could be caged: his acid-breath melted his holding pen and Gnaw started to rampage through the science facility where he was held. No-one knows exactly what happened, but the facility was found 12 days later, abandoned, and overgrown with some weird, toxic flora.\n\nGnaw was eventually noticed by a passing band of Amphibian cosmic bikerpirates. Gnaw was in need of some friends, and he was taken in by them, nurtured and trained to fight in black-market exotic-alien arena fights. Occasionally his masters sell Gnaw's \"services\" to any war general that is desperate enough to set loose the rapid, chitinous menace upon the battlefield.",
+    "stats": {
+      "health": 140,
+      "healthBonus": 30,
+      "moveSpeed": 7.4,
+      "attackType": "MELEE",
+      "role": [
+        "Harasser",
+        "Area_Control",
+        "Damage_Dealer"
+      ],
+      "mobility": "Balanced"
+    },
+    "skills": [
+      {
+        "name": "Acid Spit",
+        "description": "Spit out a sticky spray of acid goo that damages enemies over time.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 5
+          },
+          {
+            "name": "Damage Over Time",
+            "value": 25
+          },
+          {
+            "name": "Damage Duration",
+            "value": "9s"
+          },
+          {
+            "name": "Cooldown",
+            "value": "8s"
+          },
+          {
+            "name": "Time",
+            "value": "4s"
+          },
+          {
+            "name": "Range",
+            "value": 6
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Aggressive Acid",
+            "description": "Goo will burn through glass platforms and drip down.",
+            "value": 170,
+            "flavor": "It has acid for drool, and is generally unpleasant.",
+            "levelUpgrade": [
+              {
+                "attrName": "Drip",
+                "attrValue": [
+                  "Yes"
+                ]
+              },
+              {
+                "attrName": "Time",
+                "attrValue": [
+                  "+2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tentacle Soup",
+            "description": "Adds a slowing effect to spit.",
+            "value": 150,
+            "flavor": "Do not use as hairgel!",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+20%","+40%"
+                ]
+              },
+              {
+                "attrName": "Slow Duration",
+                "attrValue": [
+                  "1.5s","1.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Overcharged Metabolism",
+            "description": "Enemies directly hit by spit will receive extra damage.",
+            "value": 160,
+            "flavor": "Buuuuuuuuuuuuurp ...",
+            "levelUpgrade": [
+              {
+                "attrName": "Amplify Damage",
+                "attrValue": [
+                  "10%",
+                  "20%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Feather Ball",
+            "description": "Spit further.",
+            "value": 145,
+            "flavor": "Make this chicken fly!",
+            "levelUpgrade": [
+              {
+                "attrName": "Distance",
+                "attrValue": [
+                  "+14"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spike Slime",
+            "description": "Deal more damage with spitted goo.",
+            "value": 180,
+            "flavor": "Don't eat the purple snow!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4","+6"
+                ]
+              },
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+8","+16","+24"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Split Spit",
+            "description": "Spitted goo will split in two new spits when run over by friendlies and enemies.",
+            "value": 190,
+            "flavor": "Can also be used as silverware polish!",
+            "levelUpgrade": [
+              {
+                "attrName": "Split",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grow Weedling",
+        "description": "Bite enemies to gather Growth Parts, then use those to grow a weedling.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Parts",
+            "value": 5
+          },
+          {
+            "name": "Damage",
+            "value": 20
+          },
+          {
+            "name": "Weedling Damage",
+            "value": 7
+          },
+          {
+            "name": "Attack Speed",
+            "value": 66.7
+          },
+          {
+            "name": "Health",
+            "value": 45
+          },
+          {
+            "name": "Weedling Starting Health",
+            "value": "25%"
+          },
+          {
+            "name": "Health Weedlings",
+            "value": "120 per min."
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Corrosive Spores",
+            "description": "Increases damage of weedlings.",
+            "value": 180,
+            "flavor": "Flower power overwhelming!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wild Growth",
+            "description": "Increases the damage of placing weedlings.",
+            "value": 175,
+            "flavor": "A good garden always has weeds.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fertilizer",
+            "description": "Weedlings that live after 15 seconds grow stronger. Every 5 min of gametime adds more health.",
+            "value": 180,
+            "flavor": "The poo from space-hippos is quite potent.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+8"
+                ]
+              },
+              {
+                "attrName": "Maximum",
+                "attrValue": [
+                  "60"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Overgrowth",
+            "description": "Weedlings require less parts to build.",
+            "value": 110,
+            "flavor": "Y u no look so good.",
+            "levelUpgrade": [
+              {
+                "attrName": "Parts",
+                "attrValue": [
+                  "-2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flex Neck",
+            "description": "Increases attack speed of weedlings.",
+            "value": 140,
+            "flavor": "Also adds happy colourful berries!",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "15%","30%","45%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bag of Seeds ",
+            "description": "Place more weedlings.",
+            "value": 150,
+            "flavor": "Just add battery acid!",
+            "levelUpgrade": [
+              {
+                "attrName": "Weedlings",
+                "attrValue": [
+                  "+1","+2"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bite",
+        "description": "Gnaw bites his enemies with his filthy maw.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 7
+          },
+          {
+            "name": "Damage Over Time",
+            "value": 10
+          },
+          {
+            "name": "Damage Duration",
+            "value": "5s"
+          },
+          {
+            "name": "Attack Speed",
+            "value": 130
+          },
+          {
+            "name": "Range",
+            "value": 2.8
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Rotten Teeth",
+            "description": "Increases the damage over time of bite.",
+            "value": 230,
+            "flavor": "Never brush your teeth again.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chattering Teeth",
+            "description": "Increases the attack speed of bite",
+            "value": 175,
+            "flavor": "Recommended by professional nailbiters.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15%",
+                  "+30%",
+                  "+45%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Filed Teeth",
+            "description": "Adds a lifestealing effect to bite.",
+            "value": 195,
+            "flavor": "Get the Hollywood smile!",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dental Braces",
+            "description": "Deals the damage over time faster, over a shorter amount of time on bite.",
+            "value": 165,
+            "flavor": "Stay away from electromagnets!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Duration",
+                "attrValue": [
+                  "2.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rabbit Teeth",
+            "description": "Get a speed bonus for biting enemies.",
+            "value": 185,
+            "flavor": "What's up doc?",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+3"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "1.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Diamond Teeth",
+            "description": "Increase damage of bite.",
+            "value": 180,
+            "flavor": "Diamonds are a Skroggle's best friend!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4","+6"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skroggle Jump",
+        "description": "Getting fed up with interplanetary mailmen that kept climbing into space-trees to avoid his jaws, Gnaw learned to jump for his meals!",
+         "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Companion",
+            "description": "Increases maximum health of both you and your summons.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              },
+              {
+                "attrName": "Max Summon Health",
+                "attrValue": [
+                  "+5",
+                  "+10",
+                  "+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  "+100",
+                  "+200"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+1.6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  "+17"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  "+115"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "-25%",
+                  "-50%"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Acid Spit will disappear upon touching enemy turrets. Try to make it land in front of them instead.",
+      "Tentacle Soup can help Gnaw in chasing his enemies.",
+      "Use Aggressive Acid on platforms above hide areas to force enemies out of them.",
+      "There are many spots on several maps that allow for Aggressive Acid to drip a long way down, covering a large area, such as the middle of Ribbit IV's top lane or the corners of the top hide area on Aiguillon.",
+      "Combining Aggressive Acid with Split Spit can make Acid Spit very hard to avoid.",
+      "Both Acid Spit and Bite can keep track of Leon even when he's invisible.",
+      "If you plant more weedlings than the current cap, the oldest one will be destroyed.",
+      "Upgrades do not affect existing weedlings. You must replant them for the upgrades to take effect.",
+      "If your enemies are doing a good job at destroying your weedlings, consider investing some Solar into Acid Spit and/or Bite for better fighting presence.",
+      "When using weedlings in different places, always keep an eye on them via the minimap, so you'll know if they are being attacked or were destroyed.",
+      "A popular tactic among Gnaw players consists of hiding weedlings on hide areas, to surprise enemy 'nauts.",
+      "Placing weedlings nearby neutral creep spawning areas allows Gnaw to have a steady supply of health, but also denies the creeps to every other 'naut on the match (even his own teamates).",
+      "Weedlings are able to block paths against every enemy 'naut. When used in tight spaces and chokepoints, they can make movement more difficult for them."
+    ],
+    "tipsPlayingAgainst": [
+      "Med-i'-can and Voltar are your best \"weapons\" against Gnaw's poison attacks.",
+      "Blinding effects will prevent weedlings from attacking, making them harmless for the duration.",
+      "Weedlings drop no Solar upon death, but they are still affected by Solar generation mechanics such as Flashy Glasses or Magnet Piercing. Keep that in mind when facing multiple, lined up weedlings.",
+      "Burst area of effect abilities are great for taking out weedlings that are stacked together. Reflecting mechanics can do the trick as well.",
+      "Weedlings do not start at full health, being more vulnerable the moment they spawn.",
+      "If Gnaw has purchased Fertilizer, try to destroy his weedlings before they can grow and become a greater threat.",
+      "If you are having trouble taking out a large group of weedlings, it might be a better idea to chase and kill Gnaw himself. All weedlings will die shortly after.",
+      "Healthpacks cancel damage over time effects immediatly, however lifestealing effects do not.",
+      "You can tell if a puddle of Acid Spit has Split Spit or not. The ones that do are larger than the ones that don't.",
+      "If affected by the Amplify Damage effect from Overcharged Metabolism, it is best to stay away from the enemy team as to avoid higher amounts of damage."
+    ],
+    "unlockedAtLevel": 7,
+    "releaseDate": "22/08/2012",
+    "extra": ""
+  },
+  {
+    "name": "Leon Chameleon",
+    "backstory": "Leon's life is a life of crime, women, and borrowing without returning. He lost his arm in a unfortunate jeu de boules incident and spends most of his time smoothly escaping debt collectors. He found himself breaking into the bedroom of the prime minister's wife, while looking for the wine cellar.\n\nHe knew no amount of charm could save him this time and planned his escape, which was eventually delayed because he refused to escape in anything but a space yacht.\n\nLeon joined the Awesomenauts for some quick cash, spending it on beautiful women and exquisite meals. In combat, he puts his natural reptile abilities to some good use and slices up his enemies with great precision. Combat is a form of art for this green gentleman.",
+    "stats": {
+      "health": 130,
+      "healthBonus": 30,
+      "moveSpeed": 7.4,
+      "attackType": "MELEE",
+      "role": [
+        "Assassin",
+        "Initiator",
+        "Damage_Dealer"
+      ],
+      "mobility": "Swift"
+    },
+    "skills": [
+      {
+        "name": "Tongue Snatch",
+        "description": "Enables a tongue snatch that grabs enemies and pulls them towards you.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": "12x2"
+          },
+          {
+            "name": "Cooldown",
+            "value": "7s"
+          },
+          {
+            "name": "Range",
+            "value": 6.6
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Spiked Tongue Piercing",
+            "description": "Increases damage of tongue snatch",
+            "value": 140,
+            "flavor": "Get kinky with this spiky accessoire.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+3","+6","+9"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tongue Stretcher",
+            "description": "Increases range of tongue snatch.",
+            "value": 145,
+            "flavor": "Instructions: Apply sticky tape to tip of tongue, then pull and glue to the back of your head.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+2.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cheese & Garlic Mints",
+            "description": "Adds a silencing effect to tongue snatch.",
+            "value": 150,
+            "flavor": "Reek like a real human.",
+            "levelUpgrade": [
+              {
+                "attrName": "Silence Duration",
+                "attrValue": [
+                  "+0.8s",
+                  "+1.6s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Steel False Teeth",
+            "description": "Adds lifesteal to a successful tongue attack.",
+            "value": 160,
+            "flavor": "Now you can eat everything, even your car!",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+8","+16"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Morning Star Piercing",
+            "description": "Increases damage of tongue snatch.",
+            "value": 370,
+            "flavor": "Newest in our line of killer jewelry.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+9"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Magnet Piercing",
+            "description": "Your tongue attack will pull Solar towards you and successful damage will add Solar.",
+            "value": 60,
+            "flavor": "WARNING: This product may cause spaceships to fly in your face.",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Grab",
+                "attrValue": [
+                  "Yes"
+                ]
+              },
+              {
+                "attrName": "Solar per Damage",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cloaking Skin",
+        "description": "Makes you invisible and creates a clone dummy to fool enemies. Stealth breaks when dealing damage or activating a skill.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "10s"
+          },
+          {
+            "name": "Dummy Health",
+            "value": 40
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Surprise Party Mask",
+            "description": "Adds extra damage to the decloaking first slash.",
+            "value": 140,
+            "flavor": "SURPRISE! Happy stab-you-in-the-neck-day!",
+            "levelUpgrade": [
+              {
+                "attrName": "First Strike Damage",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pinot Noir",
+            "description": "You will regenerate health when you're cloaked.",
+            "value": 170,
+            "flavor": "Fruity, but with a horrible metallic aftertaste.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health per Min.",
+                "attrValue": [
+                  "+100"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Basic AI Chip",
+            "description": "Makes your replica dummy walk around.",
+            "value": 205,
+            "flavor": "It's alive! It's ALIVE!",
+            "levelUpgrade": [
+              {
+                "attrName": "Dummy Attack",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Aggressive AI Chip",
+            "description": "Makes your replica dummy attack.",
+            "value": 225,
+            "flavor": "Weaponise your friend in crime.",
+            "levelUpgrade": [
+              {
+                "attrName": "Dummy Attack",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Extra Battery Pack",
+            "description": "Increases health of the replica dummy.",
+            "value": 205,
+            "flavor": "For those long lonesome nights, when you need a friend.",
+            "levelUpgrade": [
+              {
+                "attrName": "Dummy Lifespan",
+                "attrValue": [
+                  "+8s"
+                ]
+              },
+              {
+                "attrName": "Dummy Health",
+                "attrValue": [
+                  "+40"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blow Up Doll",
+            "description": "Makes your replica dummy explode on death.",
+            "value": 200,
+            "flavor": "It's dead! It's DEAD!",
+            "levelUpgrade": [
+              {
+                "attrName": "Dummy Explosion",
+                "attrValue": [
+                  "+25","+50"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slash",
+        "description": "Leon slices his enemies with his razorsharp lightsword.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 8
+          },
+          
+          {
+            "name": "Attack Speed",
+            "value": 136.4
+          },
+          {
+            "name": "Range",
+            "value": 3.2
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Chainsaw Addon",
+            "description": "Increases the damage of slash.",
+            "value": 210,
+            "flavor": "In the French cuisine, you need a good knife.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+2","+4","+6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enhanced Muscle Fibers",
+            "description": "Increases the attack speed of slash.",
+            "value": 200,
+            "flavor": "Cut any vegetable or fiend in a blink of an eye.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15%",
+                  "+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Clover of Honour",
+            "description": "Increases the damage of your third hit.",
+            "value": 175,
+            "flavor": "Awarded to the heroes of the first AI war or whoever has 175 solar.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+6","+12"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Backstab Blade",
+            "description": "Adds an extra amount of damage when striking the back of a target with slash.",
+            "value": 180,
+            "flavor": "The backside of the blade is extra sharp.",
+            "levelUpgrade": [
+              {
+                "attrName": "Backstab Damage",
+                "attrValue": [
+                  "+4","+8"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hungry Sword",
+            "description": "Adds a lifesteal effect to slash.",
+            "value": 180,
+            "flavor": "Because war is give and take.",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+25%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Electrifier",
+            "description": "Adds a slowing effect to slash.",
+            "value": 160,
+            "flavor": "Batteries not included.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+12.5%","+25%"
+                ]
+              },
+              {
+                "attrName": "Slow Duration",
+                "attrValue": [
+                  "1s","1s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reptile Jump",
+        "description": "Being a reptile has its advantages. Strong leg muscles give Leon the ability to leap high into the air. His tail keeps him stable while mid-air, giving him an agile advantage over his enemies.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Using Cheese & Garlic Mints can give Leon a very powerful initiation tool: not only will your enemies be pulled towards your team, but they will also be unable to use any escaping/defensive abilities they might have.",
+      "If you don't have Basic AI Chip, leaving a clone inside a hide area will grant vision to you and your teamates.",
+      "Backstab Blade cannot affect turrets of the Solar drill, but the animation for a successful strike will still play. Don't be fooled by this.",
+      "One of the first abilities you will want to upgrade if you want to maximize your DPS against droids and 'nauts is your Backstab Blade. It will help you tremendously, since you will almost always get a backstab or two on your first strike, and you will get a lot more if they start to run away. However, if your goal is to have high overall damage and be effective against turrets, Chainsaw Addon is a better option.",
+      "If you're actively in an engagement and have Surprise Party Mask upgraded, quickly cloak and uncloak for a higher damage slash.",
+      "Always make sure to go around crossfire while cloaked, you might be invisible but enemy projectiles and area of effect damage are still issues. It is very easy to be nailed by a lone dynamite and immediately killed.",
+      "When you're stalking an enemy, if you see him start to attack a turret, sneak up from behind him, stand still, and wail on him. This will keep him trapped between you and the turret for a short period of time, maybe until he dies, if he doesn't realize that you are standing in the way quickly enough.",
+      "Jumping around an enemy will let you avoid a lot of unneeded damage. If you have the Backstab Blade equpped, jump behind them repeatedly to boost your damage output tremendously.",
+      "Combining a fully upgraded Surprise Party Mask, Backstab Blade, and Chainsaw Addon will result in an uncloaking backstab that does high damage. If they're hurt, this can easily take them out.",
+      "Pull enemies into dangerous situations with your Tongue. Good places are into your teammates, Yuri's mines, or your turrets.",
+      "If you are trying to destroy a turret with no support from allied 'nauts/creeps, cloak directly in front of the turret to use it as a temporary shield.",
+      "The orb on Aiguillon works with Leon's Surprise Party Mask just like normal cloak. A popular combo is getting the orb, uncloaking with a slash, activating cloaking skin and then slashing the enemy again for high amounts of damage. The orb does not grant Pinot Noir, however.",
+      "With either Aggressive AI Chip or Blow Up Doll, Leon is able to push two lanes at once. Simply leave a clone in one lane close to enemy droids and push the other lane yourself. Using Basic AI Chip makes this tactic more efficient."
+    ],
+    "tipsPlayingAgainst": [
+      "Even when Leon's invisible it's still possible to hear his footsteps. Some players turn off the game music and increase sound effects volume for this sole purpose.",
+      "Jumping erratically around Leon may be useful when trying to evade Tongue Snatch.",
+      "Any visual indicators coming from Leon's enemies (damage numbers, crowd control effects, Raelynn's Snipe targeting reticle and damage over time effects) will show up on Leon even if he's invisible. Use that to find him.",
+      "The cooldown on Leon's Cloaking Skin doesn't start until invisibility is broken. If you see him uncloaking, keep in mind that you have a few seconds to attack or even kill him before he can cloak again.",
+      "Don't let the minimap fool you! Leon's clones appear as a 'naut there.",
+      "If Leon is using a clonespam loadout (which involves sending clones to attack your turrets over and over), keep in mind that his cloak will most likely be unavaliable when you find him. It could be a good idea to either kill him or force him away.",
+      "Clones with Basic AI Chip and Aggressive AI Chip will chase the nearest target. Use this to lure them away from your turret."
+    ],
+    "unlockedAtLevel": 1,
+    "releaseDate": "01/05/2012",
+    "extra": ""
+  },
+  {
+    "name": "Raelynn",
+    "backstory": "Raelynn loves big guns. After highschool she went straight into the E.L.F. army to fight against the invading robots, just before the first AI war.\n\nShe was trained by the best and excelled in long range weaponary. Within a year she was given the honor of joining an elite squad called the SkyHawks, where she met the love of her life: her Pulserifle \"Cuddles\".\n\nFor years they did covert missions together as a team to disrupt robot production and steal robot technologies. They were feared by all robots (well...the ones with emo-chips).\n\nUntil that one deep space mission to AI station 404 in the year 3009, where she ran into a robot ambush, and \"Cuddles\" was brutally taken away from her. Raelynn was put into cryostasis. Decades passed until a small mercenary team found her hidden on the planet. There she was rejoined with \"Cuddles\" and many warm 'hugs' were given that day to all robots on 404.",
+    "stats": {
+      "health": 135,
+      "healthBonus": 30,
+      "moveSpeed": 7,
+      "attackType": "LONG_RANGE",
+      "role": [
+        "Harasser",
+        "Pusher",
+        "Area_Control"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Timerift",
+        "description": "Throw a deployable wall that slows time.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 2
+          },
+          {
+            "name": "Attack Speed",
+            "value": 150
+          },
+          {
+            "name": "Slowing Power",
+            "value": "65%"
+          },
+          {
+            "name": "Cooldown",
+            "value": "9s"
+          },
+          {
+            "name": "Height",
+            "value": 3.5
+          },
+          {
+            "name": "Width",
+            "value": 2
+          },
+          {
+            "name": "Duration",
+            "value": "4s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Higgs Grenade",
+            "description": "Increases height of Timerift.",
+            "value": 155,
+            "flavor": "Gives you that extra mass when you need it.",
+            "levelUpgrade": [
+              {
+                "attrName": "Height",
+                "attrValue": [
+                  "+1","+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Nuclear Warhead",
+            "description": "Adds additional damage to Timerift.",
+            "value": 165,
+            "flavor": "Old antique weapon. On the back it says \"Dear John\".",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+250%","+500%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Retro Spaceship",
+            "description": "Increases slow of Timerift.",
+            "value": 160,
+            "flavor": "Original owner: Rick Rocket",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+5%",
+                  "+10%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "T-800 Dome",
+            "description": "Makes Timerift spawn a droid.",
+            "value": 145,
+            "flavor": "WARNING: Don't tell the robot where to find John.",
+            "levelUpgrade": [
+              {
+                "attrName": "Droid",
+                "attrValue": [
+                  "Hummingbird"
+                ]
+              },
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "100%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HC-Bomb",
+            "description": "The next protoblaster shot after using Timerift will do more damage.",
+            "value": 215,
+            "flavor": "Destroys spacetime (Psi universe not included).",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "x3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "1.21 Gigawatt Battery",
+            "description": "Increases duration of Timerift.",
+            "value": 190,
+            "flavor": "Stolen plutonium core.",
+            "levelUpgrade": [
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "+2s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snipe",
+        "description": "Makes you invisible and creates a clone dummy to fool enemies. Stealth breaks when dealing damage or activating a skill.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 45
+          },
+          {
+            "name": "Cooldown",
+            "value": "10s"
+          },
+          {
+            "name": "Range",
+            "value": 17
+          },
+          {
+            "name": "Arming Time",
+            "value": "0.6s"
+          },
+          {
+            "name": "Knockback",
+            "value": 0.7
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Pump Rifle",
+            "description": "Increases damage of Snipe.",
+            "value": 200,
+            "flavor": "Pump up the base...damage.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+10","+20","+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Casettedeck Magazine",
+            "description": "Reduces cooldown of Snipe.",
+            "value": 145,
+            "flavor": "Listen to some good music, while you wait for your next shot.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1.5s","-3s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Laserpointer",
+            "description": "Adds a blinding effect to Snipe.",
+            "value": 160,
+            "flavor": "Don't point at eye(s).",
+            "levelUpgrade": [
+              {
+                "attrName": "Blind Duration",
+                "attrValue": [
+                  1.5
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flashy Glasses",
+            "description": "Receive Solar per effective Snipe.",
+            "value": 115,
+            "flavor": "I'mma let you finish after I take your Solar!",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar per hit",
+                "attrValue": [
+                  "+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Iron Rifle",
+            "description": "Gain a debuff immunity shield when activating Snipe.",
+            "value": 200,
+            "flavor": "Straightens out your bullets.",
+            "levelUpgrade": [
+              {
+                "attrName": "Immunity time",
+                "attrValue": [
+                  "+2s"
+                ]
+              },
+              {
+                "attrName": "Shield",
+                "attrValue": [
+                  "+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gryc Lubricator",
+            "description": "Increases the range of Snipe.",
+            "value": 120,
+            "flavor": "Made from real Grycworm intestines.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+4","+8","+12"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Protoblaster",
+        "description": "Raelynn fires her pulserifle 'Cuddles'.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 7
+          },
+          
+          {
+            "name": "Attack Speed",
+            "value": 150
+          },
+          {
+            "name": "Range",
+            "value": 8
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Skull Bracelet",
+            "description": "Increases damage of shots.",
+            "value": 135,
+            "flavor": "Makes you look really tough!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+1","+2","+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unknown Alien Hand",
+            "description": "Your shots will pierce through enemies, hitting additional enemies in their path.",
+            "value": 185,
+            "flavor": "Points home.",
+            "levelUpgrade": [
+              {
+                "attrName": "Piercing",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Monkey Hand",
+            "description": "Receive extra Solar for every Awesomenaut kill.",
+            "value": 50,
+            "flavor": "Belonged to a thief monkey.",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  "+50"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lucky Cat Air Freshener",
+            "description": "Increases damage of shots against enemy Awesomenauts.",
+            "value": 195,
+            "flavor": "Fills your spaceship with the sweet smell of cat.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Joe Doll",
+            "description": "Increases attack speed of shots",
+            "value": 160,
+            "flavor": "Dangerously fast bike not included.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15%","+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Receding Ponytail ",
+            "description": "Increases damage of shots.",
+            "value": 300,
+            "flavor": "Worn by famous movie actor.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+3"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Six Million Solar Human Jump",
+        "description": "Being a reptile has its advantages. Strong leg muscles give Leon the ability to leap high into the air. His tail keeps him stable while mid-air, giving him an agile advantage over his enemies.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Most of Raelynn's playstyles involves keeping her enemies at a safe distance. Denny's Boots and Gryc Lubricator may help her accomplish that.",
+      "Remember: the laser sight for Raelynn's Snipe becomes yellow when you are targetting an enemy Awesomenaut. This is specially useful when using the Gryc Lubricator upgrade for offscreen kills. Watching the minimap also helps in these cases.",
+      "When charging up Snipe, it is possible to press the Snipe button a second time after hearing the beep to fire the beam earlier.",
+      "Aiming Snipe away from your enemy or at the ground can prevent them from seeing the laser sight right away. Quickly direct it to your enemies and fire, surprising them.",
+      "You can begin charging Snipe while Raelynn is mid-air. Jump from a high place and activate it. By the time you hit the ground, Snipe will likely be ready to fire, giving less reaction time to your enemies.",
+      "Iron Rifle can prevent many crowd control effects from interrupting Snipe.",
+      "When using Laserpointer, sweeping the area in front of you in a fan-like motion may help you in blinding more enemies with it.",
+      "Timerift is a very effective tool against sieged Derpls as it affects the unsiege animation, making it way longer. Some players may notice this and will start sieging on glass platforms so they can drop down and escape, however.",
+      "Despite what it may look like, Timerift isn't a slow, but a [Slowdown]] and, as such, isn't affected by CC reduction or CC immunity.",
+      "With the T-800 Dome upgrade for Timerift, it is possible to solo turrets very effectively if they are left unguarded by your enemy",
+      "Without the Higgs Grenade upgrade, Timerift is best used to block chokepoints.",
+      "If taking HC-Bomb, it's best to attempt to trap enemies in Timerift and use your HC-shots to whittle them down until you're able to finish them off with Snipe. Using Gryc Lubricator helps to finish off fleeing enemies very well."
+    ],
+    "tipsPlayingAgainst": [
+      "Snipe can be interrupted by most crowd control effects, and will go on cooldown if this happens.",
+      "Snipe can't go through terrain. Stay out of Raelynn's direct line of sight to discourage her from firing it.",
+      "Before engaging an enemy Raelynn, make sure you will be able to kill her quickly. She may get you low enough on health so that her Snipe will finish you off.",
+      "Saving abilities that are harder to land for when Raelynn uses Snipe might be a good idea, as she can't move until the she fires the beam or is interrupted.",
+      "The cooldown on Timerift exceeds its duration. This is true even with the 1.21 Gigawatt Battery upgrade. You can use that window of opportunity to approach a Raelynn, but be mindful of Snipe as well.",
+      "Raelynn's Protoblaster can deal high dps with proper upgrades. Don't underestimate her ability to engage in close combat."
+    ],
+    "unlockedAtLevel": 14,
+    "releaseDate": "01/11/2012",
+    "extra": ""
   }
 ]

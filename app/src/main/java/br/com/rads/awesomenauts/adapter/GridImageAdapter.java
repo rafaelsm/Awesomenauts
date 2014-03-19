@@ -58,7 +58,7 @@ public class GridImageAdapter extends BaseAdapter {
             gridViewCell = inflater.inflate(R.layout.grid_cell, parent, false);
 
             //TODO: verificar porque nao consigo ajustar as imagens da forma correta
-            gridViewCell.setLayoutParams( new GridView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 540));
+            gridViewCell.setLayoutParams( new GridView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         } else {
             gridViewCell = convertView;
@@ -75,6 +75,10 @@ public class GridImageAdapter extends BaseAdapter {
 
     private int getImageForNaut(Awesomenaut awesomenaut) {
         int drawable = context.getResources().getIdentifier(awesomenaut.getDrawableName(), "drawable", context.getPackageName());
+
+        if(drawable == 0)
+            drawable = R.drawable.placeholder;
+
         return drawable;
     }
 }
