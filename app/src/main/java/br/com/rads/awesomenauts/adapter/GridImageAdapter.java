@@ -18,6 +18,8 @@ import java.util.List;
 
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.model.Awesomenaut;
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 /**
  * Created by rafael_2 on 17/02/14.
@@ -50,27 +52,29 @@ public class GridImageAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View gridViewCell;
+        ViewHolder holder;
 
         if (convertView == null){
 
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
-            gridViewCell = inflater.inflate(R.layout.grid_cell, parent, false);
+            convertView = inflater.inflate(R.layout.grid_cell, parent, false);
 
             //TODO: verificar porque nao consigo ajustar as imagens da forma correta
-            gridViewCell.setLayoutParams( new GridView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            convertView.setLayoutParams( new GridView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+            holder = new ViewHolder(convertView);
+
+            convertView.setTag(holder);
 
         } else {
-            gridViewCell = convertView;
+            holder = (ViewHolder) convertView.getTag();
         }
 
-        ImageView imageView = (ImageView) gridViewCell.findViewById(R.id.cell_image);
-        imageView.setImageResource(getImageForNaut(awesomenauts.get(position)));
+        holder.image.setImageResource(getImageForNaut(awesomenauts.get(position)));
 
-        TextView textView = (TextView) gridViewCell.findViewById(R.id.cell_text);
-        textView.setText(awesomenauts.get(position).getName());
+        holder.text.setText(awesomenauts.get(position).getName());
 
-        return gridViewCell;
+        return convertView;
     }
 
     private int getImageForNaut(Awesomenaut awesomenaut) {
@@ -80,5 +84,19 @@ public class GridImageAdapter extends BaseAdapter {
             drawable = R.drawable.placeholder;
 
         return drawable;
+    }
+
+    static class ViewHolder{
+
+        @InjectView(R.id.cell_image)
+        ImageView image;
+
+        @InjectView(R.id.cell_text)
+        TextView text;
+
+        public ViewHolder(View view){
+            ButterKnife.inject(this, view);
+        }
+
     }
 }
