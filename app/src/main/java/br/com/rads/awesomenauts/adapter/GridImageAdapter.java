@@ -2,6 +2,11 @@ package br.com.rads.awesomenauts.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,7 +58,7 @@ public class GridImageAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHolder holder;
+        final ViewHolder holder;
 
         if (convertView == null){
 
@@ -70,9 +76,9 @@ public class GridImageAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.image.setImageResource(getImageForNaut(awesomenauts.get(position)));
-
-        holder.text.setText(awesomenauts.get(position).getName());
+        Awesomenaut a = awesomenauts.get(position);
+        holder.image.setImageResource( getImageForNaut(awesomenauts.get(position)));
+        holder.text.setText(a.getName());
 
         return convertView;
     }
@@ -99,4 +105,5 @@ public class GridImageAdapter extends BaseAdapter {
         }
 
     }
+
 }

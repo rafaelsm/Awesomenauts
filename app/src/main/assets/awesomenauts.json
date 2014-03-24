@@ -5118,5 +5118,1002 @@
     "unlockedAtLevel": 14,
     "releaseDate": "01/11/2012",
     "extra": ""
+  },
+  {
+    "name": "Sheriff Lonestar",
+    "backstory": "At the heart of the milky way lies the Bovinion system, ruled by a semi intelligent cow-like species. Although technologically advanced to an acceptable level, these Bovinions have maintained a tribal form of society for several thousands of years. Until recent years, an age-old custom in this society was to scare young Bovinion calves with bogeyman stories about a scary cowboy. Naughty Bovinion calves would, as the story went, be caught by this cowboy's unrelenting lasso.\n\nRecently, a wealthy Bovinion visionary opened up a park where visitors would come to see a genetically re-engineered cowboy in action. But disaster struck and the cowboy escaped his cage. Before the Bovinions could react the cowboy had wrangled the entire park staff. Terror shook the Bovinion civilization as the cowboy started to wrangle every single Bovinion on the planet! Suddenly the Bovinions found themselves out of their cities and wrangled into herds on green meadows by the whisky drinking, bucket spitting, yeeehaawing horror.\n\nOnce the entire Bovinion civilization had been wrangled, the cowboy, naming himself Sheriff Lonestar, rode a rocket ship into the sunset, his job complete. Now Sheriff Lonestar fights as a mercenary in the robot wars, combining his awesome cowboy-powers with high tech weaponry to earn some solar to spend on whisky and cigars.",
+    "stats": {
+      "health": 135,
+      "healthBonus": 30,
+      "moveSpeed": 7,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Fighter",
+        "Pusher"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Dynamite Throw",
+        "description": "Enables a dynamite throwing technique.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 20
+          },
+          {
+            "name": "Cooldown",
+            "value": "6s"
+          },
+          {
+            "name": "Amount",
+            "value": 2
+          },
+          {
+            "name": "Explosion Size",
+            "value": 3.2
+          },
+          {
+            "name": "Time",
+            "value": "0.7s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Trinamite",
+            "description": "Adds an extra stick of dynamite to dynamite throw.",
+            "value": 270,
+            "flavor": "Now without superglue coating, making throwing multiple sticks a lot easier.",
+            "levelUpgrade": [
+              {
+                "attrName": "Amount",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mister TNT",
+            "description": "Increases the explosion size of dynamite.",
+            "value": 130,
+            "flavor": "Free black van included.",
+            "levelUpgrade": [
+              {
+                "attrName": "Explosion Size",
+                "attrValue": [
+                  "+1.2","+2.4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rubber Sleeve",
+            "description": "Makes your dynamite bounce.",
+            "value": 155,
+            "flavor": "Better shape, better explosive.",
+            "levelUpgrade": [
+              {
+                "attrName": "Bounce",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dark Matter Flashbang",
+            "description": "Adds a blinding effect to dynamite.",
+            "value": 150,
+            "flavor": "Instructions: Shake hand to activate dark matter flakes. Light dynamite. throw dynamite. Close eyes.",
+            "levelUpgrade": [
+              {
+                "attrName": "Blind Duration",
+                "attrValue": [
+                  "+2.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Transfusion Grenades",
+            "description": "Adds a lifesteal effect to dynamite.",
+            "value": 220,
+            "flavor": "How you like them apples!",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Incendiary Bomb",
+            "description": "Increases damage over time of dynamite.",
+            "value": 150,
+            "flavor": "The perfect gift for your Kremzon mother-in-law. Sharing is caring.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              },
+              {
+                "attrName": "Damage Duration",
+                "attrValue": [
+                  "5s","5s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Summon Hyper Bull",
+        "description": "Enables summoning of hyper bull, which charges towards his enemies and knocks them back.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "8s"
+          },
+          {
+            "name": "Speed",
+            "value": 8
+          },
+          {
+            "name": "Health",
+            "value": 40
+          },
+          {
+            "name": "Attack Speed",
+            "value": 428.6
+          },
+          {
+            "name": "Knockback",
+            "value": 1.2
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Super Breed 2.0",
+            "description": "Makes hyper bull bigger, and push harder.",
+            "value": 135,
+            "flavor": "Patch notes 2.0\n+Improved frame rate\n+Polished horns\n+Added eye patch",
+            "levelUpgrade": [
+              {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+1"
+                ]
+             },
+             {
+                "attrName": "Health",
+                "attrValue": [
+                  "+40"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cattle Rebooter",
+            "description": "Reduces the cooldown on hyper bull.",
+            "value": 185,
+            "flavor": "Cattle rebooter, boots your cows and bulls.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ribbit Snail Slime",
+            "description": "Makes hyper bull slow enemies.",
+            "value": 120,
+            "flavor": "The slime of this snail is a strong adhesive and a popular ingredient in many cocktails.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+10%","+20%","+30%"
+                ]
+              },
+              {
+                "attrName": "Slow Duration",
+                "attrValue": [
+                  "3s","3s","3s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bull Charger",
+            "description": "Makes hyper bull explode on death.",
+            "value": 185,
+            "flavor": "Overclocks bull's processor to 1337 ultrahertz for faster processing of leg movement.",
+            "levelUpgrade": [
+              {
+                "attrName": "Explosion Damage",
+                "attrValue": [
+                  "+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Techno Viking Helmet",
+            "description": "Makes hyper bull deal damage.",
+            "value": 150,
+            "flavor": "This helmet is property of chief Red Beard.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mature Ribbit Snail Slime",
+            "description": "Makes hyper bull slow enemies.",
+            "value": 250,
+            "flavor": "A mature ribbit snail produces one of the strongest adhesives in the galaxy.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+30%"
+                ]
+              },
+              {
+                "attrName": "Slow Duration",
+                "attrValue": [
+                  "+3s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blaster",
+        "description": "Shred enemies in a mid to long ranged hail of blaster fire.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 5
+          },
+          
+          {
+            "name": "Attack Speed",
+            "value": 166.7
+          },
+          {
+            "name": "Range",
+            "value": 7.2
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Eagle Bullets",
+            "description": "Increases damage of shots.",
+            "value": 200,
+            "flavor": "We love war! Buy more stuff from us - Vladimir Pewchenko, Happy Bullets",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cheetah Bullets",
+            "description": "Increases attack speed of blaster.",
+            "value": 210,
+            "flavor": "No Zurians were harmed during testing, other than the ones that were.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+20%","+40%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Missile",
+            "description": "Adds a slow-loading homing missile to your blaster, which explodes.",
+            "value": 220,
+            "flavor": "SPECIAL OFFER: Buy one, get one free!",
+            "levelUpgrade": [
+              {
+                "attrName": "Missiles",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Homing",
+                "attrValue": [
+                  "200"
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "15"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "25"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Crystal Eagle Bullets",
+            "description": "Increases damage of shots.",
+            "value": 360,
+            "flavor": "Crystals from Luxor moon of Calias. Handcarved by Zurians.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Booming Bullets",
+            "description": "Makes bullets and missiles do damage in an area.",
+            "value": 190,
+            "flavor": "On planet Russia, bullet shoots you. - Vladimir Pewchenko, Happy Bullets",
+            "levelUpgrade": [
+              {
+                "attrName": "Explosion Size",
+                "attrValue": [
+                  "+3.4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Another Missile",
+            "description": "Adds a slow-loading homing missile to your blaster, which explodes.",
+            "value": 220,
+            "flavor": "SPECIAL OFFER: Buy one, get one free!",
+            "levelUpgrade": [
+               {
+                "attrName": "Missiles",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Homing",
+                "attrValue": [
+                  "200"
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "15"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "25"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Double Jump",
+        "description": "Using the simple thrusters he integrated into his classic cowboy boots, Lonestar can do an extra jump in mid-air. Handy for traversing mountains of wrangled Bovinions!",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "ncreases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rocket Boots",
+            "description": "Increases movement speed.",
+            "value": 160,
+            "flavor": "Cowboy boots with rockets. What's not to like?",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.2
+                ]
+              },
+              {
+                "attrName": "Triple Jump",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Use the additional jump provided by Rocket Boots to confuse enemies and evade their attacks.",
+      "The Rubber Sleeve upgrade allows Lonestar to attack turrets and enemies from a much safer distance.",
+      "Lonestar's Incendiary Bomb upgrade has a fire effect that is visible on enemies even when they are stealthed. This is useful against invisibility.",
+      "You can trap enemies between your bull and terrain or one of your turrets for massive damage.",
+      "Bull is very useful for clearing lanes of enemy traps such as Yuri's Mines or Derpl's Grid Traps.",
+      "Bull can be used as a scouting tool. If you suspect a hide area has an enemy or trap awaiting, send the bull in first so it grants vision to you and your team.",
+      "Purchasing even base bull early on is an effective way of keeping enemies at bay or trapping them against a turret."
+    ],
+    "tipsPlayingAgainst": [
+      "Lonestar can jump again mid-air (twice with his boots). Try to keep track of his jumps to attack him when he comes down.",
+      "Rubber Sleeve will make dynamites bounce as high as Lonestar's position the moment he throws them. Use this to predict its pattern an avoid them more easily.",
+      "Lonestar's Dynamite explode on contact. Be careful when approaching him in melee range, as you may suddently take more damage than you'd expect.",
+      "Lonestar's only means of pushing his enemies away is his bull. It's easier to attack him when it is on cooldown.",
+      "Always keep an eye on the minimap, as Lonestar excels at pushing. If he goes to another lane to kill droids, you might want to follow him to repel the push or chase him off."
+    ],
+    "unlockedAtLevel": 1,
+    "releaseDate": "01/05/2012",
+    "extra": ""
+  },
+  {
+    "name": "Skølldir",
+    "backstory": "Skølldir the Terrible Space Viking has raided over a hundred spaceports, cargo ships and grocery stores. His legendary thirst for battle is unquenchable. Great raids are usually followed by great feasts and soon his nickname was altered to Skølldir The Terribly Overweight Space Viking. Nothing could scorn Skølldir more than this honorless title!\n\nSkølldir has set out on his space barge to impress the universe with his lightning fast fighting skills to prove this moniker wrong and show his nimbleness. Anyone who would dare to call him fat is met with a rapid series of crushing punches and is thrown aside. All the while, Skølldir's metallic suit is telling him how many calories he is burning.\n\nIf you find yourself on the battlefield, and hear the sound of crushing bones and thunderous farts in the distance, flee as Skølldirs fury is upon you!",
+    "stats": {
+      "health": 170,
+      "healthBonus": 30,
+      "moveSpeed": 7,
+      "attackType": "MELEE",
+      "role": [
+        "Fighter",
+        "Initiator",
+        "Crowd_Control"
+      ],
+      "mobility": "Balanced"
+    },
+    "skills": [
+      {
+        "name": "Mighty Throw",
+        "description": "Throw enemies backwards.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Knockback",
+            "value": 1.7
+          },
+          {
+            "name": "Cooldown",
+            "value": "8s"
+          },
+          {
+            "name": "Stun Duration",
+            "value": "0.8s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Power Briefs",
+            "description": "Adds damage to mighty throw.",
+            "value": 150,
+            "flavor": "You feel very powerful in these briefs.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+15","+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cortexiphan Shake",
+            "description": "Adds a slowing effect to mighty throw.",
+            "value": 160,
+            "flavor": "Sideffect: You might experience switching between multiple dimensions.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+20%","+40%"
+                ]
+              },
+              {
+                "attrName": "Slow Duration",
+                "attrValue": [
+                  "2s","2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Axethrowing Trophy",
+            "description": "Throw further.",
+            "value": 160,
+            "flavor": "Won by Arnie in the 2006 championship.",
+            "levelUpgrade": [
+              {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Crankin' Dumbbells",
+            "description": "Reduces the cooldown on mighty throw.",
+            "value": 160,
+            "flavor": "Speed up your weightlifting.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1s","-2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Homeless Gnome",
+            "description": "Throw an exploding gnome.",
+            "value": 220,
+            "flavor": "If you are willing to throw a gnome you can throw anything!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+20","+40"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Oily Spray on Bronze",
+            "description": "Receive an attackspeed bonus after a successful throw.",
+            "value": 200,
+            "flavor": "Real bronze, don't inhale! For robotics only.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+75%"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "2.2s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Earthquake ",
+        "description": "Buttstamp the ground to damage enemies in front of you in a line.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage Over Time",
+            "value": 35
+          },
+          {
+            "name": "Damage Duration",
+            "value": "5s" 
+          },
+          {
+            "name": "Cooldown",
+            "value": "8s"
+          },
+          {
+            "name": "Range",
+            "value": 9
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Electric Hammer",
+            "description": "Adds a snaring effect to Earthquake.",
+            "value": 220,
+            "flavor": "Knock, knock! Who's there?",
+            "levelUpgrade": [
+              {
+                "attrName": "Snare Duration",
+                "attrValue": [
+                  "+0.5s"
+                ]
+             }
+            ]
+          },
+          {
+            "name": "Stolen Couch",
+            "description": "Increases the range of Earthquake.",
+            "value": 190,
+            "flavor": "Perfect for powerlifting.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+5"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Stone Twins",
+            "description": "Makes Earthquake to go to the back as well.",
+            "value": 160,
+            "flavor": "Twice the action, twice the result.",
+            "levelUpgrade": [
+              {
+                "attrName": "Backwards",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Iridium Bricks Game",
+            "description": "Increases damage of Earthquake.",
+            "value": 190,
+            "flavor": "Stack 'em high! Ages 350 to 500",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enhanced Muscle Fibers",
+            "description": "Recues cooldown time of Earthquake.",
+            "value": 185,
+            "flavor": "Exercise is so 3008.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Small Volcano",
+            "description": "Increases height of Earthquake.",
+            "value": 225,
+            "flavor": "Fully functional volcano for at the office.",
+            "levelUpgrade": [
+              {
+                "attrName": "Height",
+                "attrValue": [
+                  "+3"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bash",
+        "description": "Skølldir bashes his enemies to bits with a devastating 3 hit combo",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": "11 | 14 | 25"
+          },
+          
+          {
+            "name": "Range",
+            "value": "3.8 | 3.8 | 7.2"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Perfumed White Flowers",
+            "description": "Regain health by landing the 3rd Bash combo bit.",
+            "value": 165,
+            "flavor": "You might get lucky with these.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flaming Fists",
+            "description": "Increases the range of the 3rd Bash combo hit.",
+            "value": 190,
+            "flavor": "I'm on fiya!!",
+            "levelUpgrade": [
+               {
+                "attrName": "Range",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chunk of Salted Meat",
+            "description": "Increases the damage of Bash.",
+            "value": 170,
+            "flavor": "Ingredients: 91% Drogo meat, 6% long hairs, 3% salt.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+1 | +2 | +4","\n+2 | +4 | +8","\n+3 | +6 | +12"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rubber Ducky Choker",
+            "description": "Adds a stun effect to the 3rd Bash combo hit.",
+            "value": 210,
+            "flavor": "Choke hard to relieve stress.",
+            "levelUpgrade": [
+              {
+                "attrName": "Stun Duration",
+                "attrValue": [
+                  "0.3s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fistbump",
+            "description": "Deflect bullets with Bash.",
+            "value": 190,
+            "flavor": "Come at me bro!",
+            "levelUpgrade": [
+              {
+                "attrName": "Deflect",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pale Mead",
+            "description": "Increases the damage of Bash.",
+            "value": 350,
+            "flavor": "Goes great with some dried meat.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2 | +4 | +10"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Explosive Fart",
+        "description": "Able to channel his inner “strength”, Skølldir lets out a thunderous fart that lifts his bulk to new-found heights during a jump.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "ncreases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "League Seven Boots",
+            "description": "Increases movement speed. Plus an extra boost when throwing enemies.",
+            "value": 155,
+            "flavor": "When you are in a hurry to get to league 1!",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  1.2
+                ]
+              },
+              {
+                "attrName": "Throw Movement",
+                "attrValue": [
+                  3.2
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "When playing as Skølldir, learning to time your 3rd punch is vital as some of the Bash upgrades will only affect it.",
+      "When using Perfumed White Flowers, try to kill creeps with the 3rd hit from bash so you can recover more health than you normally would.",
+      "Skølldir may use Earthquake from a high place to quickly \"drop\" in front of enemies, often surprising them.",
+      "If you see an enemy jumping, try timing your Earthquake so it hits them on their way down.",
+      "With the right upgrades, Skølldir can make his Earthquake very hard to escape from. Stolen Couch, Stone Twins and Small Volcano all help him accomplish that.",
+      "Every one of Skølldir's abilities have at least one form of crowd control available. WIth the right build he can become a powerful disruptor.",
+      "Homeless Gnome can be useful to attack turrets or the Solar drill from a safe distance, making it a somewhat effective weapon against structures."
+    ],
+    "tipsPlayingAgainst": [
+      "Baby Kuri Mammoth does not reduce the effect of Mighty Throw, but will work against Rubber Ducky Choker.",
+      "Skølldir is a very dangerous 'naut at close range. Try poking him if you have more range than him or use some form of crowd control before approaching him.",
+      "A Skølldir that uses Perfumed White Flowers can be very hard to bring down, specially when paired with Med-i'-can, Power Pills Turbo and Oily Spray on Bronze. Avoid the 3rd hit from bash at all costs.",
+      "Possibly the best way to deal with a Skølldir is to be above or below him, as he has trouble dealing with enemies in a different vertical plane. Characters like Lonestar and Vinnie & Spike are good examples of 'nauts that can do this.",
+      "Some Skølldirs prefer to delay Earthquake in favor of Mighty Throw and Bash upgrades. They can have trouble defending their turrets from many droids at once in this case. Upgrades such as the T-800 Dome and The Last Pieridae Transformae may make defending the turret even harder."
+    ],
+    "unlockedAtLevel": 11,
+    "releaseDate": "04/10/2012",
+    "extra": ""
   }
 ]

@@ -51,7 +51,6 @@ public class Awesomenaut {
                 awesomenaut.releaseDate = parseDateFromString(nautJson.getString("releaseDate"));
 
                 allNauts.add(awesomenaut);
-                Log.d("AWESOMENAUT", awesomenaut.toString());
             }
 
         } catch (JSONException e) {
