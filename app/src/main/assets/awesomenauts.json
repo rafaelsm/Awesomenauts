@@ -6115,5 +6115,1023 @@
     "unlockedAtLevel": 11,
     "releaseDate": "04/10/2012",
     "extra": ""
+  },
+  {
+    "name": "Ted McPain",
+    "backstory": "Ted McPain was one of the great heroes of the first AI Wars, a long time ago. He has led his squad of elite super soldiers, the Killer Koala’s, against many opponents and has been decorated as an outstanding soldier a hundred times over. His ultimate achievement, during the climax of the First AI Wars, was a solo operation onto the AI’s battle station Starstorm. This mission ended in Ted McPain single handedly unhinging all of the station’s crucial power couplings, effectively making sure the station wouldn’t be completed before the end of the war. Ted McPain eventually died when he sacrificed himself to save the Sunny-Daisy Alien Orphanage from a band of bloodthirsty dinosaur zombies in 3021. Ted’s heroic deeds would never be forgotten.\n\nHe lived on as he became the star of various video games: Ted McPain I through XVII, Ted McPain: Zombie Blast, Ted McPain vs. evil Ted McPain and Ted McPain Unicorn Dance Karting.\n\nWhen Voltar The Omniscient learned of the violent dimwitted video game star, he brewed up a plan that would backfire horribly. He created the Materializotron XT8000 with which he wanted to bring back the war hero of old to be his personal assistant. Extracting Ted McPain’s digital essence from his video games, Voltar managed to materialize a life-size flesh and blood version. The Ted McPain that appeared though was missing his pants for unknown reasons. Voltar waved the issue aside saying \"Stop asking stupid questions! He looks fine to me.\"",
+    "stats": {
+      "health": 140,
+      "healthBonus": 30,
+      "moveSpeed": 7,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Damage_Dealer",
+        "Fighter"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Airstrike",
+        "description": "Shoot a flare that marks the location for a powerful airstrike. Only available when holding the machinegun.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 45
+          },
+          {
+            "name": "Cooldown",
+            "value": "10s"
+          },
+          {
+            "name": "Range",
+            "value": 10
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Stealthy Ninja Weapons",
+            "description": "Adds damage over time to airstrike.",
+            "value": 145,
+            "flavor": "User Rating: 0 out of 5 stars \"These are glow in the dark?!!... how on Jupiter is this stealthy... I don't even...\"",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage Over Time",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              },
+              {
+                "attrName": "Damage Duration",
+                "attrValue": [
+                  "5s","5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wheelbarrow with Ammo",
+            "description": "Increases damage of the airstrike.",
+            "value": 150,
+            "flavor": "New technology to reload walking mechs. It's not very effective, but looks really cool!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+5","+10","+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "I-Don't-Carebear",
+            "description": "Adds a stunning effect to airstrike.",
+            "value": 180,
+            "flavor": "Look kids! It's gloomy! The super depressed bear from the I-don't-carebears television series!",
+            "levelUpgrade": [
+              {
+                "attrName": "Stun Duration",
+                "attrValue": [
+                  "+0.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Triple RPG",
+            "description": "Splits the airstrike in three pulses.",
+            "value": 180,
+            "flavor": "This little piggy blew up the market, this little piggy wrecked home, this little piggy made some roast beef.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "20"
+                ]
+              },
+              {
+                "attrName": "Airstrike",
+                "attrValue": [
+                  "+2"
+                ]
+              },
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "+4s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hamburger Phone",
+            "description": "After airstrike, a healthpack supply will drop.",
+            "value": 125,
+            "flavor": "\"Hello. Yes this is hotdog.\"",
+            "levelUpgrade": [
+              {
+                "attrName": "Healthpack",
+                "attrValue": [
+                  "Yes","Yes"
+                ]
+              },
+              {
+                "attrName": "Heal",
+                "attrValue": [
+                  "+15","+30"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Adlez Princess Phonenumber",
+            "description": "Airstrike will go through terrain, all across the level.",
+            "value": 190,
+            "flavor": "After getting in trouble, Adlez princesses send out intergalactic distress calls to find their prince.",
+            "levelUpgrade": [
+              {
+                "attrName": "Piercing",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Stimpack",
+        "description": "Receive a temporary burst of attack speed, but deal damage to yourself. Only available when holding the shotgun.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Attack Speed",
+            "value": "+30%"
+          },
+          {
+            "name": "Damage Self",
+            "value": 19 
+          },
+          {
+            "name": "Duration",
+            "value": "3s"
+          },
+          {
+            "name": "Cooldown",
+            "value": "6s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Armpit Shaving Cream",
+            "description": "Adds a heal over time effect to stimpack.",
+            "value": 135,
+            "flavor": "Also goes great with some toast and sparkling wine.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal Over Time",
+                "attrValue": [
+                  "+10","+20"
+                ]
+             }
+            ]
+          },
+          {
+            "name": "Ammo Weekly",
+            "description": "Increases the attackspeed while stimpack is active.",
+            "value": 160,
+            "flavor": "This week's special Recycling bullets: bad for you, good for the environment!",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15%","+30%"
+                ]
+              },
+              {
+                "attrName": "Damage Self",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Personal Assistant",
+            "description": "Increases the duration of stimpack",
+            "value": 155,
+            "flavor": "Pocketsize, they don't need a charger and come with a great résumé!",
+            "levelUpgrade": [
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "+1","+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Angel Wing Toilet Paper",
+            "description": "Stimpack automatically reloads your shotgun.",
+            "value": 195,
+            "flavor": "My $#! feels like heaven! Disclaimer: Nalani angel wings have been harvested unhumanly as possible.",
+            "levelUpgrade": [
+              {
+                "attrName": "Auto Reload",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Sniper Toothbrush",
+            "description": "Increases movement speed while stimpack is active.",
+            "value": 220,
+            "flavor": "If you are going to pull the trigger while brushing your teeth, you're gonna have a bad time.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+25%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Grénaide pour Homme",
+            "description": "Killed enemy Awesomenauts will increase the stimpack duration. Resets on death.",
+            "value": 185,
+            "flavor": "A fragrance made of Zurian tears.",
+            "levelUpgrade": [
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Max Duration",
+                "attrValue": [
+                  "+3s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shotgun and Machine Gun",
+        "description": "Ted can alternate between his shotgun and machine gun",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Shotgun Damage",
+            "value": "8x3 (piercing)"
+          },
+          {
+            "name": "Shotgun Attack Speed",
+            "value": 60
+          },
+          {
+            "name": "Shotgun Range",
+            "value": 4
+          },
+          {
+            "name": "Shotgun Reload Time",
+            "value": "2s"
+          },
+          {
+            "name": "Shotgun Knockback",
+            "value": 0.2
+          },
+          {
+            "name": "Machine Gun Damage",
+            "value": 4
+          },
+          {
+            "name": "Machine Gun Attack Speed",
+            "value": 352.9
+          },
+          {
+            "name": "Machine Gun Range",
+            "value": 7.2
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Ted McPain Unicorn Dance Karting",
+            "description": "Adds a grenade to shotgun shots.",
+            "value": 150,
+            "flavor": "Now with a rearview mirror on the controller!",
+            "levelUpgrade": [
+              {
+                "attrName": "Grenades Damage",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Commando Ted Figurine",
+            "description": "Increases the damage of shotgun and machine gun.",
+            "value": 175,
+            "flavor": "Wind him up and he will teach your kids the latest barfighting moves.",
+            "levelUpgrade": [
+               {
+                "attrName": "Shotgun Damage",
+                "attrValue": [
+                  "+2","+4","+6"
+                ]
+              },
+              {
+                "attrName": "Machine Gun Damage",
+                "attrValue": [
+                  "+1","+2","+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Teddy's Puffed Spider Eggs",
+            "description": "Reduces the reloadtime of shotgun.",
+            "value": 190,
+            "flavor": "Add some chunky Bovinian milk to start the day like a champ!",
+            "levelUpgrade": [
+              {
+                "attrName": "Reload Time",
+                "attrValue": [
+                  "-0.25s","-0.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tedris Ville",
+            "description": "Adds a snipe shot to machine gun when switching weapons.",
+            "value": 200,
+            "flavor": "Tap two blocks and wait a month or pay 99 Solar cents. Your friends play it!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  20
+                ]
+              },
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  20.8
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Can O'Juice!",
+            "description": "Increases the range of machine gun.",
+            "value": 145,
+            "flavor": "Ted juice walk it out! DRAAANK!",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ted's Power Briefs",
+            "description": "Increases knockback on shotgun shots.",
+            "value": 150,
+            "flavor": "Limited Edition! You might want to wash these first.",
+            "levelUpgrade": [
+              {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jumppack",
+        "description": "This marine can handle any assault course with his jumppack.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "ncreases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+1.6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Switching to Machine Gun grants Ted a movement speed boost.",
+      "Keep an eye on your Shotgun ammo count and plan ahead.",
+      "Just like Raelynn's Snipe, Airstrike's laser sight turns yellow whenever an enemy 'naut steps into its blast zone.",
+      "Firing Airstrike's tracer directly inside a hide area will grant vision inside of it.",
+      "More so than any other 'naut, Ted must land his shotgun bullets to make the most use of their limited ammo. Being patient and waiting for the perfect moment to shoot one or more targets can make the difference in a teamfight.",
+      "Because Airstrike hits all targets above the impact point by default, it's a good idea to spend more time at the bottom parts of the map. With good minimap awareness, it is possible to kill unsuspecting enemies and recover health from creeps that would otherwise be too far away. With Adlez Princess Phonenumber, you can do this from the top lane as well.",
+      "The Healthpack from Hamburger Phone heals all allies around them when they are picked up. Use this to your advantage.",
+      "Both Med-i'-can and Armpit Shaving Cream are able to negate the self-damge caused by basic Stimpack.",
+      "Stimpack's animation prevents Ted from moving and attacking, but he can still switch to Machine Gun.",
+      "Stimpack affects both of Ted's weapons. Simply switch to the Machine Gun after using Stimpack for increased, constant DPS.",
+      "Quickly and frequently switching weapons enables Ted to use the sniper bullets from Tedris Ville very often.",
+      "Keep in mind that despite Tedris Ville's very long range and high damage, it cannot damage turrets.",
+      "Use Ted's large hitbox and Shotgun's innate Knockback to keep your enemies within the Airstrike's tracer until it hits.",
+      "Can O'Juice! can turn the Machine Gun into a more effective poking tool.",
+      "When being chased, firing an Airstrike directly downwards may discourage your pursuers or even hit them if they are not careful, possibly allowing you to turn the fight around."
+    ],
+    "tipsPlayingAgainst": [
+      "Try to keep your distance from Ted, specially during the early game. He's deadly at close range, but isn't very fast.",
+      "Take advantage of Airstrike's slow, predictable animation and sound effect to get out of the way before it can hit you.",
+      "Stimpack's animation briefly prevents Ted from moving. Use this opportunity to move away from him.",
+      "Use blinding effects to make Ted miss his shotgun rounds and waste ammo. He'll either be forced to rely on the machine gun, retreat or pop up Stimpack to reload (if using Angel Wing Toilet Paper).",
+      "Silence not only prevents Ted from using Airstrike and Stimpack, but it also prevents him from switching weapons as well."
+    ],
+    "unlockedAtLevel": 1,
+    "releaseDate": "12/12/2013",
+    "extra": ""
+  },
+  {
+    "name": "Vinnie & Spike",
+    "backstory": "Vinnie and Spike are notorious partners in crime and BFF's. Spike is the muscle of the team and a bit of a silent guy, he loves late night krab burgers.\n\nVinnie is quite the hothead, leaving Spike to do the heavy lifting while he plots out the next heist. With a pack full of restraining orders this little plankton devil is not to be messed with. They are wanted on numerous planets including their homeplanet Okeanos where the largest crime syndicate Shisu has put a reward on their head for stealing the Kullinan Koi, the biggest golden Koi ever known to fish and worth 4.8 Billion Solar.\n\nUnfortunately the duo lost the Koi somewhere in the Atlantic ocean while fleeing from Interpool.\n\nBeing a pufferfish, Spike can gasp for air and float up, flapping his fins to move around. He is always ready for a fast getaway and can dash out of combat, leaving a smokebomb behind to fool his enemies, while both Vinnie and Spike run with the loot.",
+    "stats": {
+      "health": 130,
+      "healthBonus": 30,
+      "moveSpeed": 6.4,
+      "attackType": "MEDIUM_RANGE",
+      "role": [
+        "Assassin",
+        "Crowd_Control",
+        "Nuker"
+      ],
+      "mobility": "Aerial"
+    },
+    "skills": [
+      {
+        "name": "Spike Dive",
+        "description": "In many a mad dash to escape them flat-flooted coppers, Spike has specialised in a Dive that lets him torpedo through just about any roadblock. It delivers a lethal dose of spikes shot from his spine to add to the mayhem!",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 35
+          },
+          {
+            "name": "Cooldown",
+            "value": "7s"
+          },
+          {
+            "name": "Radius",
+            "value": 6
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Antique Machinegun",
+            "description": "Increases range of spike dive.",
+            "value": 160,
+            "flavor": "This rusty weapon has quite the recoil.",
+            "levelUpgrade": [
+              {
+                "attrName": "Radius",
+                "attrValue": [
+                  "+1.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dead Seahorse Head",
+            "description": "Shoot extra spikes before you dive. The extra spikes deal 40% of the regular damage.",
+            "value": 140,
+            "flavor": "The Omean give these to their children to warn them of the dangers of the seas.",
+            "levelUpgrade": [
+              {
+                "attrName": "Extra Shot",
+                "attrValue": [
+                  "Yes","Yes"
+                ]
+              },
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "20%","40%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Alien Abduction Kit",
+            "description": "Adds a lifesteal effect to spike dive.",
+            "value": 185,
+            "flavor": "It's probing time!",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+25%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bag Full of Gold Fish",
+            "description": "Deal extra damage with the dive when you have 150 solar in your pockets.",
+            "value": 150,
+            "flavor": "Common currency on Okeanos.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chrome File",
+            "description": "Increases damage of spike dive.",
+            "value": 210,
+            "flavor": "For male pufferfish hygenic use and escaping prison.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+10","+20"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rigged Casino Games",
+            "description": "Reduced cooldown on spike dive.",
+            "value": 135,
+            "flavor": "Nobody likes chance!",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1s","-2s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Smoke Screenmpack",
+        "description": "Whenever Spike gets cornered, he squirts out a misty cloud that leaves everyone blinded in its wake. Vinnie has long since learned to use this nervous tick in his trusty pal to beat a hasty retreat when things get nasty!",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "11s"
+          },
+          {
+            "name": "Duration",
+            "value": "4s"
+          },
+          {
+            "name": "Size",
+            "value": 8
+          },
+          {
+            "name": "Attack Speed",
+            "value": 160
+          },
+          {
+            "name": "Blind Duration",
+            "value": "0.38s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Red Bandana",
+            "description": "Adds a silencing effect to smoke screen.",
+            "value": 155,
+            "flavor": "Say what again! I dare ya! I double dare ya!",
+            "levelUpgrade": [
+              {
+                "attrName": "Silence Duration",
+                "attrValue": [
+                  "+0.38s"
+                ]
+             }
+            ]
+          },
+          {
+            "name": "Clown's Mask",
+            "description": "When using smoke screen you will become temporarily immune to all debuffs.",
+            "value": 150,
+            "flavor": "Worn by Grint tribe members during sacrificial rituals",
+            "levelUpgrade": [
+              {
+                "attrName": "Immunity",
+                "attrValue": [
+                  "+1.5s","+3s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mammoth Sock with Holes",
+            "description": "Makes teammates invisible.",
+            "value": 175,
+            "flavor": "Common giant second-hand sock worn by the mammoths on the glass planet Kuri.",
+            "levelUpgrade": [
+              {
+                "attrName": "Invisible",
+                "attrValue": [
+                  "Yes","Yes"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "1.2s","2.4s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Withered President Mask",
+            "description": "Increases movement speed after using smoke cloud.",
+            "value": 150,
+            "flavor": "Although the mask is bleached by the sun, it's still in good shape. It says \"4 more years!\"",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "80%"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "2s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rocketeer",
+            "description": "Increases size of smoke screen.",
+            "value": 175,
+            "flavor": "This poor guy seems to be tied to a rocket!",
+            "levelUpgrade": [
+              {
+                "attrName": "Size",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rubber Mask",
+            "description": "Get solar for every enemy in the cloud.",
+            "value": 70,
+            "flavor": "Latest in Cerean eyewear. By Lucci",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  "+1 per s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bubble Gun",
+        "description": "The small difference between the bubbles shot from Spike’s mouth, and the gently tumbling soapy dreams we all adore from our childhood, is that Spike’s bubbles will take your arm off if you try to pop ‘m!",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Bullets",
+            "value": 3
+          },
+           {
+            "name": "Damage",
+            "value": 3
+          },
+           {
+            "name": "Attack Speed",
+            "value": 85.7
+          },
+           {
+            "name": "Range",
+            "value": 7
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Sharky & Remora",
+            "description": "Increases range of bubble gun.",
+            "value": 185,
+            "flavor": "Two friends in a can.",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Scarfish",
+            "description": "Increases attack speed of bubble gun.",
+            "value": 135,
+            "flavor": "Say hello to my little friend!",
+            "levelUpgrade": [
+               {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+15%","+30%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Yakoiza",
+            "description": "Increases damage of bubble gun after using smoke screen or spike dive.",
+            "value": 160,
+            "flavor": "This decoy was used in the famous Kullinan Koi heist.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Al Carper",
+            "description": "Increases damage of bubble gun.",
+            "value": 190,
+            "flavor": "Great with a good cocktail!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+1","+2","+3"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Godfish",
+            "description": "Increases damage of bubble gun when wealthy enemies (150 solar) are near.",
+            "value": 175,
+            "flavor": "SALE! Now for an offer you can't refuse!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+3"
+                ]
+              },
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "22"
+                ]
+              }
+            ]
+          },
+           {
+            "name": "Loanshark",
+            "description": "Receive extra solar for every Awesomenaut kill.",
+            "value": 50,
+            "flavor": "Better pay your debts!",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  "+50"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inflate",
+        "description": "Being the smart guy that he is, Vinnie uses Spike’s ability to bloat his body and float around. Apart from a hilarious party trick, this will get the duo up to those hard to reach places for the choicest pieces of loot!",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Light",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+18",
+                  "+36",
+                  "+54"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Krab Burguer",
+            "description": "Solar coins will heal you.",
+            "value": 200,
+            "flavor": "This popular underwater fast food, makes your stomach resistant to solar.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health/Solar",
+                "attrValue": [
+                  "+5"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+1.6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  115
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Vinnie & Spike are noticeably faster while moving on air, rather than on land. Players are encouraged to keep flying instead of walking.",
+      "Solar Krab Burgers will not give you more health if you pick up a golden Solar cube instead of a silver one.",
+      "Spike Dive starts off pretty weak early game. Use it to farm Solar, poke enemies or as an escape tool. With some upgrades, it becomes more effective at killing enemies.",
+      "If you are using Bag Full of Gold Fish, it might be a good idea to play more passively and focus on farming whenever you drop below the required Solar limit. Once you have enough Solar again, you can go back to ganks and pushes.",
+      "Aiming downwards with Spike Dive while close to the ground is an effective way of landing both spike explosions from Dead Seahorse Head on the same target.",
+      "Remember that if you use Spike Dive to attack your enemies, you won't have it available for an escape. Smoke Screen (and any upgrades it may have) can assist you in your escape.",
+      "Smoke Screen can be used defensively against droids: since blind incapacitates them, use it to prevent your turret from being attacked by them. This is also useful against Gnaw's weedlings.",
+      "If you combine Rubber Mask with Solar Krab Burgers, you can use Smoke Screen on a large group of enemies to heal off of them.",
+      "Combining Mammoth Sock With Holes, Withered President Mask and Space Air Max can turn Vinnie & Spike into very powerful escape artists.",
+      "Using Sharky & Remora can help you stay at a safe distance from your enemy while attacking or to get kills that wouldn't be possible otherwise. This upgrade also allows Vinnie & Spike to outrange turrets, making them great at pushing, specially when combined with Smoke Screen which stops droids from attacking, giving you time to kill them while destroying the turret.",
+      "Although Bubble Gun deals fairly low damage early on, it pierces through enemies, making it a good droid farming tool.",
+      "When using The Godfish upgrade, keep in mind that you will glow when you are near an enemy with 150 or more Solar even if he's inside a hide area or invisible. Use this as a \"radar\" and be prepared to attack or flee accordingly."
+    ],
+    "tipsPlayingAgainst": [
+      "Vinnie & Spike have poor acceleration when falling, specially inside the anti-gravity lift on AI Station 404, making it easier to land abilities on them during that time.",
+      "Vinnie & Spike have no access to traditional regeneration in form of Med-i'-can. Try harrassing them early on, forcing them to go after healthpacks, creeps or to retreat.",
+      "Mammoth Sock With Holes will apply not only to Vinnie & Spike, but to their teammates as well. Be wary of stealth ambushes.",
+      "Unlike Froggy G, Vinnie & Spike are vulnerable to damage during Spike Dive. Attack them when they use it offensively.",
+      "If Vinnie & Spike are using Rubber Mask paired with Solar Krab Burgers, do your best to step out of Smoke Screen as soon as possible, as you'll be healing them more and more the longer you stay inside of it.",
+      "Remember: Blinding effects do not disable your minimap. Use it to keep track of Vinnie & Spike's position.",
+      "If you notice that Vinnie & Spike are surrounded by a white bubble after using Smoke Screen, don't use your crowd control abilities: they are protected by Clown's Mask.",
+      "If silence from Red Bandana is giving you trouble, consider upgrading your autoattack instead, since it's unnafected by it."
+    ],
+    "unlockedAtLevel": 16,
+    "releaseDate": "18/12/2012",
+    "extra": ""
   }
 ]
