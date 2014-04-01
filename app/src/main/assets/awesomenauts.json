@@ -7035,7 +7035,7 @@
           {
             "name": "Solar Krab Burguer",
             "description": "Solar coins will heal you.",
-            "value": 200,
+            "value": 100,
             "flavor": "This popular underwater fast food, makes your stomach resistant to solar.",
             "levelUpgrade": [
               {
@@ -7132,6 +7132,998 @@
     ],
     "unlockedAtLevel": 16,
     "releaseDate": "18/12/2012",
+    "extra": ""
+  },
+  {
+    "name": "Voltar the Omniscient",
+    "backstory": "Voltar's past is shrouded in mystery. Rumor has it he once was a researcher at a star-encapsulating power station. The station made intergalactic headlines when it exploded around 500 years ago, sending off all kinds of strange, unseen radiation into space. In this explosion, the Al core of the Zero's was destroyed, bringing an abrupt end to the First Al War. Although peace was maintained for some centuries, the war eventually returned. Some think that war was just too profitable, and suspect that weapon manufacturers had a hand in the construction of a new Al core for the Zero's.\n\nThe explosion at the power station destroyed almost every part of Voltar's body, leaving only his brilliant brain intact. This brain was carefully placed inside a Braintank by salvagers. Through the years, and with help of his loyal robot drones, he made some nifty modifications to his braintank that enabled him to participate in the newly erupted Robot Wars.\n\nNo-one knows Voltar's true motives for participating in the war as a mercenary, but what can be assured is that he’s a mastermind with unmatched psychotechnic powers and an arsenal of armed robots that do his every bidding.",
+    "stats": {
+      "health": 135,
+      "healthBonus": 30,
+      "moveSpeed":7.2,
+      "attackType": "SHORT_RANGE",
+      "role": [
+        "Support",
+        "Pusher"
+      ],
+      "mobility": "Tactical"
+    },
+    "skills": [
+      {
+        "name": "Suicide Drones",
+        "description": "Summon drones that protect you. Detonate them using.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "4s"
+          },
+          {
+            "name": "Amount",
+            "value": 6
+          },
+          {
+            "name": "Damage",
+            "value": 4
+          },
+          {
+            "name": "Explosion Damage",
+            "value": 12
+          },
+          {
+            "name": "Attack Speed",
+            "value": 48
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Drone Army",
+            "description": "Increases the amount of drones you can create.",
+            "value": 200,
+            "flavor": "Self-aware and ready for extermination.",
+            "levelUpgrade": [
+              {
+                "attrName": "Amount",
+                "attrValue": [
+                  "+1"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dark Matter Shots",
+            "description": "Makes drones blind enemies.",
+            "value": 140,
+            "flavor": "Manufactured on AI station 404.",
+            "levelUpgrade": [
+              {
+                "attrName": "Blind Duration",
+                "attrValue": [
+                  "0.5s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapon Clip-on",
+            "description": "Increases the damage of your drones' shots.",
+            "value": 190,
+            "flavor": "Universal fit: easy to attach, even without hands.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hyper Drive",
+            "description": "Increases attack speed of drones.",
+            "value": 210,
+            "flavor": "From 0 to 100 in 435.5 zeptoseconds.",
+            "levelUpgrade": [
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+33%","+66%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weaponised Hull",
+            "description": "Improves drone explosion upon destruction.",
+            "value": 180,
+            "flavor": "Manufactured on AI station 404.",
+            "levelUpgrade": [
+              {
+                "attrName": "Explosion Damage",
+                "attrValue": [
+                  "+3","+6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warpgate Overdrive",
+            "description": "Reduces cooldown time on drone gateway and summons drones faster.",
+            "value": 200,
+            "flavor": "Is that a drone gateway in your robe or are you just happy to see me?",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-1s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Healbot",
+        "description": "Enables a stationary healing robot.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Heal",
+            "value": 4
+          },
+          {
+            "name": "Attack Speed",
+            "value": 100
+          },
+          {
+            "name": "Cooldown",
+            "value": "11s"
+          },
+          {
+            "name": "Time",
+            "value": "6s"
+          },
+          {
+            "name": "Health",
+            "value": 60
+          },
+          {
+            "name": "Range",
+            "value": 8
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Energy Drink",
+            "description": "Increases the health and longevity of Healbot.",
+            "value": 205,
+            "flavor": "Keep your clone brain healthy and alive... for a while.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+10","+20"
+                ]
+             },
+             {
+                "attrName": "Time",
+                "attrValue": [
+                  "+2s","+4s"
+                ]
+             }
+            ]
+          },
+          {
+            "name": "Overheal Potion",
+            "description": "Increases the healing power of the Healbot.",
+            "value": 210,
+            "flavor": "Chug! Chug! Chug!",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Turret Add-on",
+            "description": "Enables your Healbot to shoot at nearby enemies.",
+            "value": 200,
+            "flavor": "Desperate diseases call for desperate remedies.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              },
+              {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "200","200"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hydraulic Sugar Dispenser",
+            "description": "Reduces cooldown of Healbot.",
+            "value": 170,
+            "flavor": "Sweet for your friends, sour for your enemies.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-2s","-4s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cortex Tank",
+            "description": "Healbot will knock away enemies.",
+            "value": 175,
+            "flavor": "Smack that droid up.",
+            "levelUpgrade": [
+              {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+1"
+                ]
+              },
+              {
+                "attrName": "Stun duration",
+                "attrValue": [
+                  "+0.1s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Health Pack Surprise",
+            "description": "Healbot will spawn a healthpack after time-out.",
+            "value": 180,
+            "flavor": "We put a first aid kit in your first aid kit. - Alvin Megabit, owner of Pods industries.",
+            "levelUpgrade": [
+              {
+                "attrName": "Healthpack",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Healing Wave",
+        "description": "Voltar can charge up healing blasts at allied bots and Awesomenauts.",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Heal",
+            "value": "1 (+2 allied Awesomenauts)"
+          },
+           {
+            "name": "Max Heal",
+            "value": 7
+          },
+          {
+            "name": "Heal Duration",
+            "value": "10s"
+          },
+          {
+            "name": "Attack Speed",
+            "value": 75
+          },
+          {
+            "name": "Range",
+            "value": 4.8
+          },
+          {
+            "name": "Solar/Heal",
+            "value": "15%"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Happy Thoughts",
+            "description": "Increases healing power of healing wave.",
+            "value": 160,
+            "flavor": "I see rainbows, so pretty... Wait, is that a unicorn?!",
+            "levelUpgrade": [
+              {
+                "attrName": "Max Heal",
+                "attrValue": [
+                  "+2","+4","+6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Psychokinetic Repulsion",
+            "description": "Adds a knockback effect to healing wave.",
+            "value": 135,
+            "flavor": "Prescription: while in cleaning mode, pour 2 cups of powder into braincontainer and mix with program 2B twice a day.",
+            "levelUpgrade": [
+               {
+                "attrName": "Knockback",
+                "attrValue": [
+                  "+0.4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Psychothrust",
+            "description": "Increases range of healing wave.",
+            "value": 155,
+            "flavor": "Open up your mind and unleash your true potential!",
+            "levelUpgrade": [
+              {
+                "attrName": "Range",
+                "attrValue": [
+                  "+1.6","+3.2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dreams of Greed",
+            "description": "Gain more Solar for healing with healing wave.",
+            "value": 155,
+            "flavor": "Mind on your money and your money on your mind.",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar/Heal",
+                "attrValue": [
+                  "+5%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Twisted Nightmares",
+            "description": "Adds damage to healing wave.",
+            "value": 200,
+            "flavor": "Ahhhhhhh!!!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Min Damage",
+                "attrValue": [
+                  "+2","+4"
+                ]
+              },
+              {
+                "attrName": "Max Damage",
+                "attrValue": [
+                  "+8","+16"
+                ]
+              },
+              {
+                "attrName": "Droid Damage",
+                "attrValue": [
+                  "-1","-2"
+                ]
+              }
+            ]
+          },
+           {
+            "name": "Euphoric Thoughts",
+            "description": "Increases healing power of your healing wave.",
+            "value": 380,
+            "flavor": "Double rainbow... all the way!",
+            "levelUpgrade": [
+              {
+                "attrName": "Max Heal",
+                "attrValue": [
+                  "+6"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hover",
+        "description": "Voltar added some thrusters to his braintank, to allow him to hover above the ground and slow-fall while in midair.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+1.6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Krab Burguer",
+            "description": "Solar coins will heal you.",
+            "value": 200,
+            "flavor": "This popular underwater fast food, makes your stomach resistant to solar.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health/Solar",
+                "attrValue": [
+                  "+5"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "Voltar has a weak early game and a very powerful late game. Play defensively and focus on farming Solar with your Healing Wave at the start.",
+      "Voltar needs to have companions to be effective. He needs something that can attack because he can't attack without his Drones. The best way to use Voltar is to follow a group of droids, or follow other Awesomenauts and support them.",
+      "Voltar gains Solar from healing anything with Healing Wave, whether it's droids, a fellow Awesomenaut, or even Leon's dummy. Healbot does not generate Solar, however.",
+      "Voltar may be able to take down a turret if left alone with just droids and drones while the rest of his team is distracting the emeny. Dark Matter Shots makes this tactic even more effective as the enemy droids are incapacitated by blind.",
+      "You might want to avoid pairing Turret Add-on with Cortex Tank, as the knockback will keep your enemies out of the healbot's damaging zone.",
+      "You may activate Voltar's Hover as many times as you'd like as long as you are still up in the air. Alternate between hovering and falling to confuse enemies trying to hit you.",
+      "Remember that the Drones' explosion is a large part of Voltar's damage output and that they take some time before fully respawning. Consider this before detonating them.",
+      "Be careful with Psychokinetic Repulsion and Cortex Tank, as they may push your enemies out of harm's way, denying your team a kill."
+    ],
+    "tipsPlayingAgainst": [
+      "Without Turret Add-on upgrade for Healbot, Twisted Nightmares or his Drones, Voltar has no means of damaging his enemies. Attack him freely if such is the case.",
+      "Voltar's the tallest Awesomenaut of the cast, making bodyblocking him to limit his movements an easier task. This is specially true on Aiguillon's tight corridors.",
+      "Most of Voltar's upgrades are very expensive. Putting pressure on him early on to kill him or force a retreat may delay his powerful late game.",
+      "You might wanna save a more powerful ability to destroy Voltar's healbot as soon as it's deployed, denying the heal to the enemy team.",
+      "Don't bother trying to steal the healthpack from Health Pack Surprise. Only Voltar and his team can take it."
+    ],
+    "unlockedAtLevel": 5,
+    "releaseDate": "01/05/2012",
+    "extra": ""
+  },
+  {
+    "name": "Yuri",
+    "backstory": "Once part of the soviet space program, Yuri was a monkey, experimentally shot into space during the 1960's cold war spacerace. Mysteriously, monitoring soviet scientists suddenly lost track of monkey Yuri's spacecraft.\n\nPuzzled by its sudden disappearence, Soviet space-command wondered what had become of their beloved test-pet Yuri. Little did they know that Yuri's spacecraft had entered a warpfield anomaly and was transported hundreds of years into the future!\n\nAlso, the warpfields radiation boosted Yuri's mind to superintelligent levels. The new, more intelligent, mad and slightly sadistic Yuri quickly grasped the situation and modified his broken rocket into an equally mad timetravelling supercomputer jetpack.\n\nWith the jetpack translating everything Yuri says and does, enemies are never quite sure who is in control, the mad scientist monkey, or the computer it created?",
+    "stats": {
+      "health": 145,
+      "healthBonus": 30,
+      "moveSpeed":7.8,
+      "attackType": "LONG_RANGE",
+      "role": [
+        "Support",
+        "Pusher",
+        "Area_Control"
+      ],
+      "mobility": "Aerial"
+    },
+    "skills": [
+      {
+        "name": "Mine Deploying",
+        "description": "What’s the use of a jetpack if all it can do is fly and warp space and time? Exactly, it needs explosions!",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 40
+          },
+          {
+            "name": "Cooldown",
+            "value": "4s"
+          },
+          {
+            "name": "Time",
+            "value": "12s"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Titanium Spikes",
+            "description": "Increases the damage of mines.",
+            "value": 120,
+            "flavor": "Arm your mines to the teeth.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+5","+10","+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Toaster Timer",
+            "description": "Increases the longevity of mines.",
+            "value": 110,
+            "flavor": "We like our enemies extra crispy.",
+            "levelUpgrade": [
+              {
+                "attrName": "Time",
+                "attrValue": [
+                  "+3s","+6s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Aerial Spring",
+            "description": "Makes mines bounce up and down.",
+            "value": 140,
+            "flavor": "a.k.a. The Dove Exterminator",
+            "levelUpgrade": [
+              {
+                "attrName": "Bounce",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mine Constructor",
+            "description": "Reduces cooldown time on mines.",
+            "value": 150,
+            "flavor": "By warping the mines directly from our factory to you, we can provide the quickest recharge time.",
+            "levelUpgrade": [
+              {
+                "attrName": "Cooldown",
+                "attrValue": [
+                  "-0.5s","-1s"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Carpet Bombs",
+            "description": "Increases the amount of mines placed, dividing total damage evenly across them..",
+            "value": 175,
+            "flavor": "Instructions: Cut mine along dotted line (use the included steelcutter). Remove the three cores.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "/2.5"
+                ]
+              },
+              {
+                "attrName": "Mines",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Uranium Spikes",
+            "description": "Increases the damage of mines.",
+            "value": 300,
+            "flavor": "My spikes are bigger than yours.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+15"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Time Warp",
+        "description": "Enables a time-slowing effect in a small bubble,which slows enemies and their projectiles down.",
+        "value": 135,
+        "attributes": [
+          {
+            "name": "Cooldown",
+            "value": "10.5s"
+          },
+          {
+            "name": "Duration",
+            "value": "3.5s"
+          },
+          {
+            "name": "Size",
+            "value": 12.8
+          },
+          {
+            "name": "Slowing Power",
+            "value": "30%"
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Chrono Rift",
+            "description": "Increases slowing effect of time warp.",
+            "value": 210,
+            "flavor": "Contains huge wormhole. Keep away from children.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+10%"
+                ]
+             }
+            ]
+          },
+          {
+            "name": "Regeneration Pod",
+            "description": "Allied droids and Awesomenauts inside your time warp are healed over time.",
+            "value": 180,
+            "flavor": "Want to feel 20 years younger? Now you can! With our patented Turn-back-time technology.",
+            "levelUpgrade": [
+              {
+                "attrName": "Heal per sec.",
+                "attrValue": [
+                  "+7.5","+15"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spacetime Continuity Device",
+            "description": "Provides debuff immunity during the time warp.",
+            "value": 155,
+            "flavor": "Special moments will last forever. Literally.",
+            "levelUpgrade": [
+              {
+                "attrName": "Immunity",
+                "attrValue": [
+                  "Yes"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flash Forward",
+            "description": "Allied robots and Awesomenauts inside your time warp will move and fight faster.",
+            "value": 220,
+            "flavor": "Ends combat and shoetalk with your centipede girlfriend quicker.",
+            "levelUpgrade": [
+              {
+                "attrName": "Speed up",
+                "attrValue": [
+                  "+25%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pod Pack Deluxe With Banana",
+            "description": "Adds a lifesteal effect to your laser while time warp is active.",
+            "value": 270,
+            "flavor": "Because you are not worth it.",
+            "levelUpgrade": [
+              {
+                "attrName": "Lifesteal",
+                "attrValue": [
+                  "+65%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Time Primer",
+            "description": "Increases slowing effect of Time Warp.",
+            "value": 180,
+            "flavor": "By folding time, we have managed to copy our products many, many times.",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+5%","+10%","+15%"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Laser",
+        "description": "Affixed on top of the jetpack is a deadly laser that is able to fire in a full circle with pinpoint precision. It is able to slice through multiple enemies and even bounce off walls to hit people around a corner!",
+        "value": 0,
+        "attributes": [
+          {
+            "name": "Damage",
+            "value": 3
+          },
+           {
+            "name": "Maximum Damage",
+            "value": 4
+          },
+          {
+            "name": "Attack Speed",
+            "value": 300
+          },
+          {
+            "name": "Range",
+            "value": 9
+          },
+          {
+            "name": "Charge time",
+            "value": 4.8
+          },
+          {
+            "name": "Pulls pickups towards you.",
+            "value": ""
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Giant Monocle",
+            "description": "Increases the range of laser.",
+            "value": 160,
+            "flavor": "Standard giant bifocal monocle for a giant toad.",
+            "levelUpgrade": [
+              {
+                "attrName": "Length",
+                "attrValue": [
+                  "+2.4"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Instant Charge Battery",
+            "description": "Increases attack speed of laser.",
+            "value": 210,
+            "flavor": "Charged at lightning farm Xeo-3011 on Sorona.",
+            "levelUpgrade": [
+               {
+                "attrName": "Attack Speed",
+                "attrValue": [
+                  "+20%","+40%"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Resonance Amplifier",
+            "description": "Increases the maximum damage per hit of laser.",
+            "value": 140,
+            "flavor": "Luxor crystals are huge, light, and trendy! A real show stealer!",
+            "levelUpgrade": [
+              {
+                "attrName": "Maximum Damage",
+                "attrValue": [
+                  "+1","+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Flyswatter",
+            "description": "Increases the damage per hit of laser.",
+            "value": 185,
+            "flavor": "Splat!",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hubble's Lens",
+            "description": "Increases the damage per hit of laser.",
+            "value": 360,
+            "flavor": "Although the lens is quite old, it remains perfectly poilished.",
+            "levelUpgrade": [
+              {
+                "attrName": "Damage",
+                "attrValue": [
+                  "+2"
+                ]
+              }
+            ]
+          },
+           {
+            "name": "Baby Yeti",
+            "description": "Adds a slowing effect to your Laser. Starts strong, grows weaker.",
+            "value": 185,
+            "flavor": "Aw... he is so cute!! OUCH! He bit me! Why you little...",
+            "levelUpgrade": [
+              {
+                "attrName": "Slowing Power",
+                "attrValue": [
+                  "+20%"
+                ]
+              },
+              {
+                "attrName": "Duration",
+                "attrValue": [
+                  "0.25s"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jet Pack",
+        "description": "The pride and joy of Yuri: it alters the flow of time, shoots laserbeams, drops mines, can insult enemies in over six million forms of communication and oh yeah, it can fly.",
+        "value": 0,
+        "attributes": [],
+        "upgrades": [
+          {
+            "name": "Power Pills Turbo",
+            "description": "Increases maximum health.",
+            "value": 130,
+            "flavor": "Insert pill into rear end of digestive tract.",
+            "levelUpgrade": [
+              {
+                "attrName": "Health",
+                "attrValue": [
+                  "+25",
+                  "+50",
+                  "+75"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Med-i'-can",
+            "description": "Automatically regenerate health.",
+            "value": 120,
+            "flavor": "Hello... anyone there? Please get me out of here!!!",
+            "levelUpgrade": [
+              {
+                "attrName": "Health Per Min",
+                "attrValue": [
+                  100,
+                  200
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Space Air Max",
+            "description": "Increases movement speed.",
+            "value": 135,
+            "flavor": "Fashionable and Fast.",
+            "levelUpgrade": [
+              {
+                "attrName": "Movement",
+                "attrValue": [
+                  "+1.6"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Solar Tree",
+            "description": "Gain additional Solar over time.",
+            "value": 50,
+            "flavor": "These rare plants grow near Solar veins. Keep away from light and water..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar Per Min",
+                "attrValue": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Piggy Bank",
+            "description": "Gives 115 Solar.",
+            "value": 0,
+            "flavor": "This product was brought to you by Zork industries, exploiting Zurians since 2780..",
+            "levelUpgrade": [
+              {
+                "attrName": "Solar",
+                "attrValue": [
+                  "+115"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Baby Kuri Mammoth",
+            "description": "Reduces the effect of all debuffs",
+            "value": 110,
+            "flavor": "LOOK!!! A FLYING ELEPHANT!",
+            "levelUpgrade": [
+              {
+                "attrName": "Debuffs",
+                "attrValue": [
+                  "25",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tipsPlayingAs": [
+      "While the Jet Pack is active, Yuri will ignore any glass platforms, moving freely through them.",
+      "Yuri players often conceal their Mines inside hide areas in order to surprise enemies.",
+      "Deploy mines in high traffic areas, jump pad paths and platforms to make it difficult for enemies to manouver around the lane. Other good locations include the Worm button on Sorona or the Creep Releaser on AI Station 404.",
+      "Combining Aerial Spring and Carpet Bombs allow Yuri to control entire corridors. This is specially useful in chokepoints and Aiguillon.",
+      "Stacking mines on top of each other is a great way of stopping droid pushes and dealing heavy damage to careless enemies.",
+      "Yuri is good when paired with Leon, considering you can stack your Mines, and have him pull enemies into a stack of them. Likewise Skølldir's throw with the right spacing. This is usually enough for a kill. If the enemy happens to survive, use your laser to aid your buddy in getting the kill.",
+      "Much like default Time Warp, Flash Forward affects the speed of everything inside the bubble, including Yuri's own attack speed. Consider taking it if you are running a laser build focused on damage.",
+      "With your team nearby, use your flight and hide areas to sneak on your enemies and get Time Warp on all of them.",
+      "When using Pod Pack Deluxe With Banana, take advantage of laser's innate piercing to lifesteal off of multiple targets at once."
+    ],
+    "tipsPlayingAgainst": [
+      "A common mistake done by many new players is to willingly step on mines in order to clear them for the rest of the team. It's very rarely worth the risk as they usually deal high damage (specially when stacked) and Yuri can quickly and easily replace them.",
+      "Mines make a beeping sound. Use that to know when you are close to one. This is specially useful against mines planted inside hide areas.",
+      "Keep in mind that mines deal damage in an area around them. You may still be hurt if a droid or friendly 'naut steps on them if you are too close.",
+      "Mobile minions such as bull and clones with Basic AI Chip can assist you in clearing mines, specially when they are stacked on top of each other. Splash Dash can also be useful due to the innate invulnerability.",
+      "When engaging Yuri in close combat, remember that he can lay a mine right on top of you, which will immediately explode.",
+      "Leon's Slash attack and movement/displacement crowd control effects can turn off Yuri's Jet Pack, forcing him to reactivate it if he wishes to remain in-flight.",
+      "Yuri has a variety of powerful and dangerous upgrades to his Time Warp capable of turning an otherwise lost teamfight in his favor. Consider this before engaging him and his teammates.",
+      "Yuri cannot move and fire his laser at the same time. Keep that in mind when trying to hit him with abilities and attacks that are harder to land.",
+      "Yuri's Laser must stay active for a while in order to reach it's maximum damage potential. Crowd control effects interrupt this effect, however, making them particularly useful in this case."
+    ],
+    "unlockedAtLevel": 12,
+    "releaseDate": "01/05/2012",
     "extra": ""
   }
 ]
