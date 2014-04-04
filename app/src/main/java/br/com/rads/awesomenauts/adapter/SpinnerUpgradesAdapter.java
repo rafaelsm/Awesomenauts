@@ -38,14 +38,6 @@ public class SpinnerUpgradesAdapter extends ArrayAdapter<Skill> {
         this.context = context;
         this.skills = objects;
 
-       // addAllSkillAtFirst();
-    }
-
-    private void addAllSkillAtFirst() {
-        Skill all = new Skill();
-        all.setName("All");
-
-        this.skills.add(0, all);
     }
 
     @Override
@@ -62,18 +54,29 @@ public class SpinnerUpgradesAdapter extends ArrayAdapter<Skill> {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View row = inflater.inflate(R.layout.spinner_upgrade_row, parent, false);
-        TextView rowTextView = (TextView) row.findViewById(R.id.row_upgrade_textview);
-
-        if (addPadding) {
-            int padding = Utils.getPadding(context.getResources().getDisplayMetrics().density, 4);
-            rowTextView.setPadding(padding, padding, padding, padding);
+        if(convertView == null) {
+            convertView = inflater.inflate(R.layout.spinner_upgrade_row, parent, false);
         }
 
         Skill skill = skills.get(position);
 
+        TextView rowTextView = (TextView) convertView.findViewById(R.id.row_upgrade_textview);
         rowTextView.setText(skill.getName());
 
+        addPaddingToDropDownView(addPadding, rowTextView);
+        addDrawableToTextView(rowTextView, skill);
+
+        return convertView;
+    }
+
+    private void addPaddingToDropDownView(boolean addPadding, TextView rowTextView) {
+        if (addPadding) {
+            int padding = Utils.getPadding(context.getResources().getDisplayMetrics().density, 4);
+            rowTextView.setPadding(padding, padding, padding, padding);
+        }
+    }
+
+    private void addDrawableToTextView(TextView rowTextView, Skill skill) {
         int imageResource = 0;
 
         try {
@@ -85,11 +88,9 @@ public class SpinnerUpgradesAdapter extends ArrayAdapter<Skill> {
         if (imageResource == 0)
             imageResource = R.drawable.placeholder_skill;
 
-        Drawable resizedDrawable = Utils.resizeDrawable(context, imageResource, 0.7f);
+        Drawable resizeDrawable = Utils.resizeDrawable(context, imageResource, 0.7f);
 
-        rowTextView.setCompoundDrawablesWithIntrinsicBounds(resizedDrawable, null, null, null);
-
-        return row;
+        rowTextView.setCompoundDrawablesWithIntrinsicBounds(resizeDrawable, null, null, null);
     }
 
 }

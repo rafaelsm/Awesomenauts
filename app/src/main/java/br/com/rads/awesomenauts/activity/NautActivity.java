@@ -199,13 +199,13 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
 
             switch (position) {
                 case 0:
-                    title = "Information";
+                    title = getString(R.string.information);
                     break;
                 case 1:
-                    title = "Skill";
+                    title = getString(R.string.skills);
                     break;
                 case 2:
-                    title = "Upgrades";
+                    title = getString(R.string.upgrades);
                     break;
             }
 

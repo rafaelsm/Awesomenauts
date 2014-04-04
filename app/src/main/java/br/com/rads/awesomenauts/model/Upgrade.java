@@ -67,7 +67,8 @@ public class Upgrade {
         StringBuilder imagePath = new StringBuilder("up_");
         imagePath.append(name.toLowerCase()
                 .replace(" ", "_").replace("/","_").replace("'","")
-                .replace("-","_").replace("\"","").replace(".","").replace("!","").replace(":", ""));
+                .replace("-","_").replace("\"","").replace(".","")
+                .replace("!","").replace(":", "").replace("&","and"));
         
         return imagePath.toString();
 

@@ -19,5 +19,10 @@
     <string name="attack_type"><![CDATA[<b>Attack Type: </b>]]></string>
     <string name="role"><![CDATA[<b>Role: </b>]]></string>
     <string name="mobility"><![CDATA[<b>Mobility: </b>]]></string>
+    <string name="action_about">About</string>
+    <string name="information">Information</string>
+    <string name="skills">Skill</string>
+    <string name="upgrades">Upgrades</string>
+    <string name="all">All</string>
 
 </resources>
