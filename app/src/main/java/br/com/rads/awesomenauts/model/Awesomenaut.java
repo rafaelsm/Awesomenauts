@@ -128,7 +128,7 @@ public class Awesomenaut {
 
     public String getImage() {
         StringBuilder imagePath = new StringBuilder("naut_");
-        imagePath.append(name.toLowerCase().replace(" ", "_"));
+        imagePath.append(name.toLowerCase().replace(" ", "_").replace("&","and"));
         return imagePath.toString();
     }
 

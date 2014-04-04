@@ -68,7 +68,8 @@ public class Upgrade {
         imagePath.append(name.toLowerCase()
                 .replace(" ", "_").replace("/","_").replace("'","")
                 .replace("-","_").replace("\"","").replace(".","")
-                .replace("!","").replace(":", "").replace("&","and"));
+                .replace("!","").replace(":", "").replace("&","and")
+                .replace("é","e"));
         
         return imagePath.toString();
 
