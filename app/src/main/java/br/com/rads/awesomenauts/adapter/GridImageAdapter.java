@@ -1,8 +1,10 @@
 package br.com.rads.awesomenauts.adapter;
 
 import android.app.Activity;
+import android.content.AsyncTaskLoader;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
@@ -18,9 +20,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.io.InputStream;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.model.Awesomenaut;
@@ -77,8 +81,11 @@ public class GridImageAdapter extends BaseAdapter {
         }
 
         Awesomenaut a = awesomenauts.get(position);
-        holder.image.setImageResource( getImageForNaut(awesomenauts.get(position)));
         holder.text.setText(a.getName());
+        holder.position = position;
+
+        new LoadImage(position, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,getImageForNaut(a));
+
 
         return convertView;
     }
@@ -100,10 +107,36 @@ public class GridImageAdapter extends BaseAdapter {
         @InjectView(R.id.cell_text)
         TextView text;
 
+        int position;
+
         public ViewHolder(View view){
             ButterKnife.inject(this, view);
         }
 
+    }
+
+    class LoadImage extends AsyncTask<Integer,Void, Drawable>{
+
+        private ViewHolder holder;
+        private int position;
+
+        public LoadImage(int position, ViewHolder holder){
+            this.holder = holder;
+            this.position = position;
+        }
+
+        @Override
+        protected Drawable doInBackground(Integer... params) {
+
+            Drawable d = context.getResources().getDrawable(params[0]);
+            return d;
+        }
+
+        @Override
+        protected void onPostExecute(Drawable drawable) {
+            if (holder.position == position)
+                holder.image.setImageDrawable(drawable);
+        }
     }
 
 }
