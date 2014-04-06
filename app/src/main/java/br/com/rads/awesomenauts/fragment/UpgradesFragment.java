@@ -31,7 +31,7 @@ import it.gmariotti.cardslib.library.view.CardListView;
  */
 public class UpgradesFragment extends Fragment {
 
-    private static final String TAG = "UPGRADE_FRAGMENT";
+    public static final String TAG = "UPGRADE_FRAGMENT";
 
     private Awesomenaut awesomenaut;
 
@@ -46,6 +46,12 @@ public class UpgradesFragment extends Fragment {
 
     public UpgradesFragment(Awesomenaut awesomenaut) {
         this.awesomenaut = awesomenaut;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
     }
 
     @Override

@@ -23,7 +23,7 @@ import butterknife.InjectView;
  */
 public class InformationFragment extends Fragment {
 
-    private static final String TAG = "INFORMATION_FRAGMENT";
+    public static final String TAG = "INFORMATION_FRAGMENT";
     public static final String SELECTED_NAUT_ID = "naut_id";
 
     @InjectView(R.id.naut_imageview)
@@ -62,6 +62,7 @@ public class InformationFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRetainInstance(true);
 
         if(awesomenaut == null){
             awesomenaut = DataManager.getInstance().getAwesomenauts().get(0);

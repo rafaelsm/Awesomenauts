@@ -26,7 +26,7 @@ import it.gmariotti.cardslib.library.view.CardView;
  */
 public class SkillsFragment extends Fragment {
 
-    private static final String TAG = "SKILLS_FRAGMENT";
+    public static final String TAG = "SKILLS_FRAGMENT";
     private Awesomenaut awesomenaut;
 
     @InjectView(R.id.card_skill_1)
@@ -46,6 +46,12 @@ public class SkillsFragment extends Fragment {
 
     public SkillsFragment(Awesomenaut awesomenaut) {
         this.awesomenaut = awesomenaut;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
     }
 
     @Override

@@ -69,7 +69,6 @@ public class MainActivity extends ActionBarActivity
                     (DrawerLayout) findViewById(R.id.drawer_layout));
 
             onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 1));
-
         } else {
             ((MultiPaneMenuFragment) getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
             onTwoPane = true;
