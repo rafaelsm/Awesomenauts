@@ -10,12 +10,12 @@ import android.view.MenuItem;
 /**
  * Created by rafael_2 on 04/04/2014.
  */
-public class AboutActivity extends ActionBarActivity {
+public class AboutAppActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_about_app);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);

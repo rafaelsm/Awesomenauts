@@ -162,7 +162,7 @@ public class MainActivity extends ActionBarActivity
         int id = item.getItemId();
 
         if (id == R.id.action_about) {
-            Intent i = new Intent(this, AboutActivity.class);
+            Intent i = new Intent(this, AboutAppActivity.class);
             startActivity(i);
             return true;
         }
