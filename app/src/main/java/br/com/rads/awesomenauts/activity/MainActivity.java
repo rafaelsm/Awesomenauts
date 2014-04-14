@@ -14,11 +14,10 @@ import android.view.MenuItem;
 
 import java.util.List;
 
-import br.com.rads.awesomenauts.fragment.MapsFragment;
 import br.com.rads.awesomenauts.fragment.MultiPaneMenuFragment;
 import br.com.rads.awesomenauts.fragment.NautsGridFragment;
 import br.com.rads.awesomenauts.fragment.NavigationDrawerFragment;
-import br.com.rads.awesomenauts.fragment.NewsFragment;
+import br.com.rads.awesomenauts.fragment.RonimoFragment;
 import br.com.rads.awesomenauts.model.Awesomenaut;
 import br.com.rads.awesomenauts.util.DataManager;
 
@@ -33,8 +32,7 @@ public class MainActivity extends ActionBarActivity
      */
     private NavigationDrawerFragment navigationDrawerFragment;
     private NautsGridFragment nautsGridFragment = new NautsGridFragment();
-    private NewsFragment newsFragment = new NewsFragment();
-    private MapsFragment mapsFragment = new MapsFragment();
+    private RonimoFragment ronimoFragment = new RonimoFragment();
 
     /**
      * Variables
@@ -68,7 +66,7 @@ public class MainActivity extends ActionBarActivity
                     R.id.navigation_drawer,
                     (DrawerLayout) findViewById(R.id.drawer_layout));
 
-            onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 1));
+            onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 0));
         } else {
             ((MultiPaneMenuFragment) getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
             onTwoPane = true;
@@ -92,8 +90,7 @@ public class MainActivity extends ActionBarActivity
 
     private void loadFragments() {
         nautsGridFragment = new NautsGridFragment(awesomenauts);
-        newsFragment = new NewsFragment();
-        mapsFragment = new MapsFragment();
+        ronimoFragment = new RonimoFragment();
     }
 
     @Override
@@ -104,17 +101,12 @@ public class MainActivity extends ActionBarActivity
         switch (position) {
             case 0:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, newsFragment)
+                        .replace(R.id.container, nautsGridFragment)
                         .commit();
                 break;
             case 1:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, nautsGridFragment)
-                        .commit();
-                break;
-            case 2:
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, mapsFragment)
+                        .replace(R.id.container, ronimoFragment)
                         .commit();
                 break;
         }
@@ -123,14 +115,13 @@ public class MainActivity extends ActionBarActivity
 
     public void onSectionAttached(int number) {
         switch (number) {
-            case 1:
-                activityTitle = getString(R.string.title_section_news);
-                break;
-            case 2:
+            case 0:
                 activityTitle = getString(R.string.title_section_nauts);
+                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,0);
                 break;
-            case 3:
-                activityTitle = getString(R.string.title_section_maps);
+            case 1:
+                activityTitle = getString(R.string.title_section_ronimo);
+                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,1);
                 break;
         }
     }
@@ -175,12 +166,10 @@ public class MainActivity extends ActionBarActivity
 
         Fragment fragmentToInsert = new Fragment();
 
-        if (id.equalsIgnoreCase(getString(R.string.title_section_news))) {
-            fragmentToInsert = newsFragment;
+        if (id.equalsIgnoreCase(getString(R.string.title_section_ronimo))) {
+            fragmentToInsert = ronimoFragment;
         } else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))) {
             fragmentToInsert = nautsGridFragment;
-        } else if (id.equalsIgnoreCase(getString(R.string.title_section_maps))) {
-            fragmentToInsert = mapsFragment;
         }
 
         Bundle arguments = new Bundle();

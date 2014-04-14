@@ -45,7 +45,7 @@ public class NautsGridFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        ((MainActivity)activity).onSectionAttached(2);
+        ((MainActivity)activity).onSectionAttached(0);
     }
 
     @Override

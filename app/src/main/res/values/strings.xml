@@ -3,9 +3,8 @@
 
     <string name="app_name">Awesomenauts</string>
 
-    <string name="title_section_news">News</string>
     <string name="title_section_nauts">Nauts</string>
-    <string name="title_section_maps">Maps</string>
+    <string name="title_section_ronimo">Ronimo</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -19,7 +18,7 @@
     <string name="attack_type"><![CDATA[<b>Attack Type: </b>]]></string>
     <string name="role"><![CDATA[<b>Role: </b>]]></string>
     <string name="mobility"><![CDATA[<b>Mobility: </b>]]></string>
-    <string name="action_about">About</string>
+    <string name="action_about">About App</string>
     <string name="information">Information</string>
     <string name="skills">Skill</string>
     <string name="upgrades">Upgrades</string>
@@ -34,5 +33,6 @@
 
     <string name="about_ronimo_title">About Ronimo Games</string>
     <string name="about_ronimo_follow">Follow Ronimo Games</string>
+    <string name="app_about">This app is a fan-creation and has non-commercial purpose. All images resources belongs to Ronimo Games and the informations are from http://awesomenauts.gamepedia.com/Awesomenauts_Wiki </string>
 
 </resources>

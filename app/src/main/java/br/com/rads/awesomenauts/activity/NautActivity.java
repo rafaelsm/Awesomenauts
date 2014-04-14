@@ -1,6 +1,8 @@
 package br.com.rads.awesomenauts.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -56,6 +58,7 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
         actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setStackedBackgroundDrawable( new ColorDrawable(Color.parseColor("#e4e4e4")));
 
         loadFragments();
 

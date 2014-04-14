@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/large_margin">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Awesomenauts App"/>
+        android:text="Awesomenauts App"
+        android:gravity="center"
+        android:textSize="@dimen/medium_text"/>
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version: x.x"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/app_version_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Version: dd/MM/yyyy"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Version: 1.0"/>
+        android:text="by Rafael da Silva Melo"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Version: 01/01/2014"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="by Rafael Melo"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Copyright Ronimo Games 2006-2014"/>
+        android:layout_height="match_parent"
+        android:text="@string/app_about"
+        android:gravity="center" />
 
 </LinearLayout>
