@@ -58,7 +58,6 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
         actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setStackedBackgroundDrawable( new ColorDrawable(Color.parseColor("#e4e4e4")));
 
         loadFragments();
 
@@ -82,20 +81,6 @@ public class NautActivity extends ActionBarActivity implements ActionBar.TabList
         loadTabs();
 
         actionBar.setTitle(awesomenaut.getName());
-
-//        if (savedInstanceState == null) {
-//
-//            Bundle arguments = new Bundle();
-//            arguments.putString(InformationFragment.SELECTED_NAUT_ID, getIntent().getStringExtra(InformationFragment.SELECTED_NAUT_ID));
-//
-//            InformationFragment informationFragment = new InformationFragment();
-//            informationFragment.setArguments(arguments);
-//
-//            FragmentManager fragManager = getSupportFragmentManager();
-//            FragmentTransaction transaction = fragManager.beginTransaction();
-//            transaction.add(R.id.nauts_detail_container, informationFragment);
-//            transaction.commit();
-//        }
 
     }
 

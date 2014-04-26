@@ -40,6 +40,7 @@ public class MainActivity extends ActionBarActivity
     private boolean onTwoPane;
     private CharSequence activityTitle;
     private List<Awesomenaut> awesomenauts;
+    private MultiPaneMenuFragment multiPaneMenuFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +69,11 @@ public class MainActivity extends ActionBarActivity
 
             onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 0));
         } else {
-            ((MultiPaneMenuFragment) getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment)).setActivatedOnItemClick(true);
+            multiPaneMenuFragment = (MultiPaneMenuFragment) getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment);
+            multiPaneMenuFragment.setActivatedOnItemClick(true);
+            onPaneMenuSelected(getString(R.string.title_section_nauts));
             onTwoPane = true;
+
         }
 
         activityTitle = getTitle();
@@ -136,15 +140,9 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (navigationDrawerFragment != null && !navigationDrawerFragment.isDrawerOpen()) {
-            // Only show items in the action bar relevant to this screen
-            // if the drawer is not showing. Otherwise, let the drawer
-            // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
             restoreActionBar();
             return true;
-        }
-        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -184,4 +182,5 @@ public class MainActivity extends ActionBarActivity
     public boolean isOnTwoPane() {
         return onTwoPane;
     }
+
 }

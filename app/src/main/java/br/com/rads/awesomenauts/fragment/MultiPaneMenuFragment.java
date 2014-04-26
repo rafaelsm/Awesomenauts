@@ -73,7 +73,7 @@ public class MultiPaneMenuFragment extends ListFragment {
         getListView().setBackgroundColor(Color.parseColor("#222222"));
 
         if (savedInstanceState != null && savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)) {
-            setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION));
+            setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION,0));
         }
 
     }
@@ -119,4 +119,5 @@ public class MultiPaneMenuFragment extends ListFragment {
 
         activatedPosition = position;
     }
+
 }
