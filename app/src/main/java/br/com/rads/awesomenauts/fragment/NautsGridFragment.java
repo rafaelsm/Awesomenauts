@@ -67,23 +67,25 @@ public class NautsGridFragment extends Fragment {
 
             MainActivity mainActivity = (MainActivity) getActivity();
 
-            if (mainActivity.isOnTwoPane()){
-
-                Bundle bundle = new Bundle();
-                bundle.putString( InformationFragment.SELECTED_NAUT_ID, awesomenauts.get(position).getName());
-
-                InformationFragment informationFragment = new InformationFragment(awesomenauts.get(position));
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.nauts_detail_container, informationFragment);
-                fragmentTransaction.commit();
-
-            } else{
+//            if (mainActivity.isOnTwoPane()){
+//
+//                Bundle bundle = new Bundle();
+//                bundle.putString( InformationFragment.SELECTED_NAUT_ID, awesomenauts.get(position).getName());
+//
+//                InformationFragment informationFragment = new InformationFragment(awesomenauts.get(position));
+//                FragmentManager fragmentManager = getFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.nauts_detail_container, informationFragment);
+//                fragmentTransaction.commit();
+//
+//                mainActivity.setMultiPaneMenuForNautInformation();
+//
+//            } else{
                 Intent i = new Intent(getActivity(), NautActivity.class);
                 i.putExtra(Awesomenaut.TAG, position);
                 startActivity(i);
                 getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-            }
+//            }
         }
     }
 
