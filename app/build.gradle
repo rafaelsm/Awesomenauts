@@ -10,11 +10,26 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    signingConfigs{
+        myConfig {
+            storeFile file("awesomenauts.keystore")
+            storePassword "awesomenauts"
+            keyAlias "awesomenautsReleaseKey"
+            keyPassword "awesomenauts"
+        }
+    }
+
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.myConfig
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 
