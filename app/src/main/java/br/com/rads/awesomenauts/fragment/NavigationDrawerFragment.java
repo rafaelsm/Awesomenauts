@@ -184,6 +184,9 @@ public class NavigationDrawerFragment extends Fragment {
         });
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        //bug navigationdrawer started opened
+        mDrawerLayout.closeDrawers();
     }
 
     private void selectItem(int position) {

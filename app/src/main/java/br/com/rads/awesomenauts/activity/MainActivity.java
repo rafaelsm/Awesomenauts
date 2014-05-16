@@ -58,7 +58,6 @@ public class MainActivity extends ActionBarActivity
         navigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
 
-
         /**
          * If in single pane(not tablet), setup navigation drawer
          */
@@ -68,6 +67,7 @@ public class MainActivity extends ActionBarActivity
                     (DrawerLayout) findViewById(R.id.drawer_layout));
 
             onNavigationDrawerItemSelected(getIntent().getIntExtra(MainActivity.SELECTED_DRAWER_ITEM, 0));
+
         } else {
             multiPaneMenuFragment = (MultiPaneMenuFragment) getSupportFragmentManager().findFragmentById(R.id.nauts_list_fragment);
             multiPaneMenuFragment.setActivatedOnItemClick(true);
