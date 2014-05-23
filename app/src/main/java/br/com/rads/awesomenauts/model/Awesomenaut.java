@@ -94,7 +94,7 @@ public class Awesomenaut {
     public String getDrawableName() {
 
         StringBuilder drawableName = new StringBuilder( "ic_" );
-        drawableName.append( this.name.toLowerCase().replace(" ", "_").replace("ø","o").replace("&","and") ) ;
+        drawableName.append( this.name.toLowerCase().replace(" ", "_").replace("-", "_").replace("ø","o").replace("&","and") ) ;
         return drawableName.toString();
     }
 
@@ -128,7 +128,7 @@ public class Awesomenaut {
 
     public String getImage() {
         StringBuilder imagePath = new StringBuilder("naut_");
-        imagePath.append(name.toLowerCase().replace(" ", "_").replace("ø","o").replace("&","and"));
+        imagePath.append(name.toLowerCase().replace(" ", "_").replace("-", "_").replace("ø","o").replace("&","and"));
         return imagePath.toString();
     }
 
