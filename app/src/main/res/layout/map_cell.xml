@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="1dp"
-    >
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/cell_image"
+        android:id="@+id/map_cell_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/placeholder"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         />
 
     <TextView
-        android:id="@+id/cell_text"
+        android:id="@+id/map_cell_text"
         android:layout_width="match_parent"
         android:layout_height="@dimen/text_height_cell"
         android:background="#50000000"
@@ -23,7 +21,6 @@
         android:layout_gravity="bottom"
         android:gravity="center_vertical"
         android:paddingLeft="@dimen/text_padding_cell"
-        android:textSize="@dimen/text_size_cell"
-        />
+        android:textSize="@dimen/text_size_cell"/>
 
 </FrameLayout>

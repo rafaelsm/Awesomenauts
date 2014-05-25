@@ -14,6 +14,7 @@ import android.view.MenuItem;
 
 import java.util.List;
 
+import br.com.rads.awesomenauts.fragment.MapsFragment;
 import br.com.rads.awesomenauts.fragment.MultiPaneMenuFragment;
 import br.com.rads.awesomenauts.fragment.NautsGridFragment;
 import br.com.rads.awesomenauts.fragment.NavigationDrawerFragment;
@@ -32,6 +33,7 @@ public class MainActivity extends ActionBarActivity
      */
     private NavigationDrawerFragment navigationDrawerFragment;
     private NautsGridFragment nautsGridFragment = new NautsGridFragment();
+    private MapsFragment mapsFragment = new MapsFragment();
     private RonimoFragment ronimoFragment = new RonimoFragment();
 
     /**
@@ -93,7 +95,8 @@ public class MainActivity extends ActionBarActivity
     }
 
     private void loadFragments() {
-        nautsGridFragment = new NautsGridFragment(awesomenauts);
+        nautsGridFragment = new NautsGridFragment();
+        nautsGridFragment.setAwesomenauts(awesomenauts);
         ronimoFragment = new RonimoFragment();
     }
 
@@ -110,6 +113,12 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 1:
                 fragmentManager.beginTransaction()
+                        .replace(R.id.container, mapsFragment)
+                        .commit();
+                break;
+
+            case 2:
+                fragmentManager.beginTransaction()
                         .replace(R.id.container, ronimoFragment)
                         .commit();
                 break;
@@ -124,8 +133,12 @@ public class MainActivity extends ActionBarActivity
                 getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,0);
                 break;
             case 1:
-                activityTitle = getString(R.string.title_section_ronimo);
+                activityTitle = getString(R.string.title_section_maps);
                 getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,1);
+                break;
+            case 2:
+                activityTitle = getString(R.string.title_section_ronimo);
+                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,2);
                 break;
         }
     }
@@ -174,6 +187,8 @@ public class MainActivity extends ActionBarActivity
             fragmentToInsert = ronimoFragment;
         } else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))) {
             fragmentToInsert = nautsGridFragment;
+        } else if(id.equalsIgnoreCase(getString(R.string.title_section_maps))){
+            fragmentToInsert = mapsFragment;
         }
 
         Bundle arguments = new Bundle();

@@ -4,6 +4,7 @@
     <string name="app_name">Awesomenauts</string>
 
     <string name="title_section_nauts">Nauts</string>
+    <string name="title_section_maps">Maps</string>
     <string name="title_section_ronimo">Ronimo</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

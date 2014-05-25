@@ -2,6 +2,7 @@
 <resources>
     <string-array name="drawer_menu">
         <item>Nauts</item>
+        <item>Maps</item>
         <item>Ronimo</item>
     </string-array>
 

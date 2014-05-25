@@ -33,59 +33,43 @@ public class NautsGridFragment extends Fragment {
     @InjectView(R.id.gridView)
     public GridView grid;
 
-    public NautsGridFragment(List<Awesomenaut> awesomenauts){
-        this.awesomenauts = awesomenauts;
-    }
-
-    public NautsGridFragment() {
-
-    }
-
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        ((MainActivity)activity).onSectionAttached(0);
+        ((MainActivity) activity).onSectionAttached(0);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_nauts_grid, container, false);
-        ButterKnife.inject(this,rootView);
+        ButterKnife.inject(this, rootView);
 
-        grid.setAdapter( new GridImageAdapter(this.getActivity(), DataManager.getInstance().getAwesomenauts()));
-        grid.setOnItemClickListener( new GridClickListener());
+        grid.setAdapter(new GridImageAdapter(this.getActivity(), DataManager.getInstance().getAwesomenauts()));
+        grid.setOnItemClickListener(new GridClickListener());
 
         return rootView;
     }
 
-    private class GridClickListener implements AdapterView.OnItemClickListener{
+    public List<Awesomenaut> getAwesomenauts() {
+        return awesomenauts;
+    }
+
+    public void setAwesomenauts(List<Awesomenaut> awesomenauts) {
+        this.awesomenauts = awesomenauts;
+    }
+
+    private class GridClickListener implements AdapterView.OnItemClickListener {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            MainActivity mainActivity = (MainActivity) getActivity();
+            Intent i = new Intent(getActivity(), NautActivity.class);
+            i.putExtra(Awesomenaut.TAG, position);
+            startActivity(i);
+            getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
-//            if (mainActivity.isOnTwoPane()){
-//
-//                Bundle bundle = new Bundle();
-//                bundle.putString( InformationFragment.SELECTED_NAUT_ID, awesomenauts.get(position).getName());
-//
-//                InformationFragment informationFragment = new InformationFragment(awesomenauts.get(position));
-//                FragmentManager fragmentManager = getFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                fragmentTransaction.replace(R.id.nauts_detail_container, informationFragment);
-//                fragmentTransaction.commit();
-//
-//                mainActivity.setMultiPaneMenuForNautInformation();
-//
-//            } else{
-                Intent i = new Intent(getActivity(), NautActivity.class);
-                i.putExtra(Awesomenaut.TAG, position);
-                startActivity(i);
-                getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-//            }
         }
     }
 
