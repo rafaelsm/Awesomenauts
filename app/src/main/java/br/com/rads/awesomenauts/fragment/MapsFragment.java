@@ -36,14 +36,9 @@ import butterknife.ButterKnife;
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
         ButterKnife.inject(this,view);
 
-        maps = Map.getDummyList();
         setListAdapter( new MapListAdapter(getActivity(), maps));
 
         return view;
-    }
-
-    public List<Map> getMaps() {
-        return maps;
     }
 
     public void setMaps(List<Map> maps) {

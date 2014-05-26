@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Ribbit IV",
+    "description": "Originally the planet was completely covered with swamps and forests, and inhabited by a frog-like species known as Amphibians and Higher Amphibians.\n\nOver time, the frogs moved out of the swamp and started building large cities.\n\nNow, only a small nature reserve remains. The rich Solar veins under the reserve have attracted the war, putting the last vegetation and wildlife in peril.",
+    "dropPodPathLink" : "https://www.youtube.com/watch?v=ZyE1N8VVC0I",
+    "mapFeatures" :[
+        {
+            "name":"Hide Areas",
+            "description":"There are three Hide Areas in the middle of Ribbit IV (the two in the bottom being interconnected). Players can hide here to ambush enemy Awesomenauts, or deploy traps such as Mines."
+        },
+        {
+            "name":"Critter Area",
+            "description":"Four Small Beasts roam around the middle of the map. Killing them will drop a small Healthpack that restores 30 Health, and 3 Solar. They will respawn after a short amount of time."
+        },
+        {
+            "name":"Solar Boss",
+            "description":"The Solar Boss is a large beast found on both sides of the map. Killing him will give 30 Solar and full Health to the Awesomenaut who killed him."
+        }
+    ],
+    "tipsAndTricks":[
+        "Depending on the 'Naut you are playing as, using the Boosters at the bottom middle of the map and attacking mid-flight will allow you to kill a Creep and gain some health.",
+        "Placing traps, such as Mines, on the top lane Platforms is an effective tactic, as enemy 'Nauts who use the Boosters at the bottom can easily get hit at the top of their flight.",
+        "An Aggressive Acid spit placed in the middle of the top lane will drip all the way down to the bottom boosters, allowing Gnaw to control a large portion of the map.",
+        "When play as or against a Clunk, be mindful of the bottom lane boosters, as he can charge up Self-Destruct, bounce up and surprise everyone in the top lane!",
+        "If there's a lone enemy attempting to kill the solar boss at a time when they're not safe from your team, try and come up behind them and push them into a bad spot for an easy kill helped by the damage the solar boss does.",
+        "Alternatively, make sure that you're always in a safe position when trying to kill the solar boss.",
+        "If an enemy is pushing your back, bottom turret, it's a good chance for you to push them into a bad spot because they will have little chance to escape if you have good positioning.",
+        "Alternatively, make sure that you're in a safe position when trying to push your enemy's bottom, back turret."
+    ],
+    "trivia":[
+        "This is the home planet of Froggy G, making him one of the few 'Nauts that fights on his own planet.",
+        "Ribbit IV was the first map developed in the game.",
+        "The name may be a play on Tallon IV from Metroid Prime, which also featured a swamp like area where Samus Aran landed her ship near the beginning of her mission.",
+        "The critters and boss beast share passing similarities with the bipedal predatory Sheegoth from this game whom also appeared in different stages of maturity, though have one eye instead of six."
+    ]
+  },
+  {
+    "name": "AI Station 404",
+    "description": "This AI station is built on the surface of an asteroid of solid Solar.\n\nThese kind of asteroids are quite rare and it's no surprise the robots quickly tried to conquer it after discovery.\n\nThe space station is now one of the most high tech weapon facilities in the galaxy. Flagship of the facility is the cromium gravitor device which manipulates gravity for experimental research.",
+    "dropPodPathLink" : "https://www.youtube.com/watch?v=JoPVAykfSqE",
+    "mapFeatures" :[
+        {
+            "name":"Anti Gravity Field",
+            "description":"There is a large anti-gravity field in the middle of AI Station 404. Any 'Nauts that enter it will become lighter, allowing them to jump higher. Certain projectiles, such as Cats, will also be affected."
+        },
+        {
+            "name":"Critter Area",
+            "description":"The upper middle of the map has four Neutral Creeps roaming around it. Killing them will drop a small Healthpack that restores 30 Health, and 3 Solar."
+        },
+        {
+            "name":"Droid Releaser",
+            "description":"Each team has a Droid Releaser right next to the top Turret. Stepping on it will spawn Humming Droids, up to a maximum of 3. These are the only Droids that attack the inner bottom Turret. Humming Droids are restocked every 10 seconds from destruction. It's impossible to activate the enemy team's droid releaser."
+        }
+    ],
+    "tipsAndTricks":[
+        "Characters who cause burst in an area can farm very well on this map due to the flying creeps. Coco, Froggy G or Vinnie & Spike can each gain 15 solar by hitting one group of three with just one use of an ability. Raelynn can earn up to 24 solar by using one snipe on a group of all three, making it very ideal for farming.",
+        "Because it is a very short map until the first turret goes down, horizontally, you can wait to buy boots until later in the game.",
+        "If you use either of the main Jump Pads behind either team's first turret, and jump back to the oppisite direction mid-air, many characters are able to quickly access the platforms that lead to the jungle area if they have right timing.",
+        "The path in front of the top turret will light up when a 'naut is standing on it, even if the 'naut is invisible."
+    ],
+    "trivia":[
+        "Raelynn was ambushed, captured and put to cryo-stasis for 578 years during a mission in AI Station 404.",
+        "The name of the map may be a reference to 404, a HTTP standard response code indicating that the client was able to communicate with the server, but the server could not find what was requested."
+    ]
+  },
+  {
+    "name": "Sorona",
+    "description": "Once a vibrant dinosaur planet, now a dead wasteland. Centuries ago, the planet was scorched by orbital nuclear bombardment, which transformed Sorona into a crude, uninhabitable place.\n\nNow only miners, static storms and radioactive giant worms scour the planet, and they are all unfriendly.\n\nThe worms (quite hungry ones) feast on everything that moves: the miners, employees of lightning farms and even small space ships. Consider yourself warned!",
+    "dropPodPathLink" : "https://www.youtube.com/watch?v=bwN5nvN5WZ0",
+    "mapFeatures" :[
+        {
+            "name":"Worm",
+            "description":"The middle of the bottom lane has a button with an openable shaft below. Stepping on it will open the shaft, to reveal a large worm, that stays on the screen as long as the button is held down. Any Droid or Awesomenaut that touches the worm will automatically die and drop their Solar on the ground.\n\nBeing killed by the Worm will display a message saying \"The worm has smooched Player Name!\"."
+        },
+        {
+            "name":"Hide Areas",
+            "description":"The center of the map has a large Hide Area, which conceals any Awesomenauts or Droids inside."
+        },
+        {
+            "name":"Critter Areas",
+            "description":"There are two worm creeps each on the left and right sides of the map, above the turrets. They drop a Healthpack that restores 25 Health and 3 Solar upon death."
+        }
+    ],
+    "tipsAndTricks":[
+        "Since the Worm instantly kills anything that touches it, this can be used to easily kill enemy Droids (Especially Super Droids) that step on the shaft, as pressing the button will instantly kill them and drop Solar on the ground.",
+        "Pressing the Worm button and quickly stepping away will show the animation of the Worm appearing for a short amount of time, but nothing on the shaft will be killed.",
+        "Similarly, stepping away quickly from the button after a Droid or Awesomenaut is killed will allow you to pick up the Solar dropped, without having it go below the hatch and disappearing.",
+        "The Boosters on the middle of the map can be used to make an easy escape by holding down the teleport button mid-flight. Most of the time, you will be teleported back to your base by the time you reach the ground."
+    ],
+    "trivia":[
+        "Sorona is currently the only map to feature naturally-spawned golden Solar cubes."
+    ]
+  },
+  {
+    "name": "Aiguillon",
+    "description": "Legend tells the story of a giant cranky porcupine that wandered through space. Furious at the sun for burning his eyes, he charged and killed both the light and himself.\n\nHis prickly remains now orbit the dead sun and gave home to the Kremzon, a crude and devious species that spend most of their time in bustling cabarets and smokey cafés. Aiguillon's thorny rings conceal a mythical temple, rumored to hold the power of invisibility.",
+    "dropPodPathLink" : "https://www.youtube.com/watch?v=C_rVosjMAfc",
+    "mapFeatures" :[
+        {
+            "name":"Stealth Orb",
+            "description":"Aiguillon has a special pickup called the Stealth Orb. It grants 20 seconds Invisibility to any 'naut that touches it, and respawns after one minute. The Orb appears shortly after a match begins, and will remain there until it is picked up."
+        },
+        {
+            "name":"Hide Areas",
+            "description":"There is a large Hide Area on the top of the map, which also contains a Healthpack inside. The outer Turrets in the bottom lane also have a hide area in front of them. Another hide area is present in the bottom of the map, which contains two Creeps. Both teams have a large hide area behind their respective team walls."
+        },
+        {
+            "name":"Critter Areas",
+            "description":"There are 6 Creeps on the map. One is behind the team wall for both teams and two are in front of each team wall. They drop a small Healthpack that restores 25 Health, and 3 Solar."
+        }
+    ],
+    "tipsAndTricks":[
+        "The Kremzon statue in the background of the stealth orb chamber will open its eyes when there are 'nauts inside the room, even if they are stealthed.",
+        "The outer turrets in the bottom lane will shoot at enemy 'nauts even if they are within the Hide Areas right in front of them.",
+        "Picking up the Stealth Orb cannot give the Pinot Noir effect to Leon, but it can activate the Surprise Party Mask.",
+        "A loud sound is played when the Stealth Orb respawns.",
+        "When on Aiguillon and your team has access to the stealth orb, let the teammate that can benefit from it most use it. A Clunk can use the suprise a lot better than Genji or Leon.",
+        "If you have a stealth character on your team, allow a non-stealth character to pick up the Stealth Orb. You can then both follow around your visible teammate and wait for an enemy to attack them,and then do an ambush attack to gank and suprise them."
+    ],
+    "trivia":[
+        "Aiguillon is the homeworld of Leon's race, the Kremzon, making him one of the few Awesomenauts to fight on his own planet. (the only other 'naut to hold this trait is Froggy G, who comes from Ribbit IV)",
+        "The neutral creeps on this map are shown in the icon of Solar Krab Burgers upgrade.",
+        "The stone head statues and hidden areas could be a reference to the Metroid game series, which feature similar looking statues in some of its earlier games.",
+        "The temple with the eye could also be a reference to Battlestar Galactica, in which the humans discover a algae planet where they come across a temple which holds the secrets to The Eye of Jupiter.",
+        "The music track released along with the map is also named The Eye of Aiguillon.",
+        "\"Aiguillon\" means \"sting\" in French (Leon's native language)."
+    ]
+  }
+]

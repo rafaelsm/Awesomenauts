@@ -8,15 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.rads.awesomenauts.model.Awesomenaut;
+import br.com.rads.awesomenauts.model.Map;
 
 /**
  * Created by rafael_2 on 19/02/14.
  */
 public class DataManager {
 
-    private static final String JSON_FILE = "awesomenauts.json";
+    public static final String JSON_FILE_AWESOMENAUTS = "awesomenauts.json";
+    public static final String JSON_FILE_MAPS = "maps.json";
 
     private List<Awesomenaut> awesomenauts = new ArrayList<Awesomenaut>();
+    private List<Map> maps = new ArrayList<Map>();
 
     private static DataManager instance = new DataManager();
     private DataManager(){
@@ -26,12 +29,12 @@ public class DataManager {
         return instance;
     }
 
-    public static String loadJSONFromAssets(Context context){
+    public static String loadJSONFromAssets(Context context, String fileName){
 
         String json = null;
 
         try {
-            InputStream is = context.getAssets().open(JSON_FILE);
+            InputStream is = context.getAssets().open(fileName);
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -54,4 +57,11 @@ public class DataManager {
         this.awesomenauts = awesomenauts;
     }
 
+    public List<Map> getMaps() {
+        return maps;
+    }
+
+    public void setMaps(List<Map> maps) {
+        this.maps = maps;
+    }
 }

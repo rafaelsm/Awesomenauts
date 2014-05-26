@@ -35,12 +35,13 @@ public class Awesomenaut {
 
         List<Awesomenaut> allNauts = new ArrayList<Awesomenaut>();
 
-
         try {
             JSONArray rootArray = new JSONArray(json);
             for (int i = 0; i < rootArray.length(); i++){
-                Awesomenaut awesomenaut = new Awesomenaut();
+
                 JSONObject nautJson = rootArray.getJSONObject(i);
+
+                Awesomenaut awesomenaut = new Awesomenaut();
                 awesomenaut.name = nautJson.getString("name");
                 awesomenaut.backstory = nautJson.getString("backstory");
                 awesomenaut.stats = parseStats(nautJson.getJSONObject("stats"));

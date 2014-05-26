@@ -2,6 +2,8 @@ package br.com.rads.awesomenauts.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,23 +68,29 @@ public class MapListAdapter extends BaseAdapter {
         viewHolder.position = position;
         viewHolder.mapNameTextView.setText(map.getName());
         changeTextSide(viewHolder.mapNameTextView, position);
-        viewHolder.mapThumbImageView.setImageResource(getThumbForMap(map));
+        new LoadImage(position, viewHolder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,getThumbForMap(map));
 
         return convertView;
     }
 
     private void changeTextSide(TextView textView, int position) {
 
+        int sizeInDp = 10;
+        float scale = context.getResources().getDisplayMetrics().density;
+        int dpAsPixels = (int) (sizeInDp*scale + 0.5f);
+
         if (position % 2 == 0){
             textView.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
+            textView.setPadding(dpAsPixels,0,0,0);
         }else{
             textView.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+            textView.setPadding(0,0,dpAsPixels,0);
         }
 
     }
 
     private int getThumbForMap(Map map) {
-        int drawable = context.getResources().getIdentifier(map.getThumbnail(), "map_thumb", context.getPackageName());
+        int drawable = context.getResources().getIdentifier(map.getThumbnail(), "drawable", context.getPackageName());
 
         if (drawable == 0)
             drawable = R.drawable.map_thumb_placeholder;
@@ -102,6 +110,30 @@ public class MapListAdapter extends BaseAdapter {
 
         public ViewHolder(View view) {
             ButterKnife.inject(this, view);
+        }
+    }
+
+    class LoadImage extends AsyncTask<Integer,Void, Drawable> {
+
+        private ViewHolder holder;
+        private int position;
+
+        public LoadImage(int position, ViewHolder holder){
+            this.holder = holder;
+            this.position = position;
+        }
+
+        @Override
+        protected Drawable doInBackground(Integer... params) {
+
+            Drawable d = context.getResources().getDrawable(params[0]);
+            return d;
+        }
+
+        @Override
+        protected void onPostExecute(Drawable drawable) {
+            if (holder.position == position)
+                holder.mapThumbImageView.setImageDrawable(drawable);
         }
     }
 }

@@ -20,6 +20,7 @@ import br.com.rads.awesomenauts.fragment.NautsGridFragment;
 import br.com.rads.awesomenauts.fragment.NavigationDrawerFragment;
 import br.com.rads.awesomenauts.fragment.RonimoFragment;
 import br.com.rads.awesomenauts.model.Awesomenaut;
+import br.com.rads.awesomenauts.model.Map;
 import br.com.rads.awesomenauts.util.DataManager;
 
 public class MainActivity extends ActionBarActivity
@@ -42,6 +43,7 @@ public class MainActivity extends ActionBarActivity
     private boolean onTwoPane;
     private CharSequence activityTitle;
     private List<Awesomenaut> awesomenauts;
+    private List<Map> maps;
     private MultiPaneMenuFragment multiPaneMenuFragment;
 
     @Override
@@ -52,6 +54,7 @@ public class MainActivity extends ActionBarActivity
          * Load all data
          */
         loadAwesomenauts();
+        loadMaps();
         loadFragments();
 
         /**
@@ -83,10 +86,10 @@ public class MainActivity extends ActionBarActivity
     }
 
     private void loadAwesomenauts() {
-        Log.d(TAG, "Starting json parser");
+        Log.d(TAG, "Starting AWESOMENAUTS json parser");
 
         long start = System.currentTimeMillis();
-        String json = DataManager.loadJSONFromAssets(this.getApplicationContext());
+        String json = DataManager.loadJSONFromAssets(this.getApplicationContext(), DataManager.JSON_FILE_AWESOMENAUTS);
         awesomenauts = Awesomenaut.parseJSON(json);
         DataManager.getInstance().setAwesomenauts(awesomenauts);
         long end = System.currentTimeMillis();
@@ -94,9 +97,28 @@ public class MainActivity extends ActionBarActivity
         Log.d(TAG, "total time: " + ((end - start) / 1000));
     }
 
+    private void loadMaps() {
+
+        Log.d(TAG, "Starting MAPS json parser");
+
+        long start = System.currentTimeMillis();
+        String json = DataManager.loadJSONFromAssets(this.getApplicationContext(), DataManager.JSON_FILE_MAPS);
+        maps = Map.parseJSON(json);
+        DataManager.getInstance().setMaps(maps);
+        long end = System.currentTimeMillis();
+
+        Log.d(TAG, "total time: " + ((end - start) / 1000));
+
+    }
+
     private void loadFragments() {
+
         nautsGridFragment = new NautsGridFragment();
         nautsGridFragment.setAwesomenauts(awesomenauts);
+
+        mapsFragment = new MapsFragment();
+        mapsFragment.setMaps(maps);
+
         ronimoFragment = new RonimoFragment();
     }
 
@@ -130,15 +152,15 @@ public class MainActivity extends ActionBarActivity
         switch (number) {
             case 0:
                 activityTitle = getString(R.string.title_section_nauts);
-                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,0);
+                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM, 0);
                 break;
             case 1:
                 activityTitle = getString(R.string.title_section_maps);
-                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,1);
+                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM, 1);
                 break;
             case 2:
                 activityTitle = getString(R.string.title_section_ronimo);
-                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM,2);
+                getIntent().putExtra(MainActivity.SELECTED_DRAWER_ITEM, 2);
                 break;
         }
     }
@@ -187,7 +209,7 @@ public class MainActivity extends ActionBarActivity
             fragmentToInsert = ronimoFragment;
         } else if (id.equalsIgnoreCase(getString(R.string.title_section_nauts))) {
             fragmentToInsert = nautsGridFragment;
-        } else if(id.equalsIgnoreCase(getString(R.string.title_section_maps))){
+        } else if (id.equalsIgnoreCase(getString(R.string.title_section_maps))) {
             fragmentToInsert = mapsFragment;
         }
 
