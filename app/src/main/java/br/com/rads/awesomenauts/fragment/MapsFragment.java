@@ -1,15 +1,18 @@
 package br.com.rads.awesomenauts.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.List;
 
 import br.com.rads.awesomenauts.activity.MainActivity;
+import br.com.rads.awesomenauts.activity.MapActivity;
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.adapter.MapListAdapter;
 import br.com.rads.awesomenauts.model.Map;
@@ -39,6 +42,15 @@ import butterknife.ButterKnife;
         setListAdapter( new MapListAdapter(getActivity(), maps));
 
         return view;
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+
+        Intent intent = new Intent(this.getActivity(), MapActivity.class);
+        intent.putExtra(Map.TAG, position);
+        startActivity(intent);
     }
 
     public void setMaps(List<Map> maps) {

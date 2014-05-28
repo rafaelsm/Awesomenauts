@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class Map {
 
+    public static final String TAG = "map";
+
     private String name;
     private String description;
     private String dropPodPathLink;

@@ -2,17 +2,13 @@
 <resources>
 
     <string name="app_name">Awesomenauts</string>
-
     <string name="title_section_nauts">Nauts</string>
     <string name="title_section_maps">Maps</string>
     <string name="title_section_ronimo">Ronimo</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="health"><![CDATA[<b>Health: </b>]]></string>
     <string name="move_speed"><![CDATA[<b>Move Speed: </b>]]></string>
@@ -24,17 +20,15 @@
     <string name="skills">Skill</string>
     <string name="upgrades">Upgrades</string>
     <string name="all">All</string>
-
-    <string name="about_ronimo_text">
-        Ronimo Games creates entertainment games for download platforms.\n\n
+    <string name="about_ronimo_text">        Ronimo Games creates entertainment games for download platforms.\n\n
         Ronimo Games was founded in 2007 by 7 enthousiastic game developers. We released our first commercial game, Swords &amp; Soldiers, in May 2009 worldwide on WiiWare and later on Playstation Network, PC, Mac, iPad, iPhone, and iPod Touch, and saw incredible positive response from media and gamers from around the globe. We are now 14 strong and very motivated to deliver awesome game experiences!\n\n
         Utilizing our in-house developed RoniTech engine, Ronimo Games is focused on creating innovative, high quality games that appeal to a wide audience.\n\n
-        Ronimo Games released the Sidescrolling Battle Arena Game Awesomenauts for Playstation Network, XBox Live Arcade in May 2012 and on Steam in August 2012!
-    </string>
-
+        Ronimo Games released the Sidescrolling Battle Arena Game Awesomenauts for Playstation Network, XBox Live Arcade in May 2012 and on Steam in August 2012!</string>
     <string name="about_ronimo_title">About Ronimo Games</string>
     <string name="about_ronimo_follow">Follow Ronimo Games</string>
     <string name="app_about">This app is a fan-creation and has non-commercial purpose. All images resources belongs to Ronimo Games and the informations are from http://awesomenauts.gamepedia.com/Awesomenauts_Wiki </string>
     <string name="by_rafael">by Rafael Melo</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

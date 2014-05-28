@@ -130,18 +130,18 @@ public class MainActivity extends ActionBarActivity
         switch (position) {
             case 0:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, nautsGridFragment)
+                        .replace(R.id.containerMapDetail, nautsGridFragment)
                         .commit();
                 break;
             case 1:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, mapsFragment)
+                        .replace(R.id.containerMapDetail, mapsFragment)
                         .commit();
                 break;
 
             case 2:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, ronimoFragment)
+                        .replace(R.id.containerMapDetail, ronimoFragment)
                         .commit();
                 break;
         }

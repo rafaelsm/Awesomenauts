@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.rads.awesomenauts.activity" >
 
-    <uses-sdk android:minSdkVersion="14"/>
+    <uses-sdk android:minSdkVersion="14" />
 
     <application
         android:allowBackup="true"
@@ -18,10 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".NautActivity"/>
-        <activity android:name=".AboutAppActivity"/>
-
+        <activity android:name="br.com.rads.awesomenauts.activity.NautActivity" />
+        <activity android:name="br.com.rads.awesomenauts.activity.AboutAppActivity" />
+        <activity
+            android:name="br.com.rads.awesomenauts.activity.MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName="br.com.rads.awesomenauts.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
     </application>
 
 </manifest>
