@@ -1,38 +1,29 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/map_detail_thumb"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/map_thumb_placeholder"
-        android:adjustViewBounds="true" />
+        android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/map_detail_thumb">
+        <ImageView
+            android:id="@+id/map_detail_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_thumb_placeholder"
+            android:adjustViewBounds="true" />
 
         <LinearLayout
+            android:layout_below="@id/map_detail_thumb"
+            android:id="@+id/map_content_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/small_margin"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="About" />
-
-            <TextView
-                android:id="@+id/map_about_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Once a vibrant dinosaur planet, now a dead wasteland. Centuries ago, the planet was scorched by orbital nuclear bombardment, which transformed Sorona into a crude, uninhabitable place.\n\nNow only miners, static storms and radioactive giant worms scour the planet, and they are all unfriendly.\n\nThe worms (quite hungry ones) feast on everything that moves: the miners, employees of lightning farms and even small space ships. Consider yourself warned!"/>
-
         </LinearLayout>
 
-    </ScrollView>
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
+

@@ -52,7 +52,7 @@ public class MapFeature {
 
     public String getImage() {
 
-        StringBuilder imageName = new StringBuilder( "map_feature_" );
+        StringBuilder imageName = new StringBuilder( "mf_" );
         imageName.append(this.name.toLowerCase().replace(" ", "_").replace("-", "_").replace("ø", "o").replace("&", "and")) ;
 
         return imageName.toString();

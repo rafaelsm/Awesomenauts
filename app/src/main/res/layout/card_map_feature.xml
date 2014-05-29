@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="@dimen/small_padding"
+   >
+
+    <TextView
+        android:id="@+id/feature_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FEATURE NAME"
+        android:textSize="@dimen/medium_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feature_title_text"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/feature_image"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/placeholder"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:padding="@dimen/medium_padding"
+            android:id="@+id/feature_description"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Four Small Beasts roam around the middle of the map. Killing them will drop a small Healthpack that restores 30 Health, and 3 Solar. They will respawn after a short amount of time."/>
+
+        </LinearLayout>
+
+</RelativeLayout>

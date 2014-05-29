@@ -80,9 +80,6 @@ public class SkillsFragment extends Fragment {
     }
 
     private Card createNewCard(View view, Skill skill) {
-//        CardExpand expand = new CardExpand(getActivity());
-//        String attributes = skill.getAttributesAsString();
-//        expand.setTitle(attributes.isEmpty() ? "Jump" : attributes);
 
         SkillExpandCard expand = new SkillExpandCard(getActivity(), skill.getAttributes());
 
