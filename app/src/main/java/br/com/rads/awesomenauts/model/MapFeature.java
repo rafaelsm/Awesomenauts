@@ -14,6 +14,7 @@ public class MapFeature {
 
     private String name;
     private String description;
+    private String image;
 
     public static List<MapFeature> parseJSONArray(JSONArray jsonArray) throws JSONException {
 
@@ -26,6 +27,7 @@ public class MapFeature {
             MapFeature mapFeature = new MapFeature();
             mapFeature.setName(jsonObject.getString("name"));
             mapFeature.setDescription(jsonObject.getString("description"));
+            mapFeature.setImage(jsonObject.getString("image"));
 
             mapFeatures.add(mapFeature);
 
@@ -52,11 +54,14 @@ public class MapFeature {
 
     public String getImage() {
 
-        StringBuilder imageName = new StringBuilder( "mf_" );
-        imageName.append(this.name.toLowerCase().replace(" ", "_").replace("-", "_").replace("ø", "o").replace("&", "and")) ;
+        StringBuilder imageName = new StringBuilder( "mp_ft_" );
+        imageName.append(this.image.toLowerCase().replace(" ", "_").replace("-", "_").replace("ø", "o").replace("&", "and")) ;
 
         return imageName.toString();
 
     }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
 }

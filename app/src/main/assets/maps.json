@@ -6,14 +6,17 @@
     "mapFeatures" :[
         {
             "name":"Hide Areas",
+            "image":"",
             "description":"There are three Hide Areas in the middle of Ribbit IV (the two in the bottom being interconnected). Players can hide here to ambush enemy Awesomenauts, or deploy traps such as Mines."
         },
         {
             "name":"Critter Area",
+            "image":"small beasts",
             "description":"Four Small Beasts roam around the middle of the map. Killing them will drop a small Healthpack that restores 30 Health, and 3 Solar. They will respawn after a short amount of time."
         },
         {
             "name":"Solar Boss",
+            "image":"solar boss",
             "description":"The Solar Boss is a large beast found on both sides of the map. Killing him will give 30 Solar and full Health to the Awesomenaut who killed him."
         }
     ],
@@ -41,14 +44,17 @@
     "mapFeatures" :[
         {
             "name":"Anti Gravity Field",
+            "image":"",
             "description":"There is a large anti-gravity field in the middle of AI Station 404. Any 'Nauts that enter it will become lighter, allowing them to jump higher. Certain projectiles, such as Cats, will also be affected."
         },
         {
             "name":"Critter Area",
+            "image":"service bots",
             "description":"The upper middle of the map has four Neutral Creeps roaming around it. Killing them will drop a small Healthpack that restores 30 Health, and 3 Solar."
         },
         {
             "name":"Droid Releaser",
+            "image":"droid releaser",
             "description":"Each team has a Droid Releaser right next to the top Turret. Stepping on it will spawn Humming Droids, up to a maximum of 3. These are the only Droids that attack the inner bottom Turret. Humming Droids are restocked every 10 seconds from destruction. It's impossible to activate the enemy team's droid releaser."
         }
     ],
@@ -70,14 +76,17 @@
     "mapFeatures" :[
         {
             "name":"Worm",
+            "image":"worm",
             "description":"The middle of the bottom lane has a button with an openable shaft below. Stepping on it will open the shaft, to reveal a large worm, that stays on the screen as long as the button is held down. Any Droid or Awesomenaut that touches the worm will automatically die and drop their Solar on the ground.\n\nBeing killed by the Worm will display a message saying \"The worm has smooched Player Name!\"."
         },
         {
             "name":"Hide Areas",
+            "image":"",
             "description":"The center of the map has a large Hide Area, which conceals any Awesomenauts or Droids inside."
         },
         {
             "name":"Critter Areas",
+            "image":"small worms",
             "description":"There are two worm creeps each on the left and right sides of the map, above the turrets. They drop a Healthpack that restores 25 Health and 3 Solar upon death."
         }
     ],
@@ -98,14 +107,17 @@
     "mapFeatures" :[
         {
             "name":"Stealth Orb",
+            "image":"stealth orb",
             "description":"Aiguillon has a special pickup called the Stealth Orb. It grants 20 seconds Invisibility to any 'naut that touches it, and respawns after one minute. The Orb appears shortly after a match begins, and will remain there until it is picked up."
         },
         {
             "name":"Hide Areas",
+            "image":"",
             "description":"There is a large Hide Area on the top of the map, which also contains a Healthpack inside. The outer Turrets in the bottom lane also have a hide area in front of them. Another hide area is present in the bottom of the map, which contains two Creeps. Both teams have a large hide area behind their respective team walls."
         },
         {
             "name":"Critter Areas",
+            "image":"solar krabs",
             "description":"There are 6 Creeps on the map. One is behind the team wall for both teams and two are in front of each team wall. They drop a small Healthpack that restores 25 Health, and 3 Solar."
         }
     ],

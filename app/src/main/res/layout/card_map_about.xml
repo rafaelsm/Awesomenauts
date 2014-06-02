@@ -13,7 +13,7 @@
         android:textSize="@dimen/medium_text"/>
 
     <TextView
-        android:layout_marginTop="5dp"
+        android:layout_margin="@dimen/small_padding"
         android:id="@+id/map_about_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

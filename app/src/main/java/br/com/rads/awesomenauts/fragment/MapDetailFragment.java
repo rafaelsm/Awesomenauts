@@ -89,6 +89,7 @@ public class MapDetailFragment extends Fragment {
         TextView description = (TextView) cardView.findViewById(R.id.map_about_text);
         description.setText(map.getDescription());
 
+
         contentLayout.addView(cardView);
 
     }
@@ -124,11 +125,11 @@ public class MapDetailFragment extends Fragment {
 
         title.setText(feature.getName());
         description.setText(feature.getDescription());
-        setFeatureImage(feature.getImage(),image);
+        setFeatureImage(feature.getImage(),image,description);
 
     }
 
-    private void setFeatureImage(String drawableName, ImageView imageView) {
+    private void setFeatureImage(String drawableName, ImageView imageView, TextView textView) {
         int imageResource = 0;
 
         try {
@@ -137,8 +138,11 @@ public class MapDetailFragment extends Fragment {
             Log.e(TAG, "Not found image drawable " + drawableName );
         }
 
-        if (imageResource == 0)
+        if (imageResource == 0) {
             imageResource = R.drawable.placeholder_image;
+            imageView.setVisibility(View.GONE);
+            textView.setLayoutParams( new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT,3f));
+        }
 
         imageView.setImageResource(imageResource);
     }

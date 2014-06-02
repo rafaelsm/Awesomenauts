@@ -17,7 +17,7 @@
         android:layout_below="@id/feature_title_text"
         android:weightSum="3"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center|left">
 
         <ImageView
             android:id="@+id/feature_image"
@@ -25,7 +25,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/placeholder"
-            android:adjustViewBounds="true"/>
+            android:adjustViewBounds="false"
+            />
 
         <TextView
             android:gravity="center_vertical"
