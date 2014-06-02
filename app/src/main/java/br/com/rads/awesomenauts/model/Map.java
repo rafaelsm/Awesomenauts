@@ -93,7 +93,7 @@ public class Map {
 
     public String getImage() {
 
-        StringBuilder drawableName = new StringBuilder( "map_image_" );
+        StringBuilder drawableName = new StringBuilder( "mp_fu_" );
         drawableName.append( this.name.toLowerCase().replace(" ", "_").replace("-", "_").replace("ø","o").replace("&","and") ) ;
         return drawableName.toString();
 

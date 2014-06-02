@@ -1,5 +1,6 @@
 package br.com.rads.awesomenauts.fragment;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import br.com.rads.awesomenauts.activity.MapZoomActivity;
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.model.Map;
 import br.com.rads.awesomenauts.model.MapFeature;
@@ -26,6 +28,9 @@ public class MapDetailFragment extends Fragment {
 
     @InjectView(R.id.map_detail_thumb)
     ImageView thumbImageView;
+
+    @InjectView(R.id.map_detail_zoom_bt)
+    ImageView zoomButton;
 
     @InjectView(R.id.map_content_layout)
     LinearLayout contentLayout;
@@ -59,6 +64,7 @@ public class MapDetailFragment extends Fragment {
         setThumbImage();
         setAboutMap();
         setFeatures();
+        setZoomListener();
 
         return view;
     }
@@ -145,6 +151,23 @@ public class MapDetailFragment extends Fragment {
         }
 
         imageView.setImageResource(imageResource);
+    }
+
+    private void setZoomListener() {
+
+        zoomButton.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int fullImageDrawable = getResources().getIdentifier(map.getImage(), "drawable", getActivity().getPackageName());
+
+                Intent i = new Intent(getActivity(), MapZoomActivity.class);
+                i.putExtra(MapZoomActivity.MAP_ZOOM_DRAWABLE, fullImageDrawable);
+
+                startActivity(i);
+            }
+        });
+
     }
 
 }
