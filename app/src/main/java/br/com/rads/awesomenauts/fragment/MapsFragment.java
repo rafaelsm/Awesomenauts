@@ -16,6 +16,7 @@ import br.com.rads.awesomenauts.activity.MapActivity;
 import br.com.rads.awesomenauts.activity.R;
 import br.com.rads.awesomenauts.adapter.MapListAdapter;
 import br.com.rads.awesomenauts.model.Map;
+import br.com.rads.awesomenauts.util.DataManager;
 import butterknife.ButterKnife;
 
 /**
@@ -39,7 +40,7 @@ import butterknife.ButterKnife;
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
         ButterKnife.inject(this,view);
 
-        setListAdapter( new MapListAdapter(getActivity(), maps));
+        setListAdapter( new MapListAdapter(getActivity(), DataManager.getInstance().getMaps()));
 
         return view;
     }
@@ -51,6 +52,8 @@ import butterknife.ButterKnife;
         Intent intent = new Intent(this.getActivity(), MapActivity.class);
         intent.putExtra(Map.TAG, position);
         startActivity(intent);
+
+        getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void setMaps(List<Map> maps) {

@@ -9,6 +9,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
@@ -40,7 +43,9 @@ public class AboutAppActivity extends ActionBarActivity {
 
     private void setAppVersionDate() {
         try {
-            textVersionDate.setText("Version Date: " + getPackageManager().getPackageInfo(getPackageName(),0).versionName);
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            String formattedDate = sdf.format(new Date(getPackageManager().getPackageInfo(getPackageName(),0).lastUpdateTime));
+            textVersionDate.setText("Version Date: " + formattedDate);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }

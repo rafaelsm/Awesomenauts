@@ -1,5 +1,6 @@
 package br.com.rads.awesomenauts.fragment;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -50,9 +51,7 @@ public class MapDetailFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setRetainInstance(true);
-
     }
 
     @Override
@@ -155,19 +154,23 @@ public class MapDetailFragment extends Fragment {
 
     private void setZoomListener() {
 
-        zoomButton.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        zoomButton.setOnClickListener( new MapClickListener() );
 
-                int fullImageDrawable = getResources().getIdentifier(map.getImage(), "drawable", getActivity().getPackageName());
+    }
 
-                Intent i = new Intent(getActivity(), MapZoomActivity.class);
-                i.putExtra(MapZoomActivity.MAP_ZOOM_DRAWABLE, fullImageDrawable);
+    private class MapClickListener implements View.OnClickListener {
 
-                startActivity(i);
-            }
-        });
+        @Override
+        public void onClick(View v) {
+            int fullImageDrawable = getResources().getIdentifier(map.getImage(), "drawable", getActivity().getPackageName());
 
+            Intent i = new Intent(getActivity(), MapZoomActivity.class);
+            i.putExtra(MapZoomActivity.MAP_ZOOM_DRAWABLE, fullImageDrawable);
+            i.putExtra(MapZoomActivity.MAP_NAME,map.getName());
+
+            startActivity(i);
+            getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        }
     }
 
 }

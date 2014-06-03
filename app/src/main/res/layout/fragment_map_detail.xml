@@ -13,14 +13,21 @@
             android:src="@drawable/map_thumb_placeholder"
             android:adjustViewBounds="true" />
 
-        <ImageButton
-            android:id="@+id/map_detail_zoom_bt"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/map_detail_thumb"
             android:layout_alignBottom="@+id/map_detail_thumb"
-            android:layout_margin="@dimen/small_margin"
-            android:background="@drawable/ic_full_screen"/>
+            android:background="#50000000">
+
+            <ImageButton
+                android:id="@+id/map_detail_zoom_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_full_screen" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_below="@id/map_detail_thumb"

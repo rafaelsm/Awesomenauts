@@ -16,8 +16,9 @@ import uk.co.senab.photoview.PhotoViewAttacher;
 public class MapZoomActivity extends ActionBarActivity {
 
     public static final String MAP_ZOOM_DRAWABLE = "map_full_screen";
+    public static final String MAP_NAME = "map_name_full_screen";
 
-//    @InjectView(R.id.full_image)
+    @InjectView(R.id.full_image)
     ImageView fullImage;
 
     private PhotoViewAttacher photoViewAttacher;
@@ -27,18 +28,17 @@ public class MapZoomActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map_zoom);
-//        ButterKnife.inject(this);
+        ButterKnife.inject(this);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("full image");
+        actionBar.setTitle(getIntent().getStringExtra(MAP_NAME) + " Full Screen");
 
         int drawable = getIntent().getIntExtra(MAP_ZOOM_DRAWABLE,0);
 
-        fullImage = (ImageView) findViewById(R.id.full_image);
         fullImage.setImageResource(drawable);
 
         photoViewAttacher = new PhotoViewAttacher(fullImage);
-//        photoViewAttacher.update();
+
     }
 
 }
