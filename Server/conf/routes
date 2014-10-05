@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Awesomenauts
+GET     /awesomenauts               controllers.Application.awesomenauts()
+POST    /awesomenauts               controllers.Application.newAwesomenaut()
+POST    /awesomenauts/:id/delete    controllers.Application.deleteAwesomenaut(id: Long)
+
+

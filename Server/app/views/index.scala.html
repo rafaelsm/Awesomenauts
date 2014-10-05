@@ -1,0 +1,28 @@
+@(awesomenauts: List[Awesomenaut], awesomenautForm: Form[Awesomenaut])
+
+@import helper._
+
+@main("Awesomenauts list") {
+
+        <h1>@awesomenauts.size() awesomenaut(s)</h1>
+
+        <ul>
+            @for(awesomenaut <- awesomenauts){
+                <li>
+                    @awesomenaut.name
+                    
+                    @form(routes.Application.deleteAwesomenaut(awesomenaut.id)){
+                        <input type="submit" value="Delete">
+                    }
+                </li>
+            }
+        </ul>
+
+        <h2>Add a new Awesomenaut</h2>
+
+        @form(routes.Application.newAwesomenaut()){
+            @inputText(awesomenautForm("name"))
+            <input type="submit" value="Create">
+        }
+
+}
