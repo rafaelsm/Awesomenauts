@@ -3,3 +3,6 @@ help
 run
 scaffold:gen
 run
+play run
+run
+test

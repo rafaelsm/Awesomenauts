@@ -6,7 +6,11 @@
 create table awesomenaut (
   id                        bigint not null,
   name                      varchar(255),
-  description               varchar(255),
+  backstory                 varchar(255),
+  icon                      varchar(255),
+  image                     varchar(255),
+  unlocked_at_level         integer,
+  release_date              timestamp,
   constraint pk_awesomenaut primary key (id))
 ;
 

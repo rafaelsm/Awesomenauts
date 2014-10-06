@@ -1,6 +1,6 @@
-// @SOURCE:/Users/Rafael/projetos/Awesomenauts Server/awesome-server/conf/routes
+// @SOURCE:/Users/Rafael/projetos/Awesomenauts/Server/conf/routes
 // @HASH:5e9fa6ca1f7eeb8884ab4b6673c2a6c04cdea57f
-// @DATE:Thu Sep 25 23:42:12 BRT 2014
+// @DATE:Sun Oct 05 20:56:10 BRT 2014
 
 package controllers;
 

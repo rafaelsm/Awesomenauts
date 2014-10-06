@@ -1,7 +1,6 @@
 
 package views.html
 
-import models.Awesomenaut
 import play.twirl.api._
 import play.twirl.api.TemplateMagic._
 
@@ -66,8 +65,8 @@ Seq[Any](format.raw/*1.71*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Sep 26 00:05:02 BRT 2014
-                  SOURCE: /Users/Rafael/projetos/Awesomenauts Server/awesome-server/app/views/index.scala.html
+                  DATE: Sun Oct 05 20:56:11 BRT 2014
+                  SOURCE: /Users/Rafael/projetos/Awesomenauts/Server/app/views/index.scala.html
                   HASH: 94d67062d6f4c015f2fd3b3746863e178a3b8625
                   MATRIX: 752->1|924->70|952->89|979->91|1012->116|1051->118|1087->128|1118->133|1138->145|1165->152|1193->153|1267->200|1315->232|1354->233|1399->250|1452->276|1472->287|1498->292|1568->335|1635->393|1674->394|1727->419|1816->477|1861->494|1911->513|1947->522|2030->578|2080->619|2119->620|2160->634|2215->668|2256->681|2333->727|2366->730
                   LINES: 26->1|29->1|31->4|32->5|32->5|32->5|34->7|34->7|34->7|34->7|34->7|37->10|37->10|37->10|38->11|39->12|39->12|39->12|41->14|41->14|41->14|42->15|43->16|44->17|45->18|46->19|50->23|50->23|50->23|51->24|51->24|52->25|53->26|55->28

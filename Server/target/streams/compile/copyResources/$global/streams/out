@@ -1,6 +1,6 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts Server/awesome-server/conf/application.conf,/Users/Rafael/projetos/Awesomenauts Server/awesome-server/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts Server/awesome-server/conf/evolutions,/Users/Rafael/projetos/Awesomenauts Server/awesome-server/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts Server/awesome-server/conf/routes,/Users/Rafael/projetos/Awesomenauts Server/awesome-server/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts Server/awesome-server/conf/evolutions/default,/Users/Rafael/projetos/Awesomenauts Server/awesome-server/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts Server/awesome-server/conf/evolutions/default/1.sql,/Users/Rafael/projetos/Awesomenauts Server/awesome-server/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts/Server/conf/application.conf,/Users/Rafael/projetos/Awesomenauts/Server/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts/Server/conf/evolutions,/Users/Rafael/projetos/Awesomenauts/Server/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts/Server/conf/routes,/Users/Rafael/projetos/Awesomenauts/Server/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts/Server/conf/evolutions/default,/Users/Rafael/projetos/Awesomenauts/Server/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Rafael/projetos/Awesomenauts/Server/conf/evolutions/default/1.sql,/Users/Rafael/projetos/Awesomenauts/Server/target/scala-2.11/classes/evolutions/default/1.sql)[0m
